@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B115D2A1C2DAFEC0079589F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B115D291C2DAFEC0079589F /* EventsManager.swift */; };
 		8B3333991C28C02100831806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333981C28C02100831806 /* AppDelegate.swift */; };
 		8B33339B1C28C02100831806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33339A1C28C02100831806 /* ViewController.swift */; };
 		8B33339E1C28C02100831806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B33339C1C28C02100831806 /* Main.storyboard */; };
@@ -14,6 +15,15 @@
 		8B3333A31C28C02100831806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3333A11C28C02100831806 /* LaunchScreen.storyboard */; };
 		8B3333AE1C28C02100831806 /* OpenFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333AD1C28C02100831806 /* OpenFoodTests.swift */; };
 		8B3333B91C28C02100831806 /* OpenFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333B81C28C02100831806 /* OpenFoodUITests.swift */; };
+		8B3333C71C28C36A00831806 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333C61C28C36A00831806 /* Constants.swift */; };
+		8B3333C91C28D7BB00831806 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333C81C28D7BB00831806 /* EventTableViewCell.swift */; };
+		8B3333CB1C28D87E00831806 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333CA1C28D87E00831806 /* Event.swift */; };
+		8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */; };
+		8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E531C2A2AD900C6527E /* USStates.swift */; };
+		8B9E8E561C2A36C200C6527E /* USStatePolygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */; };
+		8B9E8E581C2A3CBD00C6527E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E8E571C2A3CBD00C6527E /* MapKit.framework */; };
+		8BBF50C61C2DA99400606FE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF50C51C2DA99400606FE7 /* Extensions.swift */; };
+		AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D82228285162DAF213084F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B115D291C2DAFEC0079589F /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		8B3333951C28C02100831806 /* OpenFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3333981C28C02100831806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B33339A1C28C02100831806 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		8B3333B41C28C02100831806 /* OpenFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3333B81C28C02100831806 /* OpenFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodUITests.swift; sourceTree = "<group>"; };
 		8B3333BA1C28C02100831806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3333C61C28C36A00831806 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8B3333C81C28D7BB00831806 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		8B3333CA1C28D87E00831806 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8B9E8E531C2A2AD900C6527E /* USStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStates.swift; sourceTree = "<group>"; };
+		8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStatePolygons.swift; sourceTree = "<group>"; };
+		8B9E8E571C2A3CBD00C6527E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BBF50C51C2DA99400606FE7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BD456AB451D303390520B787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CA474B76DE6DE682368082BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D1D82228285162DAF213084F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9E8E581C2A3CBD00C6527E /* MapKit.framework in Frameworks */,
+				AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +98,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A75FE6A0FF0F406419BD2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E8E571C2A3CBD00C6527E /* MapKit.framework */,
+				D1D82228285162DAF213084F /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B115D251C2DAF670079589F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B33339A1C28C02100831806 /* ViewController.swift */,
+				8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8B115D261C2DAF7E0079589F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E8E531C2A2AD900C6527E /* USStates.swift */,
+				8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */,
+				8B3333CA1C28D87E00831806 /* Event.swift */,
+				8B115D291C2DAFEC0079589F /* EventsManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8B115D271C2DAF830079589F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B3333C81C28D7BB00831806 /* EventTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8B115D281C2DAFA10079589F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8B3333981C28C02100831806 /* AppDelegate.swift */,
+				8B33339F1C28C02100831806 /* Assets.xcassets */,
+				8B3333A11C28C02100831806 /* LaunchScreen.storyboard */,
+				8B3333A41C28C02100831806 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +153,8 @@
 				8B3333AC1C28C02100831806 /* OpenFoodTests */,
 				8B3333B71C28C02100831806 /* OpenFoodUITests */,
 				8B3333961C28C02100831806 /* Products */,
+				AAE7D02C34FC42B897988CA4 /* Pods */,
+				09A75FE6A0FF0F406419BD2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +171,13 @@
 		8B3333971C28C02100831806 /* OpenFood */ = {
 			isa = PBXGroup;
 			children = (
-				8B3333981C28C02100831806 /* AppDelegate.swift */,
-				8B33339A1C28C02100831806 /* ViewController.swift */,
+				8B115D281C2DAFA10079589F /* Support */,
+				8B115D251C2DAF670079589F /* Controller */,
+				8B115D271C2DAF830079589F /* View */,
+				8B115D261C2DAF7E0079589F /* Model */,
+				8B3333C61C28C36A00831806 /* Constants.swift */,
+				8BBF50C51C2DA99400606FE7 /* Extensions.swift */,
 				8B33339C1C28C02100831806 /* Main.storyboard */,
-				8B33339F1C28C02100831806 /* Assets.xcassets */,
-				8B3333A11C28C02100831806 /* LaunchScreen.storyboard */,
-				8B3333A41C28C02100831806 /* Info.plist */,
 			);
 			path = OpenFood;
 			sourceTree = "<group>";
@@ -125,6 +200,15 @@
 			path = OpenFoodUITests;
 			sourceTree = "<group>";
 		};
+		AAE7D02C34FC42B897988CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD456AB451D303390520B787 /* Pods.debug.xcconfig */,
+				CA474B76DE6DE682368082BE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3333BD1C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFood" */;
 			buildPhases = (
+				B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */,
 				8B3333911C28C02100831806 /* Sources */,
 				8B3333921C28C02100831806 /* Frameworks */,
 				8B3333931C28C02100831806 /* Resources */,
+				20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */,
+				837C41AD6E396E6B61002026 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +280,12 @@
 				TargetAttributes = {
 					8B3333941C28C02100831806 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 38CJ7RTF4Q;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8B3333A81C28C02100831806 = {
 						CreatedOnToolsVersion = 7.2;
@@ -251,13 +344,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837C41AD6E396E6B61002026 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B3333911C28C02100831806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3333C91C28D7BB00831806 /* EventTableViewCell.swift in Sources */,
+				8BBF50C61C2DA99400606FE7 /* Extensions.swift in Sources */,
 				8B33339B1C28C02100831806 /* ViewController.swift in Sources */,
 				8B3333991C28C02100831806 /* AppDelegate.swift in Sources */,
+				8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */,
+				8B3333C71C28C36A00831806 /* Constants.swift in Sources */,
+				8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */,
+				8B3333CB1C28D87E00831806 /* Event.swift in Sources */,
+				8B115D2A1C2DAFEC0079589F /* EventsManager.swift in Sources */,
+				8B9E8E561C2A36C200C6527E /* USStatePolygons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,8 +546,10 @@
 		};
 		8B3333BE1C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD456AB451D303390520B787 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OpenFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFood;
@@ -408,8 +559,10 @@
 		};
 		8B3333BF1C28C02100831806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA474B76DE6DE682368082BE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OpenFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFood;
@@ -484,6 +637,7 @@
 				8B3333BF1C28C02100831806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B3333C01C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +646,7 @@
 				8B3333C21C28C02100831806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B3333C31C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +655,7 @@
 				8B3333C51C28C02100831806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
