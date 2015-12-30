@@ -21,6 +21,8 @@ struct EventSchema {
   static let recallInitiationDate = "recall_initiation_date"
   static let affectedStates = "distribution_pattern"
   static let reasonForRecall = "reason_for_recall"
+  static let reportDate = "report_date"
+  static let recallingFirm = "recalling_firm"
   
 }
 
@@ -42,5 +44,6 @@ class Event {
   var recallInitiationDate: NSDate?
   var reasonForRecall: String?
   var affectedStates: Set<USStateAbbreviation>?
-  
+  var reportDate: NSDate?
+  var recallingFirm: String?
 }

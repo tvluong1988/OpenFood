@@ -13,7 +13,9 @@ struct OpenFDAAPI {
   static let baseURL = "https://api.fda.gov/food/"
 }
 
-
+enum SortOrder: String {
+  case Relevance, Date
+}
 
 
 

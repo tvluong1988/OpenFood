@@ -6,12 +6,14 @@
 //  Copyright © 2015 Thinh Luong. All rights reserved.
 //
 
+
+
 class EventsManager {
   
   // MARK: Functions
   func addEvent(event: Event) {
     eventsSortedByRelevance.append(event)
-    eventsSortedByDate = eventsSortedByRelevance.sort {return $0.recallInitiationDate!.compare($1.recallInitiationDate!) == .OrderedDescending}
+    eventsSortedByDate = eventsSortedByRelevance.sort {return $0.reportDate!.compare($1.reportDate!) == .OrderedDescending}
   }
   
   func removeAllEvents() {
@@ -19,8 +21,19 @@ class EventsManager {
     eventsSortedByDate.removeAll()
   }
   
-  func eventsCount() -> Int {
+  func getEventsCount() -> Int {
     return eventsSortedByRelevance.count
+  }
+  
+  func getEventAtIndex(index: Int) -> Event? {
+    guard index < getEventsCount() else {
+      return nil
+    }
+    
+    switch sortMode {
+    case .Relevance: return eventsSortedByRelevance[index]
+    case .Date: return eventsSortedByDate[index]
+    }
   }
   
   // MARK: Lifecycle
@@ -32,4 +45,5 @@ class EventsManager {
   // MARK: Properties
   var eventsSortedByRelevance: [Event]
   var eventsSortedByDate: [Event]
+  var sortMode: SortOrder = .Relevance
 }

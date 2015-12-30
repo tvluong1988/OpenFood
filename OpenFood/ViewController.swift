@@ -33,32 +33,38 @@ class ViewController: UIViewController {
   */
   func convertStringToDate(dateString: String) -> NSDate? {
     
-    let format = EventSchema.dateFormat
     if dateString == "nil" {
       return nil
     } else {
       
       let dateFormatter = NSDateFormatter()
-      dateFormatter.dateFormat = format
+      dateFormatter.dateFormat = EventSchema.dateFormat
       return dateFormatter.dateFromString(dateString)
     }
   }
   
-  func downloadAndUpdate(searchString: String, skip: Int) {
-    
-    activityIndicator.startAnimating()
-    loadingData = true
-    
+  func getURL(search: String, skip: Int) -> String {
     let enforcementJSON = "enforcement.json?"
     let apiKey = "api_key=" + OpenFDAAPI.key
     let limitAndSkip = "&limit=25&skip=\(skip)"
-    let search = "&search=\(searchString)"
+    let searchString = "&search=\(search.stringByReplacingOccurrencesOfString(" ", withString: "+"))"
     
     var url = OpenFDAAPI.baseURL
     url += enforcementJSON
     url += apiKey
     url += limitAndSkip
-    url += search
+    url += searchString
+    
+    return url
+  }
+  
+  func downloadAndUpdate(search: String, skip: Int) {
+    
+    activityIndicator.startAnimating()
+    loadingData = true
+    searchResultsTotal = 0
+    
+    let url = getURL(search, skip: skip)
     
     Alamofire.request(.GET, url).responseJSON {
       response in
@@ -73,6 +79,12 @@ class ViewController: UIViewController {
       let json = JSON(data)
       
       let resultsJSON = json["results"]
+      let metaJSON = json["meta"]
+      if let totals = metaJSON["results"]["total"].int {
+        self.searchResultsTotal = totals
+      }
+      //      print(metaJSON)
+      //      print(self.searchResultsTotal)
       
       for (_, item) in resultsJSON {
         print(item)
@@ -100,8 +112,12 @@ class ViewController: UIViewController {
     event.classification = json[EventSchema.classification].string
     event.status = json[EventSchema.status].string
     event.productDescription = json[EventSchema.productDescription].string
+    
     event.recallInitiationDate = self.convertStringToDate(json[EventSchema.recallInitiationDate].string!)
+    event.reportDate = self.convertStringToDate(json[EventSchema.reportDate].string!)
+    
     event.reasonForRecall = json[EventSchema.reasonForRecall].string
+    event.recallingFirm = json[EventSchema.recallingFirm].string
     
     let locations = json[EventSchema.affectedStates].string
     var states = Set<USStateAbbreviation>()
@@ -129,8 +145,27 @@ class ViewController: UIViewController {
   
   func handleRefresh(refreshControl: UIRefreshControl) {
     eventsManager.removeAllEvents()
-    downloadAndUpdate("", skip: eventsManager.eventsCount())
+    getLatestUpdates()
     refreshControl.endRefreshing()
+  }
+  
+  func getLatestUpdates() {
+    
+    let today = NSDate(timeIntervalSinceNow: 0)
+    let secondsIn3Months: NSTimeInterval = 60*60*24*120
+    let date3MonthsAgo = today.dateByAddingTimeInterval(-secondsIn3Months)
+    
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.dateFormat = EventSchema.dateFormat
+    
+    let dateRange = "report_date:[\(dateFormatter.stringFromDate(date3MonthsAgo))+TO+\(dateFormatter.stringFromDate(today))]"
+    
+    searchText = dateRange
+    
+    downloadAndUpdate(searchText, skip: eventsManager.getEventsCount())
+    
+    searchBar(searchController.searchBar, selectedScopeButtonIndexDidChange: 1)
+    
   }
   
   // MARK: Lifecycle
@@ -144,11 +179,11 @@ class ViewController: UIViewController {
     activityIndicator.hidesWhenStopped = true
     
     searchController = UISearchController(searchResultsController: nil)
-    searchController.dimsBackgroundDuringPresentation = false
+    searchController.dimsBackgroundDuringPresentation = true
     definesPresentationContext = true
     
     let searchBar = searchController.searchBar
-    searchBar.scopeButtonTitles = ["Relevance", "Date"]
+    searchBar.scopeButtonTitles = [SortOrder.Relevance.rawValue, SortOrder.Date.rawValue]
     searchBar.showsScopeBar = false
     searchBar.delegate = self
     searchBar.sizeToFit()
@@ -159,7 +194,7 @@ class ViewController: UIViewController {
     refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
     
     refreshControl.tintColor = UIColor.lightGrayColor().colorWithAlphaComponent(0.5)
-    refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+    refreshControl.attributedTitle = NSAttributedString(string: "Pull for latest")
     
     tableView.addSubview(refreshControl)
     
@@ -171,6 +206,7 @@ class ViewController: UIViewController {
   var loadingData = false
   var searchController: UISearchController!
   var searchText = ""
+  var searchResultsTotal = 0
   
   var refreshControl: UIRefreshControl!
   
@@ -183,22 +219,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return eventsManager.eventsCount()
+    return eventsManager.getEventsCount()
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! EventTableViewCell
     
-    let searchBar = searchController.searchBar
-    let scopeBarTitle = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-    
-    switch scopeBarTitle {
-    case "Relevance":
-      cell.event = eventsManager.eventsSortedByRelevance[indexPath.row]
-    case "Date":
-      cell.event = eventsManager.eventsSortedByDate[indexPath.row]
-    default: break
-    }
+    cell.event = eventsManager.getEventAtIndex(indexPath.row)
     
     cell.textLabel?.text = cell.event?.productDescription
     
@@ -206,9 +233,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-    let eventsCount = eventsManager.eventsCount()
+    let eventsCount = eventsManager.getEventsCount()
     
-    if !loadingData && indexPath.row == eventsCount - 1 && eventsCount > 2 {
+    if !loadingData && indexPath.row == eventsCount - 1 && eventsCount > 2 && eventsCount < searchResultsTotal {
       downloadAndUpdate(searchText, skip: eventsCount)
     }
   }
@@ -217,18 +244,37 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
 // MARK: - UISearchBarDelegate
 extension ViewController: UISearchBarDelegate {
+  
+  func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
+    tableView.userInteractionEnabled = false
+    return true
+  }
+  
+  func searchBarShouldEndEditing(searchBar: UISearchBar) -> Bool {
+    tableView.userInteractionEnabled = true
+    return true
+  }
+  
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-    print(searchController.searchBar.text)
     
-    if let searchText = searchController.searchBar.text where searchText.isEmpty == false {
+    if let searchText = searchController.searchBar.text where !searchText.isEmpty {
       eventsManager.removeAllEvents()
       
       self.searchText = searchText
-      downloadAndUpdate(searchText, skip: eventsManager.eventsCount())
+      downloadAndUpdate(searchText, skip: eventsManager.getEventsCount())
+      
     }
   }
   
   func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    switch selectedScope {
+    case 0: eventsManager.sortMode = .Relevance
+    case 1: eventsManager.sortMode = .Date
+    default: break
+    }
+    
+    searchController.searchBar.selectedScopeButtonIndex = selectedScope
+    
     tableView.reloadData()
   }
 }

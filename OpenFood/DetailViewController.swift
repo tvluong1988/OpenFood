@@ -12,30 +12,35 @@ import MapKit
 class DetailViewController: UIViewController {
   
   // MARK: Outlets
+  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet weak var contentView: UIView!
+  
   @IBOutlet weak var statusLabel: UILabel!
   @IBOutlet weak var classLabel: UILabel!
-  @IBOutlet weak var locationsLabel: UILabel!
-  @IBOutlet weak var productDescriptionLabel: UILabel!
-  @IBOutlet weak var problemLabel: UILabel!
   @IBOutlet weak var recallDateLabel: UILabel!
   @IBOutlet weak var mapView: MKMapView!
+  
+  @IBOutlet weak var problemLabel: UILabel!
+  @IBOutlet weak var productDescriptionTextView: UITextView!
+  
+  @IBOutlet weak var recallingFirmLabel: UILabel!
+  
   
   // MARK: Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
     let center = CLLocationCoordinate2D(latitude: 40, longitude: -90)
-    let span = MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5)
+    let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
     let region = MKCoordinateRegion(center: center, span: span)
     mapView.setRegion(region, animated: true)
     mapView.showsUserLocation = false
     
-    title = event?.classification
-    productDescriptionLabel.lineBreakMode = .ByWordWrapping
-    productDescriptionLabel.numberOfLines = 0
-    
     problemLabel.lineBreakMode = .ByWordWrapping
     problemLabel.numberOfLines = 0
+    
+    recallingFirmLabel.lineBreakMode = .ByWordWrapping
+    recallingFirmLabel.numberOfLines = 0
     
   }
   
@@ -43,14 +48,15 @@ class DetailViewController: UIViewController {
     super.viewDidAppear(animated)
     
     if let event = event {
-      statusLabel.text = "Status - \(event.status!)"
+      statusLabel.text = "Status: \(event.status!)"
       classLabel.text = event.classification
-      productDescriptionLabel.text = event.productDescription
+      
       
       let dateFormatter = NSDateFormatter()
       dateFormatter.dateStyle = .MediumStyle
-      let date = dateFormatter.stringFromDate(event.recallInitiationDate!)
+      let date = dateFormatter.stringFromDate(event.reportDate!)
       recallDateLabel.text = "Recall date: \(date)"
+      recallDateLabel.sizeToFit()
       
       if let states = event.affectedStates {
         if states.contains(.Nationwide) {
@@ -62,13 +68,19 @@ class DetailViewController: UIViewController {
         }
         
         let center = CLLocationCoordinate2D(latitude: 40, longitude: -115)
-        let span = MKCoordinateSpan(latitudeDelta: 40, longitudeDelta: 40)
+        let span = MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
         let region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
       }
       
-      problemLabel.text = "Problem - \(event.reasonForRecall!)"
+      problemLabel.text = event.reasonForRecall
       problemLabel.sizeToFit()
+      
+      productDescriptionTextView.text = event.productDescription
+      productDescriptionTextView.sizeToFit()
+      
+      recallingFirmLabel.text = event.recallingFirm
+      recallingFirmLabel.sizeToFit()
       
     }
   }
