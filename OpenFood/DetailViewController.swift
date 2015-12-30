@@ -47,18 +47,18 @@ class DetailViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    if let event = event {
-      statusLabel.text = "Status: \(event.status!)"
-      classLabel.text = event.classification
+    if let recall = recall {
+      statusLabel.text = "Status: \(recall.status!)"
+      classLabel.text = recall.classification
       
       
       let dateFormatter = NSDateFormatter()
       dateFormatter.dateStyle = .MediumStyle
-      let date = dateFormatter.stringFromDate(event.reportDate!)
+      let date = dateFormatter.stringFromDate(recall.reportDate!)
       recallDateLabel.text = "Recall date: \(date)"
       recallDateLabel.sizeToFit()
       
-      if let states = event.affectedStates {
+      if let states = recall.affectedStates {
         if states.contains(.Nationwide) {
           mapView.addOverlays(polygonsForNationwide())
         } else {
@@ -73,20 +73,21 @@ class DetailViewController: UIViewController {
         mapView.setRegion(region, animated: true)
       }
       
-      problemLabel.text = event.reasonForRecall
+      problemLabel.text = recall.reasonForRecall
       problemLabel.sizeToFit()
       
-      productDescriptionTextView.text = event.productDescription
+      productDescriptionTextView.text = recall.productDescription
       productDescriptionTextView.sizeToFit()
       
-      recallingFirmLabel.text = event.recallingFirm
+      recallingFirmLabel.text = recall.recallingFirm
       recallingFirmLabel.sizeToFit()
       
     }
   }
   
   // MARK: Properties
-  var event: Event?
+  /// Recall information to display.
+  var recall: Recall?
 }
 
 // MARK: - MKMapViewDelegate

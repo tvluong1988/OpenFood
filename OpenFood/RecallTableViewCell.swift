@@ -8,8 +8,9 @@
 
 import UIKit
 
-class EventTableViewCell: UITableViewCell {
+/// TableViewCell holding a Recall object.
+class RecallTableViewCell: UITableViewCell {
   
   // MARK: Properties
-  var event: Event?
+  var recall: Recall?
 }

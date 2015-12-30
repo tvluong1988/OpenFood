@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,11 +21,11 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6hp-ms-kho">
                                 <rect key="frame" x="141" y="222" width="37" height="37"/>
                             </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="39" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UG7-Dw-i6D">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="39" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UG7-Dw-i6D">
                                 <rect key="frame" x="0.0" y="72" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="OU1-vf-CDc" customClass="EventTableViewCell" customModule="OpenFood" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="OU1-vf-CDc" customClass="RecallTableViewCell" customModule="OpenFood" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OU1-vf-CDc" id="nPt-NG-KGC">
@@ -58,7 +59,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="JdQ-Sw-gRJ"/>
+                    <navigationItem key="navigationItem" id="JdQ-Sw-gRJ">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="88g-jM-9z2">
+                            <connections>
+                                <segue destination="gIv-rc-HP9" kind="show" identifier="ShowAbout" id="mfd-y5-cyH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="6hp-ms-kho" id="aEd-sN-26v"/>
@@ -68,6 +75,128 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1220" y="267"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="44h-Cj-BpZ">
+            <objects>
+                <viewController id="gIv-rc-HP9" customClass="AboutViewController" customModule="OpenFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="msb-Dw-L1J"/>
+                        <viewControllerLayoutGuide type="bottom" id="7e8-vc-co0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pxn-08-04X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recall information and updates are provided by openFDA." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJj-OC-Skl">
+                                <rect key="frame" x="16" y="72" width="288" height="40.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVR-Aj-McI">
+                                <rect key="frame" x="16" y="120.5" width="104" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCe-Y3-gNZ">
+                                <rect key="frame" x="16" y="148" width="58.5" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-ub-LEC">
+                                <rect key="frame" x="16" y="195" width="80" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://open.fda.gov/license" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-ZA-fek">
+                                <rect key="frame" x="16" y="167.5" width="194" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tD-h3-9TP">
+                                <rect key="frame" x="16" y="214.5" width="288" height="103.5"/>
+                                <string key="text">openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-mN-UBn">
+                                <rect key="frame" x="16" y="326" width="288" height="146"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiV-kl-17b">
+                                        <rect key="frame" x="0.0" y="48" width="57" height="50"/>
+                                        <state key="normal" image="UIButtons_Facebook"/>
+                                        <connections>
+                                            <action selector="postFacebook:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Cfb-xL-xGt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-zl-3s6">
+                                        <rect key="frame" x="57" y="48" width="58" height="50"/>
+                                        <state key="normal" image="UIButtons_Twitter"/>
+                                        <connections>
+                                            <action selector="postTweet:" destination="gIv-rc-HP9" eventType="touchUpInside" id="14h-zn-E4w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC7-Ss-wPU">
+                                        <rect key="frame" x="115" y="48" width="57" height="50"/>
+                                        <state key="normal" image="UIButtons_Rate"/>
+                                        <connections>
+                                            <action selector="rateApp:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Dgo-RH-iME"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-Ri-cEP">
+                                        <rect key="frame" x="172" y="47" width="60" height="52"/>
+                                        <state key="normal" image="UIButtons_RestorePurchase"/>
+                                        <connections>
+                                            <action selector="restorePurchases:" destination="gIv-rc-HP9" eventType="touchUpInside" id="los-cK-ybc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frU-lY-0RD">
+                                        <rect key="frame" x="231" y="48" width="57" height="50"/>
+                                        <state key="normal" image="UIButtons_RemoveAds"/>
+                                        <connections>
+                                            <action selector="removeAds:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Ypc-QA-VEF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RmB-mN-UBn" secondAttribute="trailing" id="1Oh-6R-grg"/>
+                            <constraint firstItem="TJj-OC-Skl" firstAttribute="top" secondItem="msb-Dw-L1J" secondAttribute="bottom" constant="8" symbolic="YES" id="8f7-YQ-Ad4"/>
+                            <constraint firstItem="ghu-ub-LEC" firstAttribute="top" secondItem="WRO-ZA-fek" secondAttribute="bottom" constant="8" symbolic="YES" id="BJp-bx-rBW"/>
+                            <constraint firstItem="TJj-OC-Skl" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="Dsq-dz-riK"/>
+                            <constraint firstItem="RmB-mN-UBn" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="F8Y-2s-IOK"/>
+                            <constraint firstItem="9tD-h3-9TP" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="G8y-Yi-TRC"/>
+                            <constraint firstItem="UCe-Y3-gNZ" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="KWt-hv-Olf"/>
+                            <constraint firstItem="WRO-ZA-fek" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="RAl-LP-LRU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJj-OC-Skl" secondAttribute="trailing" id="RLp-FY-vvw"/>
+                            <constraint firstItem="EVR-Aj-McI" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="Z17-N6-lZf"/>
+                            <constraint firstItem="EVR-Aj-McI" firstAttribute="top" secondItem="TJj-OC-Skl" secondAttribute="bottom" constant="8" symbolic="YES" id="cGA-Au-NwQ"/>
+                            <constraint firstItem="WRO-ZA-fek" firstAttribute="top" secondItem="UCe-Y3-gNZ" secondAttribute="bottom" id="dgh-Xt-xM0"/>
+                            <constraint firstItem="UCe-Y3-gNZ" firstAttribute="top" secondItem="EVR-Aj-McI" secondAttribute="bottom" constant="8" symbolic="YES" id="gsf-CN-aPf"/>
+                            <constraint firstItem="RmB-mN-UBn" firstAttribute="top" secondItem="9tD-h3-9TP" secondAttribute="bottom" constant="8" symbolic="YES" id="hLE-gf-jjf"/>
+                            <constraint firstItem="7e8-vc-co0" firstAttribute="top" secondItem="RmB-mN-UBn" secondAttribute="bottom" constant="8" symbolic="YES" id="jhi-cn-JRN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9tD-h3-9TP" secondAttribute="trailing" id="oX5-6x-cKf"/>
+                            <constraint firstItem="9tD-h3-9TP" firstAttribute="top" secondItem="ghu-ub-LEC" secondAttribute="bottom" id="tUy-FY-0J4"/>
+                            <constraint firstItem="ghu-ub-LEC" firstAttribute="leading" secondItem="Pxn-08-04X" secondAttribute="leadingMargin" id="wnj-dN-cPY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="mvd-bx-Ym8"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lastUpdatedLabel" destination="EVR-Aj-McI" id="c51-oH-EAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTi-Uv-wIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="267"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="l55-qC-wOg">
@@ -279,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iut-Sk-RwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="267"/>
+            <point key="canvasLocation" x="1220" y="1123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h7M-r1-2Mm">
@@ -300,4 +429,11 @@
             <point key="canvasLocation" x="408" y="267"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UIButtons_Facebook" width="50" height="50"/>
+        <image name="UIButtons_Rate" width="50" height="50"/>
+        <image name="UIButtons_RemoveAds" width="50" height="50"/>
+        <image name="UIButtons_RestorePurchase" width="52" height="52"/>
+        <image name="UIButtons_Twitter" width="50" height="50"/>
+    </resources>
 </document>

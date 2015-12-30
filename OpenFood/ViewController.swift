@@ -6,6 +6,9 @@
 //  Copyright © 2015 Thinh Luong. All rights reserved.
 //
 
+import Social
+import iAd
+import StoreKit
 import UIKit
 import Alamofire
 import SwiftyJSON
@@ -14,8 +17,12 @@ class ViewController: UIViewController {
   
   // MARK: Segues
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "ShowDetail", let detailVC = segue.destinationViewController as? DetailViewController, let sender = sender as? EventTableViewCell {
-      detailVC.event = sender.event
+    if segue.identifier == "ShowDetail", let detailVC = segue.destinationViewController as? DetailViewController, let sender = sender as? RecallTableViewCell {
+      detailVC.recall = sender.recall
+    }
+    
+    if segue.identifier == "ShowAbout", let aboutVC = segue.destinationViewController as? AboutViewController {
+      aboutVC.metaInfo = metaInfo
     }
   }
   
@@ -38,11 +45,19 @@ class ViewController: UIViewController {
     } else {
       
       let dateFormatter = NSDateFormatter()
-      dateFormatter.dateFormat = EventSchema.dateFormat
+      dateFormatter.dateFormat = RecallSchema.dateFormat
       return dateFormatter.dateFromString(dateString)
     }
   }
   
+  /**
+   Retrieve a url formatted for openFDA.
+   
+   - parameter search: user search text
+   - parameter skip:   number of previous item to skip
+   
+   - returns: formatted url
+   */
   func getURL(search: String, skip: Int) -> String {
     let enforcementJSON = "enforcement.json?"
     let apiKey = "api_key=" + OpenFDAAPI.key
@@ -58,6 +73,12 @@ class ViewController: UIViewController {
     return url
   }
   
+  /**
+   Send HTTP request with search text and skip parameter to openFDA.
+   
+   - parameter search: user search text
+   - parameter skip:   number of previous item to skip
+   */
   func downloadAndUpdate(search: String, skip: Int) {
     
     activityIndicator.startAnimating()
@@ -78,22 +99,29 @@ class ViewController: UIViewController {
       
       let json = JSON(data)
       
-      let resultsJSON = json["results"]
       let metaJSON = json["meta"]
+      if let dateString = metaJSON[RecallSchema.lastUpdated].string {
+        let formattedDateString = dateString.stringByReplacingOccurrencesOfString("-", withString: "")
+        if let date = self.convertStringToDate(formattedDateString) {
+          self.metaInfo = MetaInfo(dateLastUpdated: date)
+        }
+      }
+      
       if let totals = metaJSON["results"]["total"].int {
         self.searchResultsTotal = totals
       }
-      //      print(metaJSON)
-      //      print(self.searchResultsTotal)
+      print(metaJSON)
+      //            print(self.searchResultsTotal)
       
+      let resultsJSON = json["results"]
       for (_, item) in resultsJSON {
-        print(item)
+        //        print(item)
         
-        guard item[EventSchema.id].string != nil  else {
+        guard item[RecallSchema.id].string != nil  else {
           continue
         }
         
-        self.eventsManager.addEvent(self.extractEventFromJSON(item))
+        self.recallManager.addRecall(self.extractRecallFromJSON(item))
       }
       
       self.tableView.reloadData()
@@ -102,24 +130,31 @@ class ViewController: UIViewController {
     }
   }
   
-  func extractEventFromJSON(json: JSON) -> Event {
+  /**
+   Extract the json and construct a Recall object to hold all the relevant information.
+   
+   - parameter json: json recall item
+   
+   - returns: Recall object
+   */
+  func extractRecallFromJSON(json: JSON) -> Recall {
     
-    let event = Event(id: json[EventSchema.id].string!)
+    let recall = Recall(id: json[RecallSchema.id].string!)
     
-    event.city = json[EventSchema.city].string
-    event.state = json[EventSchema.state].string
-    event.country = json[EventSchema.country].string
-    event.classification = json[EventSchema.classification].string
-    event.status = json[EventSchema.status].string
-    event.productDescription = json[EventSchema.productDescription].string
+    recall.city = json[RecallSchema.city].string
+    recall.state = json[RecallSchema.state].string
+    recall.country = json[RecallSchema.country].string
+    recall.classification = json[RecallSchema.classification].string
+    recall.status = json[RecallSchema.status].string
+    recall.productDescription = json[RecallSchema.productDescription].string
     
-    event.recallInitiationDate = self.convertStringToDate(json[EventSchema.recallInitiationDate].string!)
-    event.reportDate = self.convertStringToDate(json[EventSchema.reportDate].string!)
+    recall.recallInitiationDate = convertStringToDate(json[RecallSchema.recallInitiationDate].string!)
+    recall.reportDate = convertStringToDate(json[RecallSchema.reportDate].string!)
     
-    event.reasonForRecall = json[EventSchema.reasonForRecall].string
-    event.recallingFirm = json[EventSchema.recallingFirm].string
+    recall.reasonForRecall = json[RecallSchema.reasonForRecall].string
+    recall.recallingFirm = json[RecallSchema.recallingFirm].string
     
-    let locations = json[EventSchema.affectedStates].string
+    let locations = json[RecallSchema.affectedStates].string
     var states = Set<USStateAbbreviation>()
     
     for state in USStateAbbreviation.allValues {
@@ -138,17 +173,25 @@ class ViewController: UIViewController {
       states.remove(.Nationwide)
     }
     
-    event.affectedStates = states
+    recall.affectedStates = states
     
-    return event
+    return recall
   }
   
+  /**
+   User pull down refresh to get latest recall information.
+   
+   - parameter refreshControl: refreshControl
+   */
   func handleRefresh(refreshControl: UIRefreshControl) {
-    eventsManager.removeAllEvents()
+    recallManager.removeAllRecall()
     getLatestUpdates()
     refreshControl.endRefreshing()
   }
   
+  /**
+   Request openFDA for latest recall information and update tableview.
+   */
   func getLatestUpdates() {
     
     let today = NSDate(timeIntervalSinceNow: 0)
@@ -156,15 +199,17 @@ class ViewController: UIViewController {
     let date3MonthsAgo = today.dateByAddingTimeInterval(-secondsIn3Months)
     
     let dateFormatter = NSDateFormatter()
-    dateFormatter.dateFormat = EventSchema.dateFormat
+    dateFormatter.dateFormat = RecallSchema.dateFormat
     
     let dateRange = "report_date:[\(dateFormatter.stringFromDate(date3MonthsAgo))+TO+\(dateFormatter.stringFromDate(today))]"
     
     searchText = dateRange
     
-    downloadAndUpdate(searchText, skip: eventsManager.getEventsCount())
+    downloadAndUpdate(searchText, skip: recallManager.getRecallCount())
     
     searchBar(searchController.searchBar, selectedScopeButtonIndexDidChange: 1)
+    
+    navigationItem.title = "Lastest Recall"
     
   }
   
@@ -172,9 +217,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    title = "Events"
-    
-    eventsManager = EventsManager()
+    recallManager = RecallManager()
     
     activityIndicator.hidesWhenStopped = true
     
@@ -194,22 +237,177 @@ class ViewController: UIViewController {
     refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
     
     refreshControl.tintColor = UIColor.lightGrayColor().colorWithAlphaComponent(0.5)
-    refreshControl.attributedTitle = NSAttributedString(string: "Pull for latest")
+    refreshControl.attributedTitle = NSAttributedString(string: "Pull for latest recalls")
     
     tableView.addSubview(refreshControl)
+    
+    loadNotifications()
+    
+    loadProductStore()
+    
+    isPaid = Product.store.isProductPurchased(Product.RemoveAds)
+    canDisplayBannerAds = !isPaid
+    
+    getLatestUpdates()
     
   }
   
   // MARK: Properties
-  var eventsManager: EventsManager!
-  var filteredEvents = [Event]()
+  var recallManager: RecallManager!
+  /// Is currently getting new data?
   var loadingData = false
   var searchController: UISearchController!
+  /// User search text.
   var searchText = ""
+  /// Total count of search results.
   var searchResultsTotal = 0
-  
   var refreshControl: UIRefreshControl!
+  /// Meta information from openFDA.
+  var metaInfo: MetaInfo?
+  /// Has the user paid to remove iAds?
+  var isPaid = false
+  /// IAP products
+  var products = [SKProduct]()
   
+  
+}
+
+// MARK: - IAP and Notifications
+extension ViewController {
+  /**
+   Initialize the Product store to handle IAP.
+   */
+  private func loadProductStore() {
+    
+    Product.store.requestProductsWithCompletionHandler {
+      success, products in
+      
+      if success {
+        self.products = products
+        print("Success, products: \(self.products)")
+      } else {
+        print("failed")
+      }
+    }
+  }
+  
+  /**
+   Initialize notifications: Facebook, Twitter, App Store, Restore Purchases, Remove Ads.
+   */
+  private func loadNotifications() {
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "productPurchased:", name: IAPHelperProductPurchasedNotification, object: nil)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showFacebook", name: Notification.postFacebook, object: nil)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showTwitter", name: Notification.postTweet, object: nil)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showAppStore", name: Notification.rateApp, object: nil)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "removeAds", name: Notification.removeAds, object: nil)
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "restorePurchases", name: Notification.restorePurchases, object: nil)
+  }
+  
+  /**
+   Update and process IAP purchases.
+   
+   - parameter notification: notification with productIdentifier
+   */
+  func productPurchased(notification: NSNotification) {
+    if let productIdentifier = notification.object as? String {
+      for product in products {
+        if product.productIdentifier == productIdentifier {
+          canDisplayBannerAds = false
+          isPaid = true
+        }
+      }
+    }
+  }
+  
+  /**
+   Show Facebook compost view.
+   */
+  func showFacebook() {
+    
+    // Check if Facebook is available
+    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+      
+      // Create the post
+      let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+      post.title = App.name
+      post.addImage(UIImage(named: Image.shareApp))
+      presentViewController(post, animated: true, completion: nil)
+      
+    } else {
+      
+      // Facebook is not available. Show a warning.
+      let alert = UIAlertController(title: "Facebook Unavailable", message: "User is not signed in", preferredStyle: .Alert)
+      alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+      presentViewController(alert, animated: true, completion: nil)
+    }
+  }
+  
+  /**
+   Show Twitter compost view.
+   */
+  func showTwitter() {
+    
+    // Check if Twitter is available
+    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+      
+      // Create the tweet
+      let tweet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+      tweet.setInitialText("I want to share this fun game: \(App.name)")
+      tweet.addURL(NSURL(string: "https://itunes.apple.com/app/id\(App.id)"))
+      tweet.addImage(UIImage(named: Image.shareApp))
+      
+      presentViewController(tweet, animated: true, completion: nil)
+      
+    } else {
+      
+      // Twitter not available. Show a warning.
+      let alert = UIAlertController(title: "Twitter Unavailable", message: "User is not signed in", preferredStyle: .Alert)
+      alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+      presentViewController(alert, animated: true, completion: nil)
+    }
+  }
+  
+  /**
+   Open link to app on App Store for rating and review.
+   */
+  func showAppStore() {
+    
+    let alert = UIAlertController(title: "Rate App", message: nil, preferredStyle: .Alert)
+    
+    alert.addAction(UIAlertAction(title: "Rate", style: .Default){
+      _ in
+      // Open App in AppStore
+      let link = "https://itunes.apple.com/app/id\(App.id)"
+      
+      UIApplication.sharedApplication().openURL(NSURL(string: link)!)
+      })
+    
+    alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+    
+    presentViewController(alert, animated: true, completion: nil)
+    
+  }
+  
+  /**
+   Initiate IAP purchase to remove iAds.
+   */
+  func removeAds() {
+    if let product = products.first {
+      Product.store.purchaseProduct(product)
+    }
+  }
+  
+  /**
+   Initiate IAP restore purchases.
+   */
+  func restorePurchases() {
+    Product.store.restoreCompletedTransactions()
+  }
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
@@ -219,24 +417,24 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return eventsManager.getEventsCount()
+    return recallManager.getRecallCount()
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! EventTableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! RecallTableViewCell
     
-    cell.event = eventsManager.getEventAtIndex(indexPath.row)
+    cell.recall = recallManager.getRecallAtIndex(indexPath.row)
     
-    cell.textLabel?.text = cell.event?.productDescription
+    cell.textLabel?.text = cell.recall?.productDescription
     
     return cell
   }
   
   func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-    let eventsCount = eventsManager.getEventsCount()
+    let recallCount = recallManager.getRecallCount()
     
-    if !loadingData && indexPath.row == eventsCount - 1 && eventsCount > 2 && eventsCount < searchResultsTotal {
-      downloadAndUpdate(searchText, skip: eventsCount)
+    if !loadingData && indexPath.row == recallCount - 1 && recallCount > 2 && recallCount < searchResultsTotal {
+      downloadAndUpdate(searchText, skip: recallCount)
     }
   }
   
@@ -258,18 +456,19 @@ extension ViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
     
     if let searchText = searchController.searchBar.text where !searchText.isEmpty {
-      eventsManager.removeAllEvents()
+      recallManager.removeAllRecall()
       
       self.searchText = searchText
-      downloadAndUpdate(searchText, skip: eventsManager.getEventsCount())
+      downloadAndUpdate(searchText, skip: recallManager.getRecallCount())
       
+      navigationItem.title = searchText
     }
   }
   
   func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
     switch selectedScope {
-    case 0: eventsManager.sortMode = .Relevance
-    case 1: eventsManager.sortMode = .Date
+    case 0: recallManager.sortMode = .Relevance
+    case 1: recallManager.sortMode = .Date
     default: break
     }
     

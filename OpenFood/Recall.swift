@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct EventSchema {
+/**
+ *  Schema of Recall object for openFDA json data.
+ */
+struct RecallSchema {
   static let dateFormat = "yyyyMMdd"
   
   static let id = "event_id"
@@ -23,10 +26,12 @@ struct EventSchema {
   static let reasonForRecall = "reason_for_recall"
   static let reportDate = "report_date"
   static let recallingFirm = "recalling_firm"
+  static let lastUpdated = "last_updated"
   
 }
 
-class Event {
+/// Recall object.
+class Recall {
   
   // MARK: Lifecycle
   init(id: String) {
@@ -34,16 +39,47 @@ class Event {
   }
   
   // MARK: Properties
+  /// Primary key of Recall object.
   let id: String
+  /// Country of firm who initiated recall.
   var country: String?
+  /// State of firm who initiated recall.
   var state: String?
+  /// City of firm who inititated recall.
   var city: String?
+  /// Detail description of recalled products.
   var productDescription: String?
+  /// Current status of the recall investigation.
   var status: String?
+  /// Classification of the recall.
   var classification: String?
+  /// Date of when the firm initiated the investigation.
   var recallInitiationDate: NSDate?
+  /// Reason for the recall.
   var reasonForRecall: String?
+  /// Set of US states affected by the recall.
   var affectedStates: Set<USStateAbbreviation>?
+  /// Date of when the recall began to take affect.
   var reportDate: NSDate?
+  ///  Name of the recalling firm who initiated the recall investigation.
   var recallingFirm: String?
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+/// US states in full name
 enum USStateFullName: String {
   case Alabama, Alaska, Arizona, Arkansas
   case California, Colorado, Connecticut
@@ -50,6 +51,7 @@ enum USStateFullName: String {
   
 }
 
+/// US states in abbreviation
 enum USStateAbbreviation: String {
   case AL, AK, AS, AZ, AR
   case CA, CO, CT
@@ -83,6 +85,11 @@ enum USStateAbbreviation: String {
   ]
 }
 
+/**
+ Retrieve the polygons for all US states.
+ 
+ - returns: array of polygon of all US states
+ */
 func polygonsForNationwide() -> [MKPolygon] {
   var polygons = [MKPolygon]()
   
@@ -93,6 +100,13 @@ func polygonsForNationwide() -> [MKPolygon] {
   return polygons
 }
 
+/**
+ Retrieve the polygon for specified US state.
+ 
+ - parameter state: US state
+ 
+ - returns: polygon of US state
+ */
 func polygonForState(state: USStateAbbreviation) -> MKPolygon {
   switch state {
   case .AL: return polygonForAlabama()
@@ -150,6 +164,13 @@ func polygonForState(state: USStateAbbreviation) -> MKPolygon {
   }
 }
 
+/**
+ Convert US state from full name to abbreviation.
+ 
+ - parameter state: US state
+ 
+ - returns: abbreviated US state
+ */
 func convertUSStateFullNameToAbbreviation(state: USStateFullName) -> USStateAbbreviation {
   let abbreviation: USStateAbbreviation
   

@@ -8,15 +8,49 @@
 
 import Foundation
 
+/**
+ *  Important App information
+ */
+struct App {
+  static let id = "1071420301"
+  static let name = "Food Check: Search for Recall"
+}
+
+/**
+ *  openFDA API information
+ */
 struct OpenFDAAPI {
   static let key     = "xmoLdqh4LzCDbAPMLhdxJmKIHhcLaR6eB32ohYUa"
   static let baseURL = "https://api.fda.gov/food/"
 }
 
+/**
+ Sort recall information
+ 
+ - Relevance: Sort by relevance to the user's search
+ - Date:      Sort by date starting from latest
+ */
 enum SortOrder: String {
   case Relevance, Date
 }
 
+/**
+ *  Notification keys
+ */
+struct Notification {
+  static let rateApp = "RateApp"
+  static let postFacebook = "PostFacebook"
+  static let postTweet = "PostTweet"
+  static let removeAds = "RemoveAds"
+  static let restorePurchases = "RestorePurchases"
+}
+
+/**
+ *  Image assets
+ */
+struct Image {
+  static let shareApp = "ShareApp"
+}
 
 
 
