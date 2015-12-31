@@ -70,7 +70,7 @@ enum USStateAbbreviation: String {
   
   case Nationwide
   
-  static let allValues = [
+  static let all51States = [
     AL, AK, AZ, AR, CA,
     CO, CT, DE, DC, FL,
     GA, HI, ID, IL, IN,
@@ -83,6 +83,20 @@ enum USStateAbbreviation: String {
     VT, VA, WA, WV, WI,
     WY
   ]
+  
+  static let allValues = [
+    AL, AK, AZ, AR, CA,
+    CO, CT, DE, DC, FL,
+    GA, HI, ID, IL, IN,
+    IA, KS, KY, LA, ME,
+    MD, MA, MI, MN, MS,
+    MO, MT, NE, NV, NH,
+    NJ, NM, NY, NC, ND,
+    OH, OK, OR, PA, RI,
+    SC, SD, TN, TX, UT,
+    VT, VA, WA, WV, WI,
+    WY, Nationwide
+  ]
 }
 
 /**
@@ -93,7 +107,7 @@ enum USStateAbbreviation: String {
 func polygonsForNationwide() -> [MKPolygon] {
   var polygons = [MKPolygon]()
   
-  for state in USStateAbbreviation.allValues {
+  for state in USStateAbbreviation.all51States {
     polygons.append(polygonForState(state))
   }
   

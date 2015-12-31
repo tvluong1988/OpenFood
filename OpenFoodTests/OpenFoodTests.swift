@@ -10,27 +10,125 @@ import XCTest
 @testable import OpenFood
 
 class OpenFoodTests: XCTestCase {
+  
+  // MARK: Tests
+  func testRecallManagerAddRecall() {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    recallManager.addRecall(recall1)
+    XCTAssert(recallManager.recallSortedByRelevance.count == 1)
+    XCTAssert(recallManager.recallSortedByDate.count == 1)
+  }
+  
+  func testRecallManagerGetRecallCount() {
+    recallManager.recallSortedByRelevance.append(recall1)
+    XCTAssert(recallManager.getRecallCount() == 1)
+    
+    recallManager.recallSortedByRelevance.append(recall2)
+    XCTAssert(recallManager.getRecallCount() == 2)
+  }
+  
+  func testRecallManagerRemoveAllRecall() {
+    recallManager.recallSortedByRelevance.append(recall1)
+    recallManager.recallSortedByRelevance.append(recall2)
+    
+    recallManager.removeAllRecall()
+    
+    XCTAssert(recallManager.recallSortedByRelevance.count == 0)
+    
+    
+    recallManager.recallSortedByDate.append(recall1)
+    recallManager.recallSortedByDate.append(recall2)
+    
+    recallManager.removeAllRecall()
+    
+    XCTAssert(recallManager.recallSortedByDate.count == 0)
+    
+  }
+  
+  func testRecallManagerGetRecallAtIndexReturnNil() {
+    XCTAssert(recallManager.getRecallAtIndex(4) == nil)
+  }
+  
+  func testRecallManagerGetRecallAtIndexReturnRecallSortedByRelevance() {
+    recallManager.sortMode = .Relevance
+    recallManager.recallSortedByRelevance.append(recall1)
+    recallManager.recallSortedByRelevance.append(recall2)
+    
+    let retrievedRecall1 = recallManager.getRecallAtIndex(0)!
+    let retrievedRecall2 = recallManager.getRecallAtIndex(1)!
+    
+    XCTAssert(retrievedRecall1 == recall1)
+    XCTAssert(retrievedRecall2 == recall2)
+  }
+  
+  func testRecallManagerGetRecallAtIndexReturnRecallSortedByDate() {
+    recallManager.sortMode = .Date
+    recallManager.recallSortedByRelevance.append(recall1)
+    recallManager.recallSortedByRelevance.append(recall2)
+    recallManager.recallSortedByDate.append(recall1)
+    recallManager.recallSortedByDate.append(recall2)
+    
+    let retrievedRecall1 = recallManager.getRecallAtIndex(0)!
+    let retrievedRecall2 = recallManager.getRecallAtIndex(1)!
+    
+    XCTAssert(retrievedRecall1 == recall1)
+    XCTAssert(retrievedRecall2 == recall2)
+  }
+  
+  func testPolygonsForNationwide() {
+    let polygons = polygonsForNationwide()
+    
+    XCTAssert(polygons.count == 51)
+  }
+  
+  func textConvertUSStateFullNameToAbbreviation() {
+    var set = Set<USStateAbbreviation>()
+    
+    for state in USStateFullName.allValues {
+      set.insert(convertUSStateFullNameToAbbreviation(state))
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    XCTAssert(set.count == USStateAbbreviation.allValues.count)
+  }
+  
+  // MARK: Lifecycle
+  override func setUp() {
+    super.setUp()
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    recallManager = RecallManager()
+  }
+  
+  override func tearDown() {
+    super.tearDown()
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+  }
+  
+  // MARK: Properties
+  var recallManager: RecallManager!
+  let recall1 = Recall(id: "Recall1")
+  let recall2 = Recall(id: "Recall2")
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

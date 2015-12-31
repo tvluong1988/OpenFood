@@ -157,7 +157,7 @@ class ViewController: UIViewController {
     let locations = json[RecallSchema.affectedStates].string
     var states = Set<USStateAbbreviation>()
     
-    for state in USStateAbbreviation.allValues {
+    for state in USStateAbbreviation.all51States {
       if locations!.containsString(state.rawValue) {
         states.insert(state)
       }

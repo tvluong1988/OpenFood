@@ -17,7 +17,14 @@ class RecallManager {
   */
   func addRecall(recall: Recall) {
     recallSortedByRelevance.append(recall)
-    recallSortedByDate = recallSortedByRelevance.sort {return $0.reportDate!.compare($1.reportDate!) == .OrderedDescending}
+    
+    recallSortedByDate = recallSortedByRelevance.sort {
+      if let firstRecallReportDate = $0.reportDate, let secondRecallReportDate = $1.reportDate {
+        return firstRecallReportDate.compare(secondRecallReportDate) == .OrderedDescending
+      } else {
+        return false
+      }
+    }
   }
   
   /**

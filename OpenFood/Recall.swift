@@ -31,7 +31,7 @@ struct RecallSchema {
 }
 
 /// Recall object.
-class Recall {
+class Recall: Equatable {
   
   // MARK: Lifecycle
   init(id: String) {
@@ -65,6 +65,9 @@ class Recall {
   var recallingFirm: String?
 }
 
+func ==(lhs: Recall, rhs: Recall) -> Bool {
+  return lhs.id == rhs.id
+}
 
 
 

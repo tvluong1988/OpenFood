@@ -46,7 +46,6 @@ class AboutViewController: UIViewController {
       
       lastUpdatedLabel.text = "Last updated: \(date)"
     }
-    
   }
   
   // MARK: Properties
