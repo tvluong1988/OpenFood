@@ -42,6 +42,8 @@ class DetailViewController: UIViewController {
     recallingFirmLabel.lineBreakMode = .ByWordWrapping
     recallingFirmLabel.numberOfLines = 0
     
+    productDescriptionTextView.backgroundColor = UIColor.flatWhiteColorDark().lightenByPercentage(0.1)
+    
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -49,7 +51,18 @@ class DetailViewController: UIViewController {
     
     if let recall = recall {
       statusLabel.text = "Status: \(recall.status!)"
-      classLabel.text = recall.classification
+      
+      if let status = recall.status {
+        statusLabel.backgroundColor = status.getBackgroundColor()
+        statusLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn: status.getBackgroundColor(), isFlat: true)
+        statusLabel.text = status.rawValue
+      }
+      
+      if let classification = recall.classification {
+        classLabel.backgroundColor = classification.getBackgroundColor()
+        classLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn: classification.getBackgroundColor(), isFlat: true)
+        classLabel.text = classification.rawValue
+      }
       
       
       let dateFormatter = NSDateFormatter()
@@ -95,7 +108,7 @@ extension DetailViewController: MKMapViewDelegate {
   func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
     if overlay is MKPolygon {
       let polygonView = MKPolygonRenderer(overlay: overlay)
-      polygonView.strokeColor = UIColor.orangeColor()
+      polygonView.strokeColor = recall?.status?.getBackgroundColor() ?? UIColor.orangeColor()
       
       return polygonView
     }

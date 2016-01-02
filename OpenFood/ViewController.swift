@@ -12,12 +12,14 @@ import StoreKit
 import UIKit
 import Alamofire
 import SwiftyJSON
+import ChameleonFramework
 
 class ViewController: UIViewController {
   
   // MARK: Segues
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "ShowDetail", let detailVC = segue.destinationViewController as? DetailViewController, let sender = sender as? RecallTableViewCell {
+      
       detailVC.recall = sender.recall
     }
     
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
    Retrieve a url formatted for openFDA.
    
    - parameter search: user search text
-   - parameter skip:   number of previous item to skip
+   - parameter skip:   offset of results
    
    - returns: formatted url
    */
@@ -77,7 +79,7 @@ class ViewController: UIViewController {
    Send HTTP request with search text and skip parameter to openFDA.
    
    - parameter search: user search text
-   - parameter skip:   number of previous item to skip
+   - parameter skip:   offset of results
    */
   func downloadAndUpdate(search: String, skip: Int) {
     
@@ -110,7 +112,7 @@ class ViewController: UIViewController {
       if let totals = metaJSON["results"]["total"].int {
         self.searchResultsTotal = totals
       }
-      print(metaJSON)
+      //      print(metaJSON)
       //            print(self.searchResultsTotal)
       
       let resultsJSON = json["results"]
@@ -144,8 +146,9 @@ class ViewController: UIViewController {
     recall.city = json[RecallSchema.city].string
     recall.state = json[RecallSchema.state].string
     recall.country = json[RecallSchema.country].string
-    recall.classification = json[RecallSchema.classification].string
-    recall.status = json[RecallSchema.status].string
+    recall.classificationString = json[RecallSchema.classification].string
+    recall.statusString = json[RecallSchema.status].string
+    print(recall.status)
     recall.productDescription = json[RecallSchema.productDescription].string
     
     recall.recallInitiationDate = convertStringToDate(json[RecallSchema.recallInitiationDate].string!)
@@ -217,6 +220,8 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    navigationController?.hidesNavigationBarHairline = true
+    
     recallManager = RecallManager()
     
     activityIndicator.hidesWhenStopped = true
@@ -226,6 +231,19 @@ class ViewController: UIViewController {
     definesPresentationContext = true
     
     let searchBar = searchController.searchBar
+    searchBar.barTintColor = barTintColor
+    
+    let colors = NSArray(ofColorsWithColorScheme: .Triadic, with: barTintColor, flatScheme: true)
+    
+    let color = colors[0] as! UIColor
+    
+    searchBar.tintColor = color
+    
+    
+    searchBar.setScopeBarButtonTitleTextAttributes([NSForegroundColorAttributeName : UIColor.flatWhiteColor()], forState: UIControlState.Normal)
+    searchBar.setScopeBarButtonTitleTextAttributes([NSForegroundColorAttributeName : UIColor.flatWhiteColor()], forState: UIControlState.Selected)
+    
+    
     searchBar.scopeButtonTitles = [SortOrder.Relevance.rawValue, SortOrder.Date.rawValue]
     searchBar.showsScopeBar = false
     searchBar.delegate = self
@@ -236,7 +254,7 @@ class ViewController: UIViewController {
     refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
     
-    refreshControl.tintColor = UIColor.lightGrayColor().colorWithAlphaComponent(0.5)
+    refreshControl.tintColor = UIColor.flatBlueColorDark()
     refreshControl.attributedTitle = NSAttributedString(string: "Pull for latest recalls")
     
     tableView.addSubview(refreshControl)
@@ -257,9 +275,9 @@ class ViewController: UIViewController {
   /// Is currently getting new data?
   var loadingData = false
   var searchController: UISearchController!
-  /// User search text.
+  /// User search criteria.
   var searchText = ""
-  /// Total count of search results.
+  /// Total number of records matching the search criteria.
   var searchResultsTotal = 0
   var refreshControl: UIRefreshControl!
   /// Meta information from openFDA.
@@ -427,6 +445,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     cell.textLabel?.text = cell.recall?.productDescription
     
+    switch currentDevice {
+    case .Pad:
+      cell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 30)
+    default:
+      cell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 16)
+    }
+    
     return cell
   }
   
@@ -436,6 +461,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     if !loadingData && indexPath.row == recallCount - 1 && recallCount > 2 && recallCount < searchResultsTotal {
       downloadAndUpdate(searchText, skip: recallCount)
     }
+  }
+  
+  func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
+  }
+  
+  func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
   }
   
 }

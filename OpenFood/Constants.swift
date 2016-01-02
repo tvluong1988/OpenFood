@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ChameleonFramework
 
 /**
  *  Important App information
@@ -52,9 +53,10 @@ struct Image {
   static let shareApp = "ShareApp"
 }
 
+let barTintColor = FlatLimeDark()
+let tintColor = FlatWhite()
 
-
-
+let currentDevice = UIDevice.currentDevice().userInterfaceIdiom
 
 
 
