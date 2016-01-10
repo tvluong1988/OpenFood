@@ -24,6 +24,8 @@
 		8B9E8E561C2A36C200C6527E /* USStatePolygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */; };
 		8B9E8E581C2A3CBD00C6527E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E8E571C2A3CBD00C6527E /* MapKit.framework */; };
 		8BBF50C61C2DA99400606FE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF50C51C2DA99400606FE7 /* Extensions.swift */; };
+		8BC6059B1C3B141000C9FF94 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6059A1C3B141000C9FF94 /* Reach.swift */; };
+		8BC6059D1C3B27EC00C9FF94 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6059C1C3B27EC00C9FF94 /* Helpers.swift */; };
 		8BD915CC1C3443D800973B8E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD915CB1C3443D800973B8E /* StoreKit.framework */; };
 		8BD915CE1C34450E00973B8E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD915CD1C34450E00973B8E /* iAd.framework */; };
 		8BD915D01C344B6400973B8E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915CF1C344B6400973B8E /* AboutViewController.swift */; };
@@ -73,6 +75,8 @@
 		8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStatePolygons.swift; sourceTree = "<group>"; };
 		8B9E8E571C2A3CBD00C6527E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BBF50C51C2DA99400606FE7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8BC6059A1C3B141000C9FF94 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		8BC6059C1C3B27EC00C9FF94 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		8BD915CB1C3443D800973B8E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8BD915CD1C34450E00973B8E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		8BD915CF1C344B6400973B8E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -194,9 +198,11 @@
 				8B115D271C2DAF830079589F /* View */,
 				8B115D261C2DAF7E0079589F /* Model */,
 				8B3333C61C28C36A00831806 /* Constants.swift */,
+				8BC6059C1C3B27EC00C9FF94 /* Helpers.swift */,
 				8BBF50C51C2DA99400606FE7 /* Extensions.swift */,
 				8BD915D11C34594D00973B8E /* IAPHelper.swift */,
 				8BD915D31C34598600973B8E /* Product.swift */,
+				8BC6059A1C3B141000C9FF94 /* Reach.swift */,
 				8B33339C1C28C02100831806 /* Main.storyboard */,
 			);
 			path = OpenFood;
@@ -427,9 +433,11 @@
 				8B3333991C28C02100831806 /* AppDelegate.swift in Sources */,
 				8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */,
 				8B72884A1C3239F60019297E /* MetaInfo.swift in Sources */,
+				8BC6059B1C3B141000C9FF94 /* Reach.swift in Sources */,
 				8BD915D01C344B6400973B8E /* AboutViewController.swift in Sources */,
 				8B3333C71C28C36A00831806 /* Constants.swift in Sources */,
 				8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */,
+				8BC6059D1C3B27EC00C9FF94 /* Helpers.swift in Sources */,
 				8B3333CB1C28D87E00831806 /* Recall.swift in Sources */,
 				8B115D2A1C2DAFEC0079589F /* RecallManager.swift in Sources */,
 				8B9E8E561C2A36C200C6527E /* USStatePolygons.swift in Sources */,
@@ -576,6 +584,7 @@
 			baseConfigurationReference = BD456AB451D303390520B787 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenFood/Info.plist;
@@ -584,6 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -592,6 +602,7 @@
 			baseConfigurationReference = CA474B76DE6DE682368082BE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenFood/Info.plist;

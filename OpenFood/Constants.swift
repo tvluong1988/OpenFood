@@ -55,6 +55,7 @@ struct Image {
 
 let barTintColor = FlatLimeDark()
 let tintColor = FlatWhite()
+let fontName = "Helvetica Neue"
 
 let currentDevice = UIDevice.currentDevice().userInterfaceIdiom
 

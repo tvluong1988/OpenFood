@@ -6,13 +6,12 @@
 //  Copyright © 2015 Thinh Luong. All rights reserved.
 //
 
-import Social
 import iAd
-import StoreKit
 import UIKit
 import Alamofire
 import SwiftyJSON
 import ChameleonFramework
+import DZNEmptyDataSet
 
 class ViewController: UIViewController {
   
@@ -92,12 +91,20 @@ class ViewController: UIViewController {
     Alamofire.request(.GET, url).responseJSON {
       response in
       
+      
       print("Result: " + response.result.description)
       //      print(response.result.value!)
+      
+      guard response.result.description == "SUCCESS" else {
+        return
+      }
       
       guard let data = response.result.value else {
         return
       }
+      
+      print(response)
+      
       
       let json = JSON(data)
       
@@ -112,8 +119,7 @@ class ViewController: UIViewController {
       if let totals = metaJSON["results"]["total"].int {
         self.searchResultsTotal = totals
       }
-      //      print(metaJSON)
-      //            print(self.searchResultsTotal)
+      
       
       let resultsJSON = json["results"]
       for (_, item) in resultsJSON {
@@ -148,7 +154,6 @@ class ViewController: UIViewController {
     recall.country = json[RecallSchema.country].string
     recall.classificationString = json[RecallSchema.classification].string
     recall.statusString = json[RecallSchema.status].string
-    print(recall.status)
     recall.productDescription = json[RecallSchema.productDescription].string
     
     recall.recallInitiationDate = convertStringToDate(json[RecallSchema.recallInitiationDate].string!)
@@ -187,9 +192,16 @@ class ViewController: UIViewController {
    - parameter refreshControl: refreshControl
    */
   func handleRefresh(refreshControl: UIRefreshControl) {
+    
+    refreshControl.endRefreshing()
+    guard case .Online(_) = Reach.connectionStatus() else {
+      
+      showAlert("No Internet connection", target: self)
+      return
+    }
+    
     recallManager.removeAllRecall()
     getLatestUpdates()
-    refreshControl.endRefreshing()
   }
   
   /**
@@ -259,15 +271,36 @@ class ViewController: UIViewController {
     
     tableView.addSubview(refreshControl)
     
-    loadNotifications()
+    tableView.emptyDataSetSource = self
+    tableView.emptyDataSetDelegate = self
+    tableView.tableFooterView = UIView()
     
-    loadProductStore()
     
-    isPaid = Product.store.isProductPurchased(Product.RemoveAds)
+    let isPaid = Product.store.isProductPurchased(Product.RemoveAds)
     canDisplayBannerAds = !isPaid
+    
+    guard case .Online(_) = Reach.connectionStatus() else {
+      return
+    }
     
     getLatestUpdates()
     
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    adBannerView = getAppDelegate().adBannerView
+    adBannerView.delegate = self
+    
+    view.addSubview(adBannerView)
+  }
+  
+  override func viewDidDisappear(animated: Bool) {
+    super.viewDidDisappear(animated)
+    
+    adBannerView.delegate = nil
+    adBannerView.removeFromSuperview()
   }
   
   // MARK: Properties
@@ -279,153 +312,12 @@ class ViewController: UIViewController {
   var searchText = ""
   /// Total number of records matching the search criteria.
   var searchResultsTotal = 0
-  var refreshControl: UIRefreshControl!
+  var refreshControl2: UIRefreshControl!
   /// Meta information from openFDA.
   var metaInfo: MetaInfo?
-  /// Has the user paid to remove iAds?
-  var isPaid = false
-  /// IAP products
-  var products = [SKProduct]()
+  var adBannerView: ADBannerView!
+  var refreshControl: UIRefreshControl!
   
-  
-}
-
-// MARK: - IAP and Notifications
-extension ViewController {
-  /**
-   Initialize the Product store to handle IAP.
-   */
-  private func loadProductStore() {
-    
-    Product.store.requestProductsWithCompletionHandler {
-      success, products in
-      
-      if success {
-        self.products = products
-        print("Success, products: \(self.products)")
-      } else {
-        print("failed")
-      }
-    }
-  }
-  
-  /**
-   Initialize notifications: Facebook, Twitter, App Store, Restore Purchases, Remove Ads.
-   */
-  private func loadNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "productPurchased:", name: IAPHelperProductPurchasedNotification, object: nil)
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showFacebook", name: Notification.postFacebook, object: nil)
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showTwitter", name: Notification.postTweet, object: nil)
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "showAppStore", name: Notification.rateApp, object: nil)
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "removeAds", name: Notification.removeAds, object: nil)
-    
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "restorePurchases", name: Notification.restorePurchases, object: nil)
-  }
-  
-  /**
-   Update and process IAP purchases.
-   
-   - parameter notification: notification with productIdentifier
-   */
-  func productPurchased(notification: NSNotification) {
-    if let productIdentifier = notification.object as? String {
-      for product in products {
-        if product.productIdentifier == productIdentifier {
-          canDisplayBannerAds = false
-          isPaid = true
-        }
-      }
-    }
-  }
-  
-  /**
-   Show Facebook compost view.
-   */
-  func showFacebook() {
-    
-    // Check if Facebook is available
-    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
-      
-      // Create the post
-      let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-      post.title = App.name
-      post.addImage(UIImage(named: Image.shareApp))
-      presentViewController(post, animated: true, completion: nil)
-      
-    } else {
-      
-      // Facebook is not available. Show a warning.
-      let alert = UIAlertController(title: "Facebook Unavailable", message: "User is not signed in", preferredStyle: .Alert)
-      alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-      presentViewController(alert, animated: true, completion: nil)
-    }
-  }
-  
-  /**
-   Show Twitter compost view.
-   */
-  func showTwitter() {
-    
-    // Check if Twitter is available
-    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
-      
-      // Create the tweet
-      let tweet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-      tweet.setInitialText("I want to share this fun game: \(App.name)")
-      tweet.addURL(NSURL(string: "https://itunes.apple.com/app/id\(App.id)"))
-      tweet.addImage(UIImage(named: Image.shareApp))
-      
-      presentViewController(tweet, animated: true, completion: nil)
-      
-    } else {
-      
-      // Twitter not available. Show a warning.
-      let alert = UIAlertController(title: "Twitter Unavailable", message: "User is not signed in", preferredStyle: .Alert)
-      alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-      presentViewController(alert, animated: true, completion: nil)
-    }
-  }
-  
-  /**
-   Open link to app on App Store for rating and review.
-   */
-  func showAppStore() {
-    
-    let alert = UIAlertController(title: "Rate App", message: nil, preferredStyle: .Alert)
-    
-    alert.addAction(UIAlertAction(title: "Rate", style: .Default){
-      _ in
-      // Open App in AppStore
-      let link = "https://itunes.apple.com/app/id\(App.id)"
-      
-      UIApplication.sharedApplication().openURL(NSURL(string: link)!)
-      })
-    
-    alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
-    
-    presentViewController(alert, animated: true, completion: nil)
-    
-  }
-  
-  /**
-   Initiate IAP purchase to remove iAds.
-   */
-  func removeAds() {
-    if let product = products.first {
-      Product.store.purchaseProduct(product)
-    }
-  }
-  
-  /**
-   Initiate IAP restore purchases.
-   */
-  func restorePurchases() {
-    Product.store.restoreCompletedTransactions()
-  }
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
@@ -447,18 +339,25 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     switch currentDevice {
     case .Pad:
-      cell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 30)
+      cell.textLabel?.font = UIFont(name: fontName, size: 30)
     default:
-      cell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 16)
+      cell.textLabel?.font = UIFont(name: fontName, size: 16)
     }
     
     return cell
   }
   
   func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    
     let recallCount = recallManager.getRecallCount()
     
     if !loadingData && indexPath.row == recallCount - 1 && recallCount > 2 && recallCount < searchResultsTotal {
+      
+      guard case .Online(_) = Reach.connectionStatus() else {
+        showAlert("No Internet connection", target: self)
+        return
+      }
+      
       downloadAndUpdate(searchText, skip: recallCount)
     }
   }
@@ -489,6 +388,13 @@ extension ViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
     
     if let searchText = searchController.searchBar.text where !searchText.isEmpty {
+      
+      guard case .Online(_) = Reach.connectionStatus() else {
+        
+        showAlert("No Internet connection", target: self)
+        return
+      }
+      
       recallManager.removeAllRecall()
       
       self.searchText = searchText
@@ -511,10 +417,45 @@ extension ViewController: UISearchBarDelegate {
   }
 }
 
+// MARK: - ADBannerViewDelegate
+extension ViewController: ADBannerViewDelegate {
+  func bannerViewDidLoadAd(banner: ADBannerView!) {
+    adBannerView.hidden = false
+  }
+  
+  func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+    adBannerView.hidden = true
+  }
+}
 
-
-
-
+// MARK: - DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
+extension ViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+  func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+    let text = ""
+    let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: fontName, size: 20)!, NSForegroundColorAttributeName: FlatRedDark()]
+    
+    return NSAttributedString(string: text, attributes: attributes)
+  }
+  
+  func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
+    return FlatWhite()
+  }
+  
+  func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+    let text = "There doesn't seem to be anything here."
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineBreakMode = .ByWordWrapping
+    paragraphStyle.alignment = .Center
+    
+    let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: fontName, size: 12)!, NSForegroundColorAttributeName: FlatRed(), NSParagraphStyleAttributeName: paragraphStyle]
+    
+    return NSAttributedString(string: text, attributes: attributes)
+  }
+  
+  func emptyDataSetShouldAllowScroll(scrollView: UIScrollView!) -> Bool {
+    return true
+  }
+}
 
 
 

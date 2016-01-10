@@ -6,6 +6,7 @@
 //  Copyright © 2015 Thinh Luong. All rights reserved.
 //
 
+import iAd
 import UIKit
 import MapKit
 
@@ -30,6 +31,9 @@ class DetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    let isPaid = Product.store.isProductPurchased(Product.RemoveAds)
+    canDisplayBannerAds = !isPaid
+    
     let center = CLLocationCoordinate2D(latitude: 40, longitude: -90)
     let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
     let region = MKCoordinateRegion(center: center, span: span)
@@ -48,6 +52,11 @@ class DetailViewController: UIViewController {
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
+    
+    adBannerView = getAppDelegate().adBannerView
+    adBannerView.delegate = self
+    
+    view.addSubview(adBannerView)
     
     if let recall = recall {
       statusLabel.text = "Status: \(recall.status!)"
@@ -98,9 +107,17 @@ class DetailViewController: UIViewController {
     }
   }
   
+  override func viewDidDisappear(animated: Bool) {
+    super.viewDidDisappear(animated)
+    
+    adBannerView.delegate = nil
+    adBannerView.removeFromSuperview()
+  }
+  
   // MARK: Properties
   /// Recall information to display.
   var recall: Recall?
+  var adBannerView: ADBannerView!
 }
 
 // MARK: - MKMapViewDelegate
@@ -117,7 +134,16 @@ extension DetailViewController: MKMapViewDelegate {
   }
 }
 
-
+// MARK: - ADBannerViewDelegate
+extension DetailViewController: ADBannerViewDelegate {
+  func bannerViewDidLoadAd(banner: ADBannerView!) {
+    adBannerView.hidden = false
+  }
+  
+  func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+    adBannerView.hidden = true
+  }
+}
 
 
 
