@@ -135,6 +135,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiV-kl-17b">
                                         <rect key="frame" x="0.0" y="362" width="144.5" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="FacebookButton"/>
                                         <state key="normal" image="UIButtons_Facebook"/>
                                         <connections>
                                             <action selector="postFacebook:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Cfb-xL-xGt"/>
@@ -142,6 +143,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-zl-3s6">
                                         <rect key="frame" x="144.5" y="362" width="144.5" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="TwitterButton"/>
                                         <state key="normal" image="UIButtons_Twitter"/>
                                         <connections>
                                             <action selector="postTweet:" destination="gIv-rc-HP9" eventType="touchUpInside" id="14h-zn-E4w"/>
@@ -149,6 +151,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC7-Ss-wPU">
                                         <rect key="frame" x="289" y="362" width="144.5" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="AppStoreButton"/>
                                         <state key="normal" image="UIButtons_Rate"/>
                                         <connections>
                                             <action selector="rateApp:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Dgo-RH-iME"/>
@@ -156,6 +159,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-Ri-cEP">
                                         <rect key="frame" x="433.5" y="361" width="150" height="52"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RestorePurchaseButton"/>
                                         <state key="normal" image="UIButtons_RestorePurchase"/>
                                         <connections>
                                             <action selector="restorePurchases:" destination="gIv-rc-HP9" eventType="touchUpInside" id="los-cK-ybc"/>
@@ -163,6 +167,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frU-lY-0RD">
                                         <rect key="frame" x="583.5" y="362" width="144.5" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RemoveAdsButton"/>
                                         <state key="normal" image="UIButtons_RemoveAds"/>
                                         <connections>
                                             <action selector="removeAds:" destination="gIv-rc-HP9" eventType="touchUpInside" id="Ypc-QA-VEF"/>

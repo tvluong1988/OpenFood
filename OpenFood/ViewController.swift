@@ -91,10 +91,6 @@ class ViewController: UIViewController {
     Alamofire.request(.GET, url).responseJSON {
       response in
       
-      
-      print("Result: " + response.result.description)
-      //      print(response.result.value!)
-      
       guard response.result.description == "SUCCESS" else {
         return
       }
@@ -107,6 +103,10 @@ class ViewController: UIViewController {
       
       
       let json = JSON(data)
+      
+      if let errorCode = json["error"]["code"].string where errorCode == "NOT_FOUND", let message = json["error"]["message"].string {
+        showAlert(message, target: self)
+      }
       
       let metaJSON = json["meta"]
       if let dateString = metaJSON[RecallSchema.lastUpdated].string {
@@ -280,6 +280,7 @@ class ViewController: UIViewController {
     canDisplayBannerAds = !isPaid
     
     guard case .Online(_) = Reach.connectionStatus() else {
+      navigationItem.title = "Recalls"
       return
     }
     

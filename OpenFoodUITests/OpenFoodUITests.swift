@@ -9,28 +9,128 @@
 import XCTest
 
 class OpenFoodUITests: XCTestCase {
-        
-    override func setUp() {
-        super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+  
+  // MARK: Tests
+  func testScrolling() {
+    app.cells.elementBoundByIndex(0).swipeUp()
+    app.cells.elementBoundByIndex(20).swipeUp()
+    app.cells.elementBoundByIndex(40).swipeUp()
+  }
+  
+  func testFacebookButton() {
+    pressAboutButton()
+    app.buttons["FacebookButton"].tap()
+    pressAlertOK()
+  }
+  
+  func testTwitterButton() {
+    pressAboutButton()
+    app.buttons["TwitterButton"].tap()
+    pressAlertOK()
+  }
+  
+  func testAppStoreButton() {
+    pressAboutButton()
+    app.buttons["AppStoreButton"].tap()
+    pressAlertCancel()
+  }
+  
+  func testSearchBarFailed() {
+    app.tables.buttons["Date"].tap()
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    let searchField = app.searchFields["Search"]
+    searchField.tap()
+    searchField.typeText("asdfghjkl")
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    let errorMessage = app.staticTexts["No matches found!"]
+    let exists = NSPredicate(format: "exists == true")
+    expectationForPredicate(exists, evaluatedWithObject: errorMessage, handler: nil)
     
+    app.buttons["Search"].tap()
+    
+    waitForExpectationsWithTimeout(5, handler: nil)
+    
+    XCTAssert(errorMessage.exists)
+    
+    pressAlertOK()
+  }
+  
+  func testSearchBarSuccess() {
+    app.tables.buttons["Date"].tap()
+    
+    let searchField = app.searchFields["Search"]
+    searchField.tap()
+    searchField.typeText("Iowa")
+    
+    let recall = app.tables.cells.staticTexts["Dry Grated Romano, Tipico Item #1-00111000, Net Wt. 50 lbs."]
+    let exists = NSPredicate(format: "exists == true")
+    expectationForPredicate(exists, evaluatedWithObject: recall, handler: nil)
+    
+    app.buttons["Search"].tap()
+    app.buttons["Cancel"].tap()
+    
+    waitForExpectationsWithTimeout(5, handler: nil)
+    
+    XCTAssert(recall.exists)
+    
+  }
+  
+  /**
+   Cannot tap "Cancel" button on Sign In system alert.
+   */
+   //  func testRestorePurchaseButton() {
+   //    pressAboutButton()
+   //    
+   //    addUIInterruptionMonitorWithDescription("Sign In") {
+   //      alert -> Bool in
+   //      alert.buttons["Cancel"].tap()
+   //      return true
+   //    }
+   //    
+   //    app.buttons["RestorePurchaseButton"].tap()
+   //    app.tap()
+   //  }
+   //  
+   //  func testRemoveAdsButton() {
+   //    pressAboutButton()
+   //    
+   //    addUIInterruptionMonitorWithDescription("Sign In") {
+   //      alert -> Bool in
+   //      alert.buttons["Cancel"].tap()
+   //      return true
+   //    }
+   //    
+   //    app.buttons["RemoveAdsButton"].tap()
+   //    app.tap()
+   //  }
+   
+   // MARK: Functions
+  func pressAboutButton() {
+    app.buttons["About"].tap()
+  }
+  
+  func pressAlertCancel() {
+    app.alerts.buttons["Cancel"].tap()
+  }
+  
+  func pressAlertOK() {
+    app.alerts.buttons["OK"].tap()
+  }
+  
+  // MARK: Lifecycle
+  override func setUp() {
+    super.setUp()
+    
+    continueAfterFailure = false
+    app.launch()
+    
+  }
+  
+  override func tearDown() {
+    super.tearDown()
+  }
+  
+  // MARK: Properties
+  let app = XCUIApplication()
+  
 }
