@@ -31,6 +31,27 @@
 		8BD915D01C344B6400973B8E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915CF1C344B6400973B8E /* AboutViewController.swift */; };
 		8BD915D21C34594D00973B8E /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D11C34594D00973B8E /* IAPHelper.swift */; };
 		8BD915D41C34598600973B8E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D31C34598600973B8E /* Product.swift */; };
+		8BF89CA01C45F46E00359C41 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C881C45F46E00359C41 /* Appfile */; };
+		8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C891C45F46E00359C41 /* Deliverfile */; };
+		8BF89CA21C45F46E00359C41 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8A1C45F46E00359C41 /* Fastfile */; };
+		8BF89CA31C45F46E00359C41 /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8C1C45F46E00359C41 /* copyright.txt */; };
+		8BF89CA41C45F46E00359C41 /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8E1C45F46E00359C41 /* description.txt */; };
+		8BF89CA51C45F46E00359C41 /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8F1C45F46E00359C41 /* keywords.txt */; };
+		8BF89CA61C45F46E00359C41 /* marketing_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C901C45F46E00359C41 /* marketing_url.txt */; };
+		8BF89CA71C45F46E00359C41 /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C911C45F46E00359C41 /* name.txt */; };
+		8BF89CA81C45F46E00359C41 /* privacy_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C921C45F46E00359C41 /* privacy_url.txt */; };
+		8BF89CA91C45F46E00359C41 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C931C45F46E00359C41 /* release_notes.txt */; };
+		8BF89CAA1C45F46E00359C41 /* support_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C941C45F46E00359C41 /* support_url.txt */; };
+		8BF89CAB1C45F46E00359C41 /* primary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C951C45F46E00359C41 /* primary_category.txt */; };
+		8BF89CAC1C45F46E00359C41 /* primary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C961C45F46E00359C41 /* primary_first_sub_category.txt */; };
+		8BF89CAD1C45F46E00359C41 /* primary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C971C45F46E00359C41 /* primary_second_sub_category.txt */; };
+		8BF89CAE1C45F46E00359C41 /* secondary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C981C45F46E00359C41 /* secondary_category.txt */; };
+		8BF89CAF1C45F46E00359C41 /* secondary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C991C45F46E00359C41 /* secondary_first_sub_category.txt */; };
+		8BF89CB01C45F46E00359C41 /* secondary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9A1C45F46E00359C41 /* secondary_second_sub_category.txt */; };
+		8BF89CB11C45F46E00359C41 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9B1C45F46E00359C41 /* report.xml */; };
+		8BF89CB21C45F46E00359C41 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9D1C45F46E00359C41 /* README.txt */; };
+		8BF89CB31C45F46E00359C41 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9E1C45F46E00359C41 /* Snapfile */; };
+		8BF89CB41C45F46E00359C41 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */; };
 		AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D82228285162DAF213084F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +103,27 @@
 		8BD915CF1C344B6400973B8E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8BD915D11C34594D00973B8E /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		8BD915D31C34598600973B8E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8BF89C881C45F46E00359C41 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		8BF89C891C45F46E00359C41 /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
+		8BF89C8A1C45F46E00359C41 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		8BF89C8C1C45F46E00359C41 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		8BF89C8E1C45F46E00359C41 /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		8BF89C8F1C45F46E00359C41 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		8BF89C901C45F46E00359C41 /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
+		8BF89C911C45F46E00359C41 /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+		8BF89C921C45F46E00359C41 /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
+		8BF89C931C45F46E00359C41 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		8BF89C941C45F46E00359C41 /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
+		8BF89C951C45F46E00359C41 /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
+		8BF89C961C45F46E00359C41 /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
+		8BF89C971C45F46E00359C41 /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
+		8BF89C981C45F46E00359C41 /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
+		8BF89C991C45F46E00359C41 /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
+		8BF89C9A1C45F46E00359C41 /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
+		8BF89C9B1C45F46E00359C41 /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
+		8BF89C9D1C45F46E00359C41 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		8BF89C9E1C45F46E00359C41 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
+		8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		BD456AB451D303390520B787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CA474B76DE6DE682368082BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1D82228285162DAF213084F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +213,7 @@
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
+				8BF89C861C45F46E00359C41 /* fastlane */,
 				8B3333971C28C02100831806 /* OpenFood */,
 				8B3333AC1C28C02100831806 /* OpenFoodTests */,
 				8B3333B71C28C02100831806 /* OpenFoodUITests */,
@@ -224,6 +267,66 @@
 				8B3333BA1C28C02100831806 /* Info.plist */,
 			);
 			path = OpenFoodUITests;
+			sourceTree = "<group>";
+		};
+		8BF89C861C45F46E00359C41 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89C871C45F46E00359C41 /* actions */,
+				8BF89C881C45F46E00359C41 /* Appfile */,
+				8BF89C891C45F46E00359C41 /* Deliverfile */,
+				8BF89C8A1C45F46E00359C41 /* Fastfile */,
+				8BF89C8B1C45F46E00359C41 /* metadata */,
+				8BF89C9B1C45F46E00359C41 /* report.xml */,
+				8BF89C9C1C45F46E00359C41 /* screenshots */,
+				8BF89C9E1C45F46E00359C41 /* Snapfile */,
+				8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		8BF89C871C45F46E00359C41 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		8BF89C8B1C45F46E00359C41 /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89C8C1C45F46E00359C41 /* copyright.txt */,
+				8BF89C8D1C45F46E00359C41 /* en-US */,
+				8BF89C951C45F46E00359C41 /* primary_category.txt */,
+				8BF89C961C45F46E00359C41 /* primary_first_sub_category.txt */,
+				8BF89C971C45F46E00359C41 /* primary_second_sub_category.txt */,
+				8BF89C981C45F46E00359C41 /* secondary_category.txt */,
+				8BF89C991C45F46E00359C41 /* secondary_first_sub_category.txt */,
+				8BF89C9A1C45F46E00359C41 /* secondary_second_sub_category.txt */,
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		8BF89C8D1C45F46E00359C41 /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89C8E1C45F46E00359C41 /* description.txt */,
+				8BF89C8F1C45F46E00359C41 /* keywords.txt */,
+				8BF89C901C45F46E00359C41 /* marketing_url.txt */,
+				8BF89C911C45F46E00359C41 /* name.txt */,
+				8BF89C921C45F46E00359C41 /* privacy_url.txt */,
+				8BF89C931C45F46E00359C41 /* release_notes.txt */,
+				8BF89C941C45F46E00359C41 /* support_url.txt */,
+			);
+			path = "en-US";
+			sourceTree = "<group>";
+		};
+		8BF89C9C1C45F46E00359C41 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89C9D1C45F46E00359C41 /* README.txt */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 		AAE7D02C34FC42B897988CA4 /* Pods */ = {
@@ -351,9 +454,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF89CAA1C45F46E00359C41 /* support_url.txt in Resources */,
+				8BF89CA21C45F46E00359C41 /* Fastfile in Resources */,
+				8BF89CB21C45F46E00359C41 /* README.txt in Resources */,
+				8BF89CA41C45F46E00359C41 /* description.txt in Resources */,
+				8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */,
+				8BF89CA61C45F46E00359C41 /* marketing_url.txt in Resources */,
+				8BF89CA31C45F46E00359C41 /* copyright.txt in Resources */,
+				8BF89CA81C45F46E00359C41 /* privacy_url.txt in Resources */,
+				8BF89CA01C45F46E00359C41 /* Appfile in Resources */,
+				8BF89CB01C45F46E00359C41 /* secondary_second_sub_category.txt in Resources */,
+				8BF89CAB1C45F46E00359C41 /* primary_category.txt in Resources */,
+				8BF89CA71C45F46E00359C41 /* name.txt in Resources */,
+				8BF89CA91C45F46E00359C41 /* release_notes.txt in Resources */,
+				8BF89CAF1C45F46E00359C41 /* secondary_first_sub_category.txt in Resources */,
 				8B3333A31C28C02100831806 /* LaunchScreen.storyboard in Resources */,
 				8B3333A01C28C02100831806 /* Assets.xcassets in Resources */,
+				8BF89CAC1C45F46E00359C41 /* primary_first_sub_category.txt in Resources */,
+				8BF89CA51C45F46E00359C41 /* keywords.txt in Resources */,
+				8BF89CB31C45F46E00359C41 /* Snapfile in Resources */,
 				8B33339E1C28C02100831806 /* Main.storyboard in Resources */,
+				8BF89CB11C45F46E00359C41 /* report.xml in Resources */,
+				8BF89CAD1C45F46E00359C41 /* primary_second_sub_category.txt in Resources */,
+				8BF89CAE1C45F46E00359C41 /* secondary_category.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3333C91C28D7BB00831806 /* RecallTableViewCell.swift in Sources */,
+				8BF89CB41C45F46E00359C41 /* SnapshotHelper.swift in Sources */,
 				8BD915D21C34594D00973B8E /* IAPHelper.swift in Sources */,
 				8BBF50C61C2DA99400606FE7 /* Extensions.swift in Sources */,
 				8B33339B1C28C02100831806 /* ViewController.swift in Sources */,
