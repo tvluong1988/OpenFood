@@ -13,7 +13,7 @@ import Foundation
  */
 struct MetaInfo {
   static let license = "http://open.fda.gov/license"
-  static let disclaimer = "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated."
+  static let disclaimer = "OpenFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated."
   
   let dateLastUpdated: NSDate
   

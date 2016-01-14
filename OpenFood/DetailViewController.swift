@@ -53,10 +53,12 @@ class DetailViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    adBannerView = getAppDelegate().adBannerView
-    adBannerView.delegate = self
-    
-    view.addSubview(adBannerView)
+    if canDisplayBannerAds {
+      adBannerView = getAppDelegate().adBannerView
+      adBannerView.delegate = self
+      
+      view.addSubview(adBannerView)
+    }
     
     if let recall = recall {
       statusLabel.text = "Status: \(recall.status!)"
@@ -110,8 +112,10 @@ class DetailViewController: UIViewController {
   override func viewDidDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
     
-    adBannerView.delegate = nil
-    adBannerView.removeFromSuperview()
+    if canDisplayBannerAds {
+      adBannerView.delegate = nil
+      adBannerView.removeFromSuperview()
+    }
   }
   
   // MARK: Properties

@@ -122,6 +122,8 @@ class OpenFoodUITests: XCTestCase {
     super.setUp()
     
     continueAfterFailure = false
+    
+    setupSnapshot(app)
     app.launch()
     
   }

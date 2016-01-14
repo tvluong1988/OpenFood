@@ -51,7 +51,24 @@
 		8BF89CB11C45F46E00359C41 /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9B1C45F46E00359C41 /* report.xml */; };
 		8BF89CB21C45F46E00359C41 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9D1C45F46E00359C41 /* README.txt */; };
 		8BF89CB31C45F46E00359C41 /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C9E1C45F46E00359C41 /* Snapfile */; };
-		8BF89CB41C45F46E00359C41 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */; };
+		8BF89CBF1C45FC2200359C41 /* OpenFoodSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF89CBE1C45FC2200359C41 /* OpenFoodSnapshot.swift */; };
+		8BF89CC71C45FCE700359C41 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */; };
+		8BF89CCA1C46066700359C41 /* keyword.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CC81C46066700359C41 /* keyword.strings */; };
+		8BF89CCB1C46066700359C41 /* title.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CC91C46066700359C41 /* title.strings */; };
+		8BF89CDE1C46068200359C41 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CCC1C46068200359C41 /* background.jpg */; };
+		8BF89CDF1C46068200359C41 /* ChalkboardSE-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CCF1C46068200359C41 /* ChalkboardSE-Bold.ttf */; };
+		8BF89CE01C46068200359C41 /* ChalkboardSE-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD01C46068200359C41 /* ChalkboardSE-Light.ttf */; };
+		8BF89CE11C46068200359C41 /* ChalkboardSE-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD11C46068200359C41 /* ChalkboardSE-Regular.ttf */; };
+		8BF89CE21C46068200359C41 /* fonts.dir in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD21C46068200359C41 /* fonts.dir */; };
+		8BF89CE31C46068200359C41 /* fonts.scale in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD31C46068200359C41 /* fonts.scale */; };
+		8BF89CE41C46068200359C41 /* ChalkboardSE.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD51C46068200359C41 /* ChalkboardSE.ttc */; };
+		8BF89CE51C46068200359C41 /* fonts.dir in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD71C46068200359C41 /* fonts.dir */; };
+		8BF89CE61C46068200359C41 /* fonts.scale in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD81C46068200359C41 /* fonts.scale */; };
+		8BF89CE71C46068200359C41 /* Verdana Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CD91C46068200359C41 /* Verdana Bold Italic.ttf */; };
+		8BF89CE81C46068200359C41 /* Verdana Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDA1C46068200359C41 /* Verdana Bold.ttf */; };
+		8BF89CE91C46068200359C41 /* Verdana Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */; };
+		8BF89CEA1C46068200359C41 /* Verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDC1C46068200359C41 /* Verdana.ttf */; };
+		8BF89CEB1C46068200359C41 /* Framefile.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDD1C46068200359C41 /* Framefile.json */; };
 		AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D82228285162DAF213084F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +81,13 @@
 			remoteInfo = OpenFood;
 		};
 		8B3333B51C28C02100831806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B33338D1C28C02100831806 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3333941C28C02100831806;
+			remoteInfo = OpenFood;
+		};
+		8BF89CC11C45FC2200359C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B33338D1C28C02100831806 /* Project object */;
 			proxyType = 1;
@@ -124,6 +148,25 @@
 		8BF89C9D1C45F46E00359C41 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		8BF89C9E1C45F46E00359C41 /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 		8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		8BF89CBC1C45FC2200359C41 /* OpenFoodSnapshot.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenFoodSnapshot.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF89CBE1C45FC2200359C41 /* OpenFoodSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodSnapshot.swift; sourceTree = "<group>"; };
+		8BF89CC01C45FC2200359C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF89CC81C46066700359C41 /* keyword.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = keyword.strings; path = "en-US/keyword.strings"; sourceTree = "<group>"; };
+		8BF89CC91C46066700359C41 /* title.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = title.strings; path = "en-US/title.strings"; sourceTree = "<group>"; };
+		8BF89CCC1C46068200359C41 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		8BF89CCF1C46068200359C41 /* ChalkboardSE-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChalkboardSE-Bold.ttf"; sourceTree = "<group>"; };
+		8BF89CD01C46068200359C41 /* ChalkboardSE-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChalkboardSE-Light.ttf"; sourceTree = "<group>"; };
+		8BF89CD11C46068200359C41 /* ChalkboardSE-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChalkboardSE-Regular.ttf"; sourceTree = "<group>"; };
+		8BF89CD21C46068200359C41 /* fonts.dir */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts.dir; sourceTree = "<group>"; };
+		8BF89CD31C46068200359C41 /* fonts.scale */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts.scale; sourceTree = "<group>"; };
+		8BF89CD51C46068200359C41 /* ChalkboardSE.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChalkboardSE.ttc; sourceTree = "<group>"; };
+		8BF89CD71C46068200359C41 /* fonts.dir */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts.dir; sourceTree = "<group>"; };
+		8BF89CD81C46068200359C41 /* fonts.scale */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts.scale; sourceTree = "<group>"; };
+		8BF89CD91C46068200359C41 /* Verdana Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Bold Italic.ttf"; sourceTree = "<group>"; };
+		8BF89CDA1C46068200359C41 /* Verdana Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Bold.ttf"; sourceTree = "<group>"; };
+		8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Italic.ttf"; sourceTree = "<group>"; };
+		8BF89CDC1C46068200359C41 /* Verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Verdana.ttf; sourceTree = "<group>"; };
+		8BF89CDD1C46068200359C41 /* Framefile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Framefile.json; sourceTree = "<group>"; };
 		BD456AB451D303390520B787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CA474B76DE6DE682368082BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1D82228285162DAF213084F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +192,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8B3333B11C28C02100831806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BF89CB91C45FC2200359C41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +267,7 @@
 				8B3333971C28C02100831806 /* OpenFood */,
 				8B3333AC1C28C02100831806 /* OpenFoodTests */,
 				8B3333B71C28C02100831806 /* OpenFoodUITests */,
+				8BF89CBD1C45FC2200359C41 /* OpenFoodSnapshot */,
 				8B3333961C28C02100831806 /* Products */,
 				AAE7D02C34FC42B897988CA4 /* Pods */,
 				09A75FE6A0FF0F406419BD2F /* Frameworks */,
@@ -229,6 +280,7 @@
 				8B3333951C28C02100831806 /* OpenFood.app */,
 				8B3333A91C28C02100831806 /* OpenFoodTests.xctest */,
 				8B3333B41C28C02100831806 /* OpenFoodUITests.xctest */,
+				8BF89CBC1C45FC2200359C41 /* OpenFoodSnapshot.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,13 +324,13 @@
 		8BF89C861C45F46E00359C41 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
+				8BF89C9C1C45F46E00359C41 /* screenshots */,
+				8BF89C8B1C45F46E00359C41 /* metadata */,
 				8BF89C871C45F46E00359C41 /* actions */,
 				8BF89C881C45F46E00359C41 /* Appfile */,
 				8BF89C891C45F46E00359C41 /* Deliverfile */,
 				8BF89C8A1C45F46E00359C41 /* Fastfile */,
-				8BF89C8B1C45F46E00359C41 /* metadata */,
 				8BF89C9B1C45F46E00359C41 /* report.xml */,
-				8BF89C9C1C45F46E00359C41 /* screenshots */,
 				8BF89C9E1C45F46E00359C41 /* Snapfile */,
 				8BF89C9F1C45F46E00359C41 /* SnapshotHelper.swift */,
 			);
@@ -325,8 +377,65 @@
 			isa = PBXGroup;
 			children = (
 				8BF89C9D1C45F46E00359C41 /* README.txt */,
+				8BF89CC81C46066700359C41 /* keyword.strings */,
+				8BF89CC91C46066700359C41 /* title.strings */,
+				8BF89CCC1C46068200359C41 /* background.jpg */,
+				8BF89CCD1C46068200359C41 /* fonts */,
+				8BF89CDD1C46068200359C41 /* Framefile.json */,
 			);
 			path = screenshots;
+			sourceTree = "<group>";
+		};
+		8BF89CBD1C45FC2200359C41 /* OpenFoodSnapshot */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89CBE1C45FC2200359C41 /* OpenFoodSnapshot.swift */,
+				8BF89CC01C45FC2200359C41 /* Info.plist */,
+			);
+			path = OpenFoodSnapshot;
+			sourceTree = "<group>";
+		};
+		8BF89CCD1C46068200359C41 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89CCE1C46068200359C41 /* Chalkboard SE */,
+				8BF89CD61C46068200359C41 /* Verdana */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		8BF89CCE1C46068200359C41 /* Chalkboard SE */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89CCF1C46068200359C41 /* ChalkboardSE-Bold.ttf */,
+				8BF89CD01C46068200359C41 /* ChalkboardSE-Light.ttf */,
+				8BF89CD11C46068200359C41 /* ChalkboardSE-Regular.ttf */,
+				8BF89CD21C46068200359C41 /* fonts.dir */,
+				8BF89CD31C46068200359C41 /* fonts.scale */,
+				8BF89CD41C46068200359C41 /* ttc */,
+			);
+			path = "Chalkboard SE";
+			sourceTree = "<group>";
+		};
+		8BF89CD41C46068200359C41 /* ttc */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89CD51C46068200359C41 /* ChalkboardSE.ttc */,
+			);
+			path = ttc;
+			sourceTree = "<group>";
+		};
+		8BF89CD61C46068200359C41 /* Verdana */ = {
+			isa = PBXGroup;
+			children = (
+				8BF89CD71C46068200359C41 /* fonts.dir */,
+				8BF89CD81C46068200359C41 /* fonts.scale */,
+				8BF89CD91C46068200359C41 /* Verdana Bold Italic.ttf */,
+				8BF89CDA1C46068200359C41 /* Verdana Bold.ttf */,
+				8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */,
+				8BF89CDC1C46068200359C41 /* Verdana.ttf */,
+			);
+			path = Verdana;
 			sourceTree = "<group>";
 		};
 		AAE7D02C34FC42B897988CA4 /* Pods */ = {
@@ -397,6 +506,24 @@
 			productReference = 8B3333B41C28C02100831806 /* OpenFoodUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8BF89CBB1C45FC2200359C41 /* OpenFoodSnapshot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BF89CC31C45FC2200359C41 /* Build configuration list for PBXNativeTarget "OpenFoodSnapshot" */;
+			buildPhases = (
+				8BF89CB81C45FC2200359C41 /* Sources */,
+				8BF89CB91C45FC2200359C41 /* Frameworks */,
+				8BF89CBA1C45FC2200359C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BF89CC21C45FC2200359C41 /* PBXTargetDependency */,
+			);
+			name = OpenFoodSnapshot;
+			productName = OpenFoodSnapshot;
+			productReference = 8BF89CBC1C45FC2200359C41 /* OpenFoodSnapshot.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -427,6 +554,10 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 8B3333941C28C02100831806;
 					};
+					8BF89CBB1C45FC2200359C41 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8B3333941C28C02100831806;
+					};
 				};
 			};
 			buildConfigurationList = 8B3333901C28C02100831806 /* Build configuration list for PBXProject "OpenFood" */;
@@ -445,6 +576,7 @@
 				8B3333941C28C02100831806 /* OpenFood */,
 				8B3333A81C28C02100831806 /* OpenFoodTests */,
 				8B3333B31C28C02100831806 /* OpenFoodUITests */,
+				8BF89CBB1C45FC2200359C41 /* OpenFoodSnapshot */,
 			);
 		};
 /* End PBXProject section */
@@ -491,6 +623,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BF89CBA1C45FC2200359C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF89CE51C46068200359C41 /* fonts.dir in Resources */,
+				8BF89CEB1C46068200359C41 /* Framefile.json in Resources */,
+				8BF89CE91C46068200359C41 /* Verdana Italic.ttf in Resources */,
+				8BF89CE11C46068200359C41 /* ChalkboardSE-Regular.ttf in Resources */,
+				8BF89CE61C46068200359C41 /* fonts.scale in Resources */,
+				8BF89CE71C46068200359C41 /* Verdana Bold Italic.ttf in Resources */,
+				8BF89CEA1C46068200359C41 /* Verdana.ttf in Resources */,
+				8BF89CDE1C46068200359C41 /* background.jpg in Resources */,
+				8BF89CE81C46068200359C41 /* Verdana Bold.ttf in Resources */,
+				8BF89CCA1C46066700359C41 /* keyword.strings in Resources */,
+				8BF89CE31C46068200359C41 /* fonts.scale in Resources */,
+				8BF89CE01C46068200359C41 /* ChalkboardSE-Light.ttf in Resources */,
+				8BF89CDF1C46068200359C41 /* ChalkboardSE-Bold.ttf in Resources */,
+				8BF89CE21C46068200359C41 /* fonts.dir in Resources */,
+				8BF89CCB1C46066700359C41 /* title.strings in Resources */,
+				8BF89CE41C46068200359C41 /* ChalkboardSE.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +705,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3333C91C28D7BB00831806 /* RecallTableViewCell.swift in Sources */,
-				8BF89CB41C45F46E00359C41 /* SnapshotHelper.swift in Sources */,
 				8BD915D21C34594D00973B8E /* IAPHelper.swift in Sources */,
 				8BBF50C61C2DA99400606FE7 /* Extensions.swift in Sources */,
 				8B33339B1C28C02100831806 /* ViewController.swift in Sources */,
@@ -585,6 +739,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BF89CB81C45FC2200359C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF89CBF1C45FC2200359C41 /* OpenFoodSnapshot.swift in Sources */,
+				8BF89CC71C45FCE700359C41 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -597,6 +760,11 @@
 			isa = PBXTargetDependency;
 			target = 8B3333941C28C02100831806 /* OpenFood */;
 			targetProxy = 8B3333B51C28C02100831806 /* PBXContainerItemProxy */;
+		};
+		8BF89CC21C45FC2200359C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3333941C28C02100831806 /* OpenFood */;
+			targetProxy = 8BF89CC11C45FC2200359C41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -786,6 +954,30 @@
 			};
 			name = Release;
 		};
+		8BF89CC41C45FC2200359C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFoodSnapshot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenFood;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8BF89CC51C45FC2200359C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFoodSnapshot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenFood;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -824,6 +1016,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8BF89CC31C45FC2200359C41 /* Build configuration list for PBXNativeTarget "OpenFoodSnapshot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BF89CC41C45FC2200359C41 /* Debug */,
+				8BF89CC51C45FC2200359C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

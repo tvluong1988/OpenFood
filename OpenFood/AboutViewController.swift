@@ -52,10 +52,12 @@ class AboutViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    adBannerView = getAppDelegate().adBannerView
-    adBannerView.delegate = self
-    
-    view.addSubview(adBannerView)
+    if canDisplayBannerAds {
+      adBannerView = getAppDelegate().adBannerView
+      adBannerView.delegate = self
+      
+      view.addSubview(adBannerView)
+    }
     
     if let metaInfo = metaInfo {
       let dateFormatter = NSDateFormatter()
@@ -69,8 +71,10 @@ class AboutViewController: UIViewController {
   override func viewDidDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
     
-    adBannerView.delegate = nil
-    adBannerView.removeFromSuperview()
+    if canDisplayBannerAds {
+      adBannerView.delegate = nil
+      adBannerView.removeFromSuperview()
+    }
   }
   
   // MARK: Properties

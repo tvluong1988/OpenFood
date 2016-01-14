@@ -1,0 +1,18 @@
+{
+  "default": {
+    "keyword": {
+      "font": "./fonts/Verdana/Verdana.ttf"
+
+    },
+    "title": {
+      "font": "./fonts/Verdana/Verdana.ttf",
+
+      "color": "#0099CC"
+    },
+    "background": "./background.jpg",
+    "padding": 50
+  },
+
+    "data": []
+
+}

@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         return
       }
       
-      print(response)
+//      print(response)
       
       
       let json = JSON(data)
@@ -291,17 +291,21 @@ class ViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    adBannerView = getAppDelegate().adBannerView
-    adBannerView.delegate = self
-    
-    view.addSubview(adBannerView)
+    if canDisplayBannerAds {
+      adBannerView = getAppDelegate().adBannerView
+      adBannerView.delegate = self
+      
+      view.addSubview(adBannerView)
+    }
   }
   
   override func viewDidDisappear(animated: Bool) {
     super.viewDidDisappear(animated)
     
-    adBannerView.delegate = nil
-    adBannerView.removeFromSuperview()
+    if canDisplayBannerAds {
+      adBannerView.delegate = nil
+      adBannerView.removeFromSuperview()
+    }
   }
   
   // MARK: Properties
@@ -448,7 +452,14 @@ extension ViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     paragraphStyle.lineBreakMode = .ByWordWrapping
     paragraphStyle.alignment = .Center
     
-    let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: fontName, size: 12)!, NSForegroundColorAttributeName: FlatRed(), NSParagraphStyleAttributeName: paragraphStyle]
+    var fontSize: CGFloat = 12
+    switch currentDevice {
+    case .Pad:
+      fontSize = 30
+    default: break
+    }
+    
+    let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: fontName, size: fontSize)!, NSForegroundColorAttributeName: FlatRed(), NSParagraphStyleAttributeName: paragraphStyle]
     
     return NSAttributedString(string: text, attributes: attributes)
   }

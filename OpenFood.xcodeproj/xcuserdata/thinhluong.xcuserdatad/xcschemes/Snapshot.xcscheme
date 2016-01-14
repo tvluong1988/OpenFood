@@ -32,26 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8B3333A81C28C02100831806"
-               BuildableName = "OpenFoodTests.xctest"
-               BlueprintName = "OpenFoodTests"
-               ReferencedContainer = "container:OpenFood.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8B3333B31C28C02100831806"
-               BuildableName = "OpenFoodUITests.xctest"
-               BlueprintName = "OpenFoodUITests"
-               ReferencedContainer = "container:OpenFood.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF89CBB1C45FC2200359C41"
                BuildableName = "OpenFoodSnapshot.xctest"
                BlueprintName = "OpenFoodSnapshot"

@@ -1,0 +1,9 @@
+In today's food market, large scale food production and distribution are common for the majority of our food products. These benefits also come with down sides. 
+
+Mishandling and insufficient quality control can cause massive food recalls that affect a wide variety of food products over many affected states. You need to be vigilant when buying food products at local supermarkets. 
+
+Food Check: Search for Recall provide you with the ability to stay up to date with latest food recalls and search for recalls affecting their states. You can be confident in the food you buy and eat.
+
+Our app accesses OpenFDA, a government project that provides public data on up to date food recalls. With OpenFDA, this app is creating easy access to important data, a new level of openness, accountability, educating the public, and saving lives. 
+
+Keep Food Check: Search for Recall on your iOS devices and double check the safety of your food!

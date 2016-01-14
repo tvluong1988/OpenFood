@@ -22,14 +22,24 @@ default_platform :ios
 
 
 platform :ios do
-  before_all do
-    cocoapods
-  end
+#before_all do
+#cocoapods
+#end
 
-  lane :beta do
-    cert
-    sigh(force: true)
-  end
+lane :beta do
+cert
+sigh(force: true)
+end
+
+lane :screenshot do
+snapshot
+frameit
+end
+
+lane :deliver do
+deliver
+end
+
 end
 
 

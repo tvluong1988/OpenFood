@@ -94,7 +94,6 @@ class OpenFoodTests: XCTestCase {
   // MARK: Lifecycle
   override func setUp() {
     super.setUp()
-    
     recallManager = RecallManager()
   }
   
