@@ -139,7 +139,9 @@ extension AboutViewController {
       // Create the post
       let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
       post.title = App.name
-      post.addImage(UIImage(named: Image.shareApp))
+      post.addURL(NSURL(string: "https://itunes.apple.com/app/id\(App.id)"))
+      
+      //      post.addImage(UIImage(named: Image.shareApp))
       presentViewController(post, animated: true, completion: nil)
       
     } else {
@@ -161,9 +163,9 @@ extension AboutViewController {
       
       // Create the tweet
       let tweet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-      tweet.setInitialText("I want to share this fun game: \(App.name)")
+      tweet.setInitialText("Use this app to get up to date food recalls: \(App.name)")
       tweet.addURL(NSURL(string: "https://itunes.apple.com/app/id\(App.id)"))
-      tweet.addImage(UIImage(named: Image.shareApp))
+      //      tweet.addImage(UIImage(named: Image.shareApp))
       
       presentViewController(tweet, animated: true, completion: nil)
       

@@ -14,7 +14,7 @@ import ChameleonFramework
  */
 struct App {
   static let id = "1071420301"
-  static let name = "Food Check: Search for Recall"
+  static let name = "Food Check - Search for Recall"
 }
 
 /**
@@ -47,11 +47,11 @@ struct Notification {
 }
 
 /**
- *  Image assets
- */
-struct Image {
-  static let shareApp = "ShareApp"
-}
+*  Image assets
+*/
+//struct Image {
+//  static let shareApp = "ShareApp"
+//}
 
 let barTintColor = FlatLimeDark()
 let tintColor = FlatWhite()
