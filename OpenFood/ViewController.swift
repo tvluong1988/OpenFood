@@ -264,7 +264,7 @@ class ViewController: UIViewController {
     tableView.tableHeaderView = searchController.searchBar
     
     refreshControl = UIRefreshControl()
-    refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
+    refreshControl.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), forControlEvents: .ValueChanged)
     
     refreshControl.tintColor = UIColor.flatBlueColorDark()
     refreshControl.attributedTitle = NSAttributedString(string: "Pull for latest recalls")

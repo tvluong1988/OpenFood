@@ -33,6 +33,7 @@
 		8BD915D01C344B6400973B8E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915CF1C344B6400973B8E /* AboutViewController.swift */; };
 		8BD915D21C34594D00973B8E /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D11C34594D00973B8E /* IAPHelper.swift */; };
 		8BD915D41C34598600973B8E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D31C34598600973B8E /* Product.swift */; };
+		8BDEAD371D2294CA00672830 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEAD361D2294CA00672830 /* .travis.yml */; };
 		8BF89CA01C45F46E00359C41 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C881C45F46E00359C41 /* Appfile */; };
 		8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C891C45F46E00359C41 /* Deliverfile */; };
 		8BF89CA21C45F46E00359C41 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8A1C45F46E00359C41 /* Fastfile */; };
@@ -131,6 +132,7 @@
 		8BD915CF1C344B6400973B8E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8BD915D11C34594D00973B8E /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		8BD915D31C34598600973B8E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8BDEAD361D2294CA00672830 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		8BF89C881C45F46E00359C41 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		8BF89C891C45F46E00359C41 /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
 		8BF89C8A1C45F46E00359C41 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
+				8BDEAD361D2294CA00672830 /* .travis.yml */,
 				8B346D6F1C581F5C00DD65C5 /* Demo.gif */,
 				8B346D6D1C581F2900DD65C5 /* README.md */,
 				8BF89C861C45F46E00359C41 /* fastlane */,
@@ -597,6 +600,7 @@
 				8BF89CB21C45F46E00359C41 /* README.txt in Resources */,
 				8BF89CA41C45F46E00359C41 /* description.txt in Resources */,
 				8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */,
+				8BDEAD371D2294CA00672830 /* .travis.yml in Resources */,
 				8BF89CA61C45F46E00359C41 /* marketing_url.txt in Resources */,
 				8BF89CA31C45F46E00359C41 /* copyright.txt in Resources */,
 				8BF89CA81C45F46E00359C41 /* privacy_url.txt in Resources */,

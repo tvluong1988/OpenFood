@@ -123,7 +123,6 @@ class OpenFoodUITests: XCTestCase {
     
     continueAfterFailure = false
     
-    setupSnapshot(app)
     app.launch()
     
   }

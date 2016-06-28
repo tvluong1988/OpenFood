@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WBh-5j-OgV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WBh-5j-OgV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -130,11 +130,11 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 </variation>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-mN-UBn">
-                                <rect key="frame" x="20" y="242.5" width="728" height="773.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-mN-UBn">
+                                <rect key="frame" x="20" y="243" width="728" height="774"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiV-kl-17b">
-                                        <rect key="frame" x="0.0" y="362" width="144.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="362" width="145" height="50"/>
                                         <accessibility key="accessibilityConfiguration" identifier="FacebookButton"/>
                                         <state key="normal" image="UIButtons_Facebook"/>
                                         <connections>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-zl-3s6">
-                                        <rect key="frame" x="144.5" y="362" width="144.5" height="50"/>
+                                        <rect key="frame" x="145" y="362" width="145" height="50"/>
                                         <accessibility key="accessibilityConfiguration" identifier="TwitterButton"/>
                                         <state key="normal" image="UIButtons_Twitter"/>
                                         <connections>
@@ -150,7 +150,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC7-Ss-wPU">
-                                        <rect key="frame" x="289" y="362" width="144.5" height="50"/>
+                                        <rect key="frame" x="289" y="362" width="145" height="50"/>
                                         <accessibility key="accessibilityConfiguration" identifier="AppStoreButton"/>
                                         <state key="normal" image="UIButtons_Rate"/>
                                         <connections>
@@ -158,7 +158,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-Ri-cEP">
-                                        <rect key="frame" x="433.5" y="361" width="150" height="52"/>
+                                        <rect key="frame" x="434" y="361" width="150" height="52"/>
                                         <accessibility key="accessibilityConfiguration" identifier="RestorePurchaseButton"/>
                                         <state key="normal" image="UIButtons_RestorePurchase"/>
                                         <connections>
@@ -166,7 +166,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frU-lY-0RD">
-                                        <rect key="frame" x="583.5" y="362" width="144.5" height="50"/>
+                                        <rect key="frame" x="584" y="362" width="145" height="50"/>
                                         <accessibility key="accessibilityConfiguration" identifier="RemoveAdsButton"/>
                                         <state key="normal" image="UIButtons_RemoveAds"/>
                                         <connections>

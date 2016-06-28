@@ -109,7 +109,7 @@ extension AboutViewController {
    Initialize notifications: Facebook, Twitter, App Store, Restore Purchases, Remove Ads.
    */
   private func loadNotifications() {
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "productPurchased:", name: IAPHelperProductPurchasedNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AboutViewController.productPurchased(_:)), name: IAPHelperProductPurchasedNotification, object: nil)
   }
   
   
