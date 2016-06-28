@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (3.1.4)
+  - ChameleonFramework/Default (2.0.6)
+  - ChameleonFramework/Swift (2.0.6):
+    - ChameleonFramework/Default
+  - DZNEmptyDataSet (1.7.3)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - ChameleonFramework/Swift
+  - DZNEmptyDataSet
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
+  ChameleonFramework: a6b466873ff9a4ce3a5196c20bccf1a97ad9f446
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
