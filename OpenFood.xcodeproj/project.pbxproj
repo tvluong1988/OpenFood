@@ -34,6 +34,8 @@
 		8BD915D21C34594D00973B8E /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D11C34594D00973B8E /* IAPHelper.swift */; };
 		8BD915D41C34598600973B8E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD915D31C34598600973B8E /* Product.swift */; };
 		8BDEAD371D2294CA00672830 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEAD361D2294CA00672830 /* .travis.yml */; };
+		8BE72A441D24BD4D0058619A /* script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8BE72A431D24BD4D0058619A /* script.sh */; };
+		8BE72A471D24BD730058619A /* after_success_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8BE72A461D24BD730058619A /* after_success_script.sh */; };
 		8BF89CA01C45F46E00359C41 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C881C45F46E00359C41 /* Appfile */; };
 		8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C891C45F46E00359C41 /* Deliverfile */; };
 		8BF89CA21C45F46E00359C41 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8A1C45F46E00359C41 /* Fastfile */; };
@@ -133,6 +135,8 @@
 		8BD915D11C34594D00973B8E /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		8BD915D31C34598600973B8E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8BDEAD361D2294CA00672830 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		8BE72A431D24BD4D0058619A /* script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = script.sh; path = travis/script.sh; sourceTree = "<group>"; };
+		8BE72A461D24BD730058619A /* after_success_script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = after_success_script.sh; path = travis/after_success_script.sh; sourceTree = "<group>"; };
 		8BF89C881C45F46E00359C41 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		8BF89C891C45F46E00359C41 /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
 		8BF89C8A1C45F46E00359C41 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
+				8BE72A451D24BD550058619A /* travis */,
 				8BDEAD361D2294CA00672830 /* .travis.yml */,
 				8B346D6F1C581F5C00DD65C5 /* Demo.gif */,
 				8B346D6D1C581F2900DD65C5 /* README.md */,
@@ -328,6 +333,15 @@
 				8B3333BA1C28C02100831806 /* Info.plist */,
 			);
 			path = OpenFoodUITests;
+			sourceTree = "<group>";
+		};
+		8BE72A451D24BD550058619A /* travis */ = {
+			isa = PBXGroup;
+			children = (
+				8BE72A431D24BD4D0058619A /* script.sh */,
+				8BE72A461D24BD730058619A /* after_success_script.sh */,
+			);
+			name = travis;
 			sourceTree = "<group>";
 		};
 		8BF89C861C45F46E00359C41 /* fastlane */ = {
@@ -595,6 +609,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE72A471D24BD730058619A /* after_success_script.sh in Resources */,
 				8BF89CAA1C45F46E00359C41 /* support_url.txt in Resources */,
 				8BF89CA21C45F46E00359C41 /* Fastfile in Resources */,
 				8BF89CB21C45F46E00359C41 /* README.txt in Resources */,
@@ -620,6 +635,7 @@
 				8BF89CB11C45F46E00359C41 /* report.xml in Resources */,
 				8BF89CAD1C45F46E00359C41 /* primary_second_sub_category.txt in Resources */,
 				8BF89CAE1C45F46E00359C41 /* secondary_category.txt in Resources */,
+				8BE72A441D24BD4D0058619A /* script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

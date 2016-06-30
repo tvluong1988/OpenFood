@@ -26,6 +26,30 @@ platform :ios do
 #cocoapods
 #end
 
+desc "Run tests"
+lane :test do
+scan(
+scheme: "OpenFood",
+workspace: "OpenFood.xcworkspace",
+clean: true,
+code_coverage: true,
+skip_slack: true,
+sdk: "iphonesimulator",
+destination: "name-iPhone6"
+)
+end
+
+desc "Calculate test code coverage score. Need to run test beforehand."
+lane :report_test_coverage do
+xcov(
+workspace: "OpenFood.xcworkspace",
+scheme: "OpenFood"
+output_directory: "xcov_output"
+)
+end
+
+
+
 lane :beta do
 cert
 sigh(force: true)

@@ -25,6 +25,7 @@ class OpenFoodSnapshot: XCTestCase {
     snapshot("bSecond")
     
     let recall = app.tables.cells.staticTexts["Dijon Mustard Potato Salad, NET WT 3 LB (1.36 kg)"]
+    
     let exists = NSPredicate(format: "exists == true")
     expectationForPredicate(exists, evaluatedWithObject: recall, handler: nil)
     
