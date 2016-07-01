@@ -11,15 +11,7 @@
 # Uncomment the following line to opt out
 # opt_out_usage
 
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
-
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
-#fastlane_version "1.49.0"
-
 default_platform :ios
-
 
 platform :ios do
 #before_all do
@@ -34,8 +26,7 @@ workspace: "OpenFood.xcworkspace",
 clean: true,
 code_coverage: true,
 skip_slack: true,
-sdk: "iphonesimulator",
-destination: "name-iPhone6"
+sdk: "iphonesimulator9.3"
 )
 end
 
@@ -43,7 +34,7 @@ desc "Calculate test code coverage score. Need to run test beforehand."
 lane :report_test_coverage do
 xcov(
 workspace: "OpenFood.xcworkspace",
-scheme: "OpenFood"
+scheme: "OpenFood",
 output_directory: "xcov_output"
 )
 end
