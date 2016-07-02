@@ -72,6 +72,7 @@ increment_build_number(build_number: number_of_commits)
 
 #build
 gym(
+scheme: "OpenFood",
 configuration: "App Store",
 sdk: "iphoneos9.3",
 clean: true,
