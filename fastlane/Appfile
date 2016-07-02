@@ -1,4 +1,4 @@
-app_identifier "tvluong.OpenFood.app-store" # The bundle identifier of your app
+app_identifier "tvluong.OpenFood" # The bundle identifier of your app
 apple_id "guitarslacker@gmail.com" # Your Apple email address
 
 for_platform :ios do
@@ -7,7 +7,7 @@ app_identifier "tvluong.OpenFood.development"
 end
 
 for_lane :beta do
-app_identifier "tvluong.OpenFood.ad-hoc"
+app_identifier "tvluong.OpenFood"
 end
 end
 
