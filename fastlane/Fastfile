@@ -40,19 +40,54 @@ output_directory: "xcov_output"
 end
 
 
-
+desc "Submit a new beta build to App Store"
 lane :beta do
-cert
-sigh(force: true)
+
+keychain_name = "OpenFood-certs"
+
+create_keychain(
+name: keychain_name,
+default_keychain: true,
+unlock: true,
+timeout: 3600,
+lock_when_sleeps: true,
+password: SecureRandom.base64
+)
+
+#Import distribution certificate
+import_certificate(
+certificate_path: "fastlane/Certificates/iosDistribution.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: keychain_name
+)
+
+#Fetch provisioning profile
+sigh(
+adhoc: false,
+username: "guitarslacker@gmail.com",
+cert_id: "38CJ7RTF4Q"
+)
+
+increment_build_number(build_number: number_of_commits)
+
+#build
+gym(
+configuration: "App Store",
+sdk: "iphoneos9.3",
+clean: true,
+include_bitcode: false,
+include_symbols: true,
+use_legacy_build_api: true,
+export_method: "enterprise"
+)
+
+delete_keychain(name: keychain_name)
+
 end
 
 lane :screenshot do
 snapshot
 frameit
-end
-
-lane :deliver do
-deliver
 end
 
 end
