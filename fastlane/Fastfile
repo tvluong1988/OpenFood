@@ -1,22 +1,11 @@
-# Customise this file, documentation can be found here:
-# https://github.com/KrauseFx/fastlane/tree/master/docs
-# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
-# can also be listed using the `fastlane actions` command
-
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# By default, fastlane will send which actions are used
-# No personal data is shared, more information on https://github.com/fastlane/enhancer
-# Uncomment the following line to opt out
-# opt_out_usage
+require 'securerandom'
 
 default_platform :ios
 
 platform :ios do
-#before_all do
-#cocoapods
-#end
+before_all do
+ensure_git_status_clean
+end
 
 desc "Run tests"
 lane :test do
@@ -43,10 +32,9 @@ end
 desc "Submit a new beta build to App Store"
 lane :beta do
 
-keychain_name = "OpenFood-certs"
 
 create_keychain(
-name: keychain_name,
+name: ENV["KEYCHAIN_NAME"],
 default_keychain: true,
 unlock: true,
 timeout: 3600,
@@ -56,9 +44,9 @@ password: SecureRandom.base64
 
 #Import distribution certificate
 import_certificate(
-certificate_path: "./fastlane/cert/iosDistribution.p12",
-#certificate_password: ENV["KEY_PASSWORD"],
-keychain_name: keychain_name
+certificate_path: "fastlane/cert/iosDistribution.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: ENV["KEYCHAIN_NAME"]
 )
 
 #Fetch provisioning profile
@@ -82,7 +70,7 @@ use_legacy_build_api: true,
 #export_method: "enterprise"
 )
 
-delete_keychain(name: keychain_name)
+delete_keychain(name: ENV["KEYCHAIN_NAME"])
 
 end
 

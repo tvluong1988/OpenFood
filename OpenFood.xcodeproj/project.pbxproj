@@ -20,7 +20,7 @@
 		8B3333CB1C28D87E00831806 /* Recall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333CA1C28D87E00831806 /* Recall.swift */; };
 		8B346D6E1C581F2900DD65C5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B346D6D1C581F2900DD65C5 /* README.md */; };
 		8B346D701C581F5C00DD65C5 /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B346D6F1C581F5C00DD65C5 /* Demo.gif */; };
-		8B3D2BD01D2786D100A48A48 /* iosDistribution.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D2BCF1D2786D100A48A48 /* iosDistribution.p12.enc */; };
+		8B3D2BD61D28068900A48A48 /* iosDistribution.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D2BD51D28068900A48A48 /* iosDistribution.p12.enc */; };
 		8B72884A1C3239F60019297E /* MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7288491C3239F60019297E /* MetaInfo.swift */; };
 		8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */; };
 		8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E531C2A2AD900C6527E /* USStates.swift */; };
@@ -122,7 +122,7 @@
 		8B3333CA1C28D87E00831806 /* Recall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recall.swift; sourceTree = "<group>"; };
 		8B346D6D1C581F2900DD65C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B346D6F1C581F5C00DD65C5 /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
-		8B3D2BCF1D2786D100A48A48 /* iosDistribution.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosDistribution.p12.enc; sourceTree = "<group>"; };
+		8B3D2BD51D28068900A48A48 /* iosDistribution.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosDistribution.p12.enc; sourceTree = "<group>"; };
 		8B7288491C3239F60019297E /* MetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInfo.swift; sourceTree = "<group>"; };
 		8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8B9E8E531C2A2AD900C6527E /* USStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStates.swift; sourceTree = "<group>"; };
@@ -337,10 +337,10 @@
 			path = OpenFoodUITests;
 			sourceTree = "<group>";
 		};
-		8B3D2BCE1D2786D100A48A48 /* cert */ = {
+		8B3D2BD41D28068900A48A48 /* cert */ = {
 			isa = PBXGroup;
 			children = (
-				8B3D2BCF1D2786D100A48A48 /* iosDistribution.p12.enc */,
+				8B3D2BD51D28068900A48A48 /* iosDistribution.p12.enc */,
 			);
 			path = cert;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 		8BF89C861C45F46E00359C41 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
-				8B3D2BCE1D2786D100A48A48 /* cert */,
+				8B3D2BD41D28068900A48A48 /* cert */,
 				8BF89C9C1C45F46E00359C41 /* screenshots */,
 				8BF89C8B1C45F46E00359C41 /* metadata */,
 				8BF89C871C45F46E00359C41 /* actions */,
@@ -631,7 +631,7 @@
 				8BF89CA31C45F46E00359C41 /* copyright.txt in Resources */,
 				8BF89CA81C45F46E00359C41 /* privacy_url.txt in Resources */,
 				8BF89CA01C45F46E00359C41 /* Appfile in Resources */,
-				8B3D2BD01D2786D100A48A48 /* iosDistribution.p12.enc in Resources */,
+				8B3D2BD61D28068900A48A48 /* iosDistribution.p12.enc in Resources */,
 				8BF89CB01C45F46E00359C41 /* secondary_second_sub_category.txt in Resources */,
 				8BF89CAB1C45F46E00359C41 /* primary_category.txt in Resources */,
 				8BF89CA71C45F46E00359C41 /* name.txt in Resources */,
