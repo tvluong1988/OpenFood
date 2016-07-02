@@ -75,6 +75,7 @@
 		8BF89CE91C46068200359C41 /* Verdana Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */; };
 		8BF89CEA1C46068200359C41 /* Verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDC1C46068200359C41 /* Verdana.ttf */; };
 		8BF89CEB1C46068200359C41 /* Framefile.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDD1C46068200359C41 /* Framefile.json */; };
+		8D9C8673E40ECF4B331B1651 /* Pods_OpenFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E169B9EB839BACEE5B84386 /* Pods_OpenFood.framework */; };
 		AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D82228285162DAF213084F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.debug.xcconfig"; sourceTree = "<group>"; };
+		66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		8B115D291C2DAFEC0079589F /* RecallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallManager.swift; sourceTree = "<group>"; };
 		8B3333951C28C02100831806 /* OpenFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3333981C28C02100831806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,9 +182,11 @@
 		8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Italic.ttf"; sourceTree = "<group>"; };
 		8BF89CDC1C46068200359C41 /* Verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Verdana.ttf; sourceTree = "<group>"; };
 		8BF89CDD1C46068200359C41 /* Framefile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Framefile.json; sourceTree = "<group>"; };
+		8E169B9EB839BACEE5B84386 /* Pods_OpenFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD456AB451D303390520B787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CA474B76DE6DE682368082BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1D82228285162DAF213084F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.app store.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +198,7 @@
 				8BD915CC1C3443D800973B8E /* StoreKit.framework in Frameworks */,
 				8B9E8E581C2A3CBD00C6527E /* MapKit.framework in Frameworks */,
 				AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */,
+				8D9C8673E40ECF4B331B1651 /* Pods_OpenFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +233,7 @@
 				8BD915CB1C3443D800973B8E /* StoreKit.framework */,
 				8B9E8E571C2A3CBD00C6527E /* MapKit.framework */,
 				D1D82228285162DAF213084F /* Pods.framework */,
+				8E169B9EB839BACEE5B84386 /* Pods_OpenFood.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -477,6 +484,9 @@
 			children = (
 				BD456AB451D303390520B787 /* Pods.debug.xcconfig */,
 				CA474B76DE6DE682368082BE /* Pods.release.xcconfig */,
+				2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */,
+				F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */,
+				66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -488,12 +498,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3333BD1C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFood" */;
 			buildPhases = (
-				B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */,
+				B8A895089F977660DDE11D00 /* [CP] Check Pods Manifest.lock */,
 				8B3333911C28C02100831806 /* Sources */,
 				8B3333921C28C02100831806 /* Frameworks */,
 				8B3333931C28C02100831806 /* Resources */,
-				20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */,
-				837C41AD6E396E6B61002026 /* Copy Pods Resources */,
+				20FD9471A0AAA5F2883A5B7C /* [CP] Embed Pods Frameworks */,
+				837C41AD6E396E6B61002026 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -691,44 +701,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */ = {
+		20FD9471A0AAA5F2883A5B7C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		837C41AD6E396E6B61002026 /* Copy Pods Resources */ = {
+		837C41AD6E396E6B61002026 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */ = {
+		B8A895089F977660DDE11D00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,7 +925,7 @@
 		};
 		8B3333BE1C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD456AB451D303390520B787 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -933,7 +943,7 @@
 		};
 		8B3333BF1C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA474B76DE6DE682368082BE /* Pods.release.xcconfig */;
+			baseConfigurationReference = F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1037,7 +1047,7 @@
 		};
 		8B3D2BC01D276A6E00A48A48 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA474B76DE6DE682368082BE /* Pods.release.xcconfig */;
+			baseConfigurationReference = 66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
