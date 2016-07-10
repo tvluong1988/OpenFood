@@ -1,30 +1,12 @@
-# Customise this file, documentation can be found here:
-# https://github.com/KrauseFx/fastlane/tree/master/docs
-# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
-# can also be listed using the `fastlane actions` command
-
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# By default, fastlane will send which actions are used
-# No personal data is shared, more information on https://github.com/fastlane/enhancer
-# Uncomment the following line to opt out
-# opt_out_usage
-
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
-
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
-#fastlane_version "1.49.0"
+require 'securerandom'
 
 default_platform :ios
 
-
 platform :ios do
-#before_all do
+before_all do
+#ensure_git_status_clean
 #cocoapods
-#end
+end
 
 desc "Run tests"
 lane :test do
@@ -34,8 +16,7 @@ workspace: "OpenFood.xcworkspace",
 clean: true,
 code_coverage: true,
 skip_slack: true,
-sdk: "iphonesimulator",
-destination: "name-iPhone6"
+sdk: "iphonesimulator9.3"
 )
 end
 
@@ -43,25 +24,81 @@ desc "Calculate test code coverage score. Need to run test beforehand."
 lane :report_test_coverage do
 xcov(
 workspace: "OpenFood.xcworkspace",
-scheme: "OpenFood"
+scheme: "OpenFood",
 output_directory: "xcov_output"
 )
 end
 
 
-
+desc "Submit a new beta build to App Store"
 lane :beta do
-cert
-sigh(force: true)
+
+
+create_keychain(
+name: ENV["KEYCHAIN_NAME"],
+default_keychain: true,
+unlock: true,
+timeout: 3600,
+lock_when_sleeps: true,
+password: SecureRandom.base64
+)
+
+#Import distribution certificate
+import_certificate(
+certificate_path: "fastlane/cert/iosDeveloper.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: ENV["KEYCHAIN_NAME"]
+)
+
+import_certificate(
+certificate_path: "fastlane/cert/iosDistribution.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: ENV["KEYCHAIN_NAME"]
+)
+
+#Fetch provisioning profile
+sigh(
+adhoc: false,
+username: ENV["ITUNES_CONNECT_USER"],
+cert_id: "38CJ7RTF4Q"
+)
+
+#increment_build_number
+set_info_plist_value(
+path: './OpenFood/Info.plist',
+key: 'CFBundleVersion',
+value: "#{number_of_commits}"
+)
+
+
+#build
+gym(
+scheme: "OpenFood",
+configuration: "App Store",
+sdk: "iphoneos9.3",
+clean: true,
+include_bitcode: false,
+include_symbols: true,
+use_legacy_build_api: true,
+export_method: "app-store"
+)
+
+#deploy to Testflight
+pilot(
+username: ENV["ITUNES_CONNECT_USER"],
+wait_processing_interval: 30,
+distribute_external: false,
+skip_submission: true,
+ipa: "OpenFood.ipa"
+)
+
+delete_keychain(name: ENV["KEYCHAIN_NAME"])
+
 end
 
 lane :screenshot do
 snapshot
 frameit
-end
-
-lane :deliver do
-deliver
 end
 
 end

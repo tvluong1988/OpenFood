@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D0B47A5AB2B386DA71B606 /* Pods_OpenFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */; };
 		8B115D2A1C2DAFEC0079589F /* RecallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B115D291C2DAFEC0079589F /* RecallManager.swift */; };
 		8B3333991C28C02100831806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333981C28C02100831806 /* AppDelegate.swift */; };
 		8B33339B1C28C02100831806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33339A1C28C02100831806 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 		8B3333CB1C28D87E00831806 /* Recall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333CA1C28D87E00831806 /* Recall.swift */; };
 		8B346D6E1C581F2900DD65C5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B346D6D1C581F2900DD65C5 /* README.md */; };
 		8B346D701C581F5C00DD65C5 /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B346D6F1C581F5C00DD65C5 /* Demo.gif */; };
+		8B3FF4561D320B3500843E20 /* iosDeveloper.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FF4541D320B3500843E20 /* iosDeveloper.p12.enc */; };
+		8B3FF4571D320B3500843E20 /* iosDistribution.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FF4551D320B3500843E20 /* iosDistribution.p12.enc */; };
 		8B72884A1C3239F60019297E /* MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7288491C3239F60019297E /* MetaInfo.swift */; };
 		8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */; };
 		8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E531C2A2AD900C6527E /* USStates.swift */; };
@@ -74,7 +77,6 @@
 		8BF89CE91C46068200359C41 /* Verdana Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */; };
 		8BF89CEA1C46068200359C41 /* Verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDC1C46068200359C41 /* Verdana.ttf */; };
 		8BF89CEB1C46068200359C41 /* Framefile.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDD1C46068200359C41 /* Framefile.json */; };
-		AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D82228285162DAF213084F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.debug.xcconfig"; sourceTree = "<group>"; };
+		66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		8B115D291C2DAFEC0079589F /* RecallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallManager.swift; sourceTree = "<group>"; };
 		8B3333951C28C02100831806 /* OpenFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3333981C28C02100831806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		8B3333CA1C28D87E00831806 /* Recall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recall.swift; sourceTree = "<group>"; };
 		8B346D6D1C581F2900DD65C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B346D6F1C581F5C00DD65C5 /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
+		8B3FF4541D320B3500843E20 /* iosDeveloper.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosDeveloper.p12.enc; sourceTree = "<group>"; };
+		8B3FF4551D320B3500843E20 /* iosDistribution.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iosDistribution.p12.enc; sourceTree = "<group>"; };
 		8B7288491C3239F60019297E /* MetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInfo.swift; sourceTree = "<group>"; };
 		8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8B9E8E531C2A2AD900C6527E /* USStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStates.swift; sourceTree = "<group>"; };
@@ -177,9 +183,8 @@
 		8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Italic.ttf"; sourceTree = "<group>"; };
 		8BF89CDC1C46068200359C41 /* Verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Verdana.ttf; sourceTree = "<group>"; };
 		8BF89CDD1C46068200359C41 /* Framefile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Framefile.json; sourceTree = "<group>"; };
-		BD456AB451D303390520B787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		CA474B76DE6DE682368082BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D1D82228285162DAF213084F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.app store.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +195,7 @@
 				8BD915CE1C34450E00973B8E /* iAd.framework in Frameworks */,
 				8BD915CC1C3443D800973B8E /* StoreKit.framework in Frameworks */,
 				8B9E8E581C2A3CBD00C6527E /* MapKit.framework in Frameworks */,
-				AF98146F628F465EC4DA1135 /* Pods.framework in Frameworks */,
+				11D0B47A5AB2B386DA71B606 /* Pods_OpenFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +229,7 @@
 				8BD915CD1C34450E00973B8E /* iAd.framework */,
 				8BD915CB1C3443D800973B8E /* StoreKit.framework */,
 				8B9E8E571C2A3CBD00C6527E /* MapKit.framework */,
-				D1D82228285162DAF213084F /* Pods.framework */,
+				A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,6 +340,15 @@
 			path = OpenFoodUITests;
 			sourceTree = "<group>";
 		};
+		8B3FF4531D320B3500843E20 /* cert */ = {
+			isa = PBXGroup;
+			children = (
+				8B3FF4541D320B3500843E20 /* iosDeveloper.p12.enc */,
+				8B3FF4551D320B3500843E20 /* iosDistribution.p12.enc */,
+			);
+			path = cert;
+			sourceTree = "<group>";
+		};
 		8BE72A451D24BD550058619A /* travis */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +361,7 @@
 		8BF89C861C45F46E00359C41 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
+				8B3FF4531D320B3500843E20 /* cert */,
 				8BF89C9C1C45F46E00359C41 /* screenshots */,
 				8BF89C8B1C45F46E00359C41 /* metadata */,
 				8BF89C871C45F46E00359C41 /* actions */,
@@ -464,8 +479,9 @@
 		AAE7D02C34FC42B897988CA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD456AB451D303390520B787 /* Pods.debug.xcconfig */,
-				CA474B76DE6DE682368082BE /* Pods.release.xcconfig */,
+				2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */,
+				F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */,
+				66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -477,12 +493,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3333BD1C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFood" */;
 			buildPhases = (
-				B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */,
+				B8A895089F977660DDE11D00 /* [CP] Check Pods Manifest.lock */,
 				8B3333911C28C02100831806 /* Sources */,
 				8B3333921C28C02100831806 /* Frameworks */,
 				8B3333931C28C02100831806 /* Resources */,
-				20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */,
-				837C41AD6E396E6B61002026 /* Copy Pods Resources */,
+				20FD9471A0AAA5F2883A5B7C /* [CP] Embed Pods Frameworks */,
+				837C41AD6E396E6B61002026 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -626,11 +642,13 @@
 				8BF89CA91C45F46E00359C41 /* release_notes.txt in Resources */,
 				8BF89CAF1C45F46E00359C41 /* secondary_first_sub_category.txt in Resources */,
 				8B3333A31C28C02100831806 /* LaunchScreen.storyboard in Resources */,
+				8B3FF4571D320B3500843E20 /* iosDistribution.p12.enc in Resources */,
 				8B3333A01C28C02100831806 /* Assets.xcassets in Resources */,
 				8BF89CAC1C45F46E00359C41 /* primary_first_sub_category.txt in Resources */,
 				8B346D701C581F5C00DD65C5 /* Demo.gif in Resources */,
 				8BF89CA51C45F46E00359C41 /* keywords.txt in Resources */,
 				8BF89CB31C45F46E00359C41 /* Snapfile in Resources */,
+				8B3FF4561D320B3500843E20 /* iosDeveloper.p12.enc in Resources */,
 				8B33339E1C28C02100831806 /* Main.storyboard in Resources */,
 				8BF89CB11C45F46E00359C41 /* report.xml in Resources */,
 				8BF89CAD1C45F46E00359C41 /* primary_second_sub_category.txt in Resources */,
@@ -679,44 +697,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20FD9471A0AAA5F2883A5B7C /* Embed Pods Frameworks */ = {
+		20FD9471A0AAA5F2883A5B7C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		837C41AD6E396E6B61002026 /* Copy Pods Resources */ = {
+		837C41AD6E396E6B61002026 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8A895089F977660DDE11D00 /* Check Pods Manifest.lock */ = {
+		B8A895089F977660DDE11D00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,6 +851,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -861,7 +880,7 @@
 			};
 			name = Debug;
 		};
-		8B3333BC1C28C02100831806 /* Release */ = {
+		8B3333BC1C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -878,7 +897,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -897,11 +917,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "App Store";
 		};
 		8B3333BE1C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD456AB451D303390520B787 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -917,14 +937,14 @@
 			};
 			name = Debug;
 		};
-		8B3333BF1C28C02100831806 /* Release */ = {
+		8B3333BF1C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA474B76DE6DE682368082BE /* Pods.release.xcconfig */;
+			baseConfigurationReference = F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = OpenFood/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -932,7 +952,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
-			name = Release;
+			name = "App Store";
 		};
 		8B3333C11C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -946,7 +966,7 @@
 			};
 			name = Debug;
 		};
-		8B3333C21C28C02100831806 /* Release */ = {
+		8B3333C21C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -956,7 +976,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenFood.app/OpenFood";
 			};
-			name = Release;
+			name = "App Store";
 		};
 		8B3333C41C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -970,7 +990,7 @@
 			};
 			name = Debug;
 		};
-		8B3333C51C28C02100831806 /* Release */ = {
+		8B3333C51C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodUITests/Info.plist;
@@ -980,7 +1000,99 @@
 				TEST_TARGET_NAME = OpenFood;
 				USES_XCTRUNNER = YES;
 			};
-			name = Release;
+			name = "App Store";
+		};
+		8B3D2BBF1D276A6E00A48A48 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		8B3D2BC01D276A6E00A48A48 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = OpenFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = "Ad Hoc";
+		};
+		8B3D2BC11D276A6E00A48A48 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenFoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenFood.app/OpenFood";
+			};
+			name = "Ad Hoc";
+		};
+		8B3D2BC21D276A6E00A48A48 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenFoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenFood;
+				USES_XCTRUNNER = YES;
+			};
+			name = "Ad Hoc";
+		};
+		8B3D2BC31D276A6E00A48A48 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tvluong.OpenFoodSnapshot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenFood;
+				USES_XCTRUNNER = YES;
+			};
+			name = "Ad Hoc";
 		};
 		8BF89CC41C45FC2200359C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -994,7 +1106,7 @@
 			};
 			name = Debug;
 		};
-		8BF89CC51C45FC2200359C41 /* Release */ = {
+		8BF89CC51C45FC2200359C41 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
@@ -1004,7 +1116,7 @@
 				TEST_TARGET_NAME = OpenFood;
 				USES_XCTRUNNER = YES;
 			};
-			name = Release;
+			name = "App Store";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1013,46 +1125,51 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B3333BB1C28C02100831806 /* Debug */,
-				8B3333BC1C28C02100831806 /* Release */,
+				8B3333BC1C28C02100831806 /* App Store */,
+				8B3D2BBF1D276A6E00A48A48 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		8B3333BD1C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B3333BE1C28C02100831806 /* Debug */,
-				8B3333BF1C28C02100831806 /* Release */,
+				8B3333BF1C28C02100831806 /* App Store */,
+				8B3D2BC01D276A6E00A48A48 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		8B3333C01C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B3333C11C28C02100831806 /* Debug */,
-				8B3333C21C28C02100831806 /* Release */,
+				8B3333C21C28C02100831806 /* App Store */,
+				8B3D2BC11D276A6E00A48A48 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		8B3333C31C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B3333C41C28C02100831806 /* Debug */,
-				8B3333C51C28C02100831806 /* Release */,
+				8B3333C51C28C02100831806 /* App Store */,
+				8B3D2BC21D276A6E00A48A48 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		8BF89CC31C45FC2200359C41 /* Build configuration list for PBXNativeTarget "OpenFoodSnapshot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF89CC41C45FC2200359C41 /* Debug */,
-				8BF89CC51C45FC2200359C41 /* Release */,
+				8BF89CC51C45FC2200359C41 /* App Store */,
+				8B3D2BC31D276A6E00A48A48 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 /* End XCConfigurationList section */
 	};

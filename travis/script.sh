@@ -1,3 +1,5 @@
 #!/bin/sh
 
-fastlane ios test
+#open -b com.apple.iphonesimulator
+#fastlane ios test
+fastlane ios beta

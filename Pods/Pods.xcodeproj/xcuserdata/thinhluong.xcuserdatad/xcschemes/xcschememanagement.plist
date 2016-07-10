@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-OpenFood.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
+		<key>4E4C310CDFCD7218D99A9E66D4AFD4D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CE8A365CF54E23D3D8D4EF510F5F689</key>
+		<key>50380D93B96679DFB1AD2089EB6E4E53</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<key>91BFA567EDC47709FE90FA3C43E47CDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<key>931EFDC73A61F9F135852D0331664945</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D55837D998F8D0681925C7197D9ACC2B</key>
+		<key>BF597F600B0B042CBAE69C26867BE3CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
