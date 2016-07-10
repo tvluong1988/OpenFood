@@ -63,7 +63,7 @@ username: ENV["ITUNES_CONNECT_USER"],
 cert_id: "38CJ7RTF4Q"
 )
 
-#increment_build_number(build_number: number_of_commits)
+#increment_build_number
 set_info_plist_value(
 path: './OpenFood/Info.plist',
 key: 'CFBundleVersion',
@@ -72,25 +72,25 @@ value: number_of_commits
 
 
 #build
-#gym(
-#scheme: "OpenFood",
-#configuration: "App Store",
-#sdk: "iphoneos9.3",
-#clean: true,
-#include_bitcode: false,
-#include_symbols: true,
-#use_legacy_build_api: true,
-#export_method: "app-store"
-#)
+gym(
+scheme: "OpenFood",
+configuration: "App Store",
+sdk: "iphoneos9.3",
+clean: true,
+include_bitcode: false,
+include_symbols: true,
+use_legacy_build_api: true,
+export_method: "app-store"
+)
 
 #deploy to Testflight
-#pilot(
-#username: ENV["ITUNES_CONNECT_USER"],
-#wait_processing_interval: 30,
-#distribute_external: false,
-#skip_submission: true,
-#ipa: "OpenFood.ipa"
-#)
+pilot(
+username: ENV["ITUNES_CONNECT_USER"],
+wait_processing_interval: 30,
+distribute_external: false,
+skip_submission: true,
+ipa: "OpenFood.ipa"
+)
 
 delete_keychain(name: ENV["KEYCHAIN_NAME"])
 

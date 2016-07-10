@@ -7,4 +7,4 @@
 # Feel free to remove the following line if you use fastlane (which you should)
 
 #app_identifier "tvluong.OpenFood" # The bundle identifier of your app
-#username "guitarslacker@gmail.com" # your Apple ID user
+#username ENV["ITUNES_CONNECT_USER"] # your Apple ID user
