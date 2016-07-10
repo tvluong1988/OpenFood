@@ -67,7 +67,7 @@ cert_id: "38CJ7RTF4Q"
 set_info_plist_value(
 path: './OpenFood/Info.plist',
 key: 'CFBundleVersion',
-value: number_of_commits
+value: "#{number_of_commits}"
 )
 
 
