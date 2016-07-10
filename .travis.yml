@@ -7,6 +7,8 @@ email: false
 
 before_script:
 - openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/cert/iosDistribution.p12.enc -d -a -out fastlane/cert/iosDistribution.p12
+- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/cert/iosDeveloper.p12.enc -d -a -out fastlane/cert/iosDeveloper.p12
+
 
 before_install:
 - gem install xcov --no-ri --no-rdoc --no-document
