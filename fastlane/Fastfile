@@ -59,11 +59,11 @@ keychain_name: ENV["KEYCHAIN_NAME"]
 #Fetch provisioning profile
 sigh(
 adhoc: false,
-username: "guitarslacker@gmail.com",
+username: ENV["ITUNES_CONNECT_USER"],
 cert_id: "38CJ7RTF4Q"
 )
 
-#increment_build_number
+increment_build_number(build_number: number_of_commits)
 
 #build
 gym(
@@ -74,7 +74,16 @@ clean: true,
 include_bitcode: false,
 include_symbols: true,
 use_legacy_build_api: true,
-#export_method: "enterprise"
+export_method: "app-store"
+)
+
+#deploy to Testflight
+pilot(
+username: ENV["ITUNES_CONNECT_USER"],
+wait_processing_interval: 30,
+distribute_external: false,
+skip_submission: true,
+ipa: "OpenFood.ipa"
 )
 
 delete_keychain(name: ENV["KEYCHAIN_NAME"])
