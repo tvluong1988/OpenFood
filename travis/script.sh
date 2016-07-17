@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "{$TRAVIS_BRANCH}"
-
-if [ "{$TRAVIS_BRANCH}" = "master" ]; then
+if [ $TRAVIS_BRANCH = "master" ]; then
 fastlane ios beta
 else
 open -b com.apple.iphonesimulator
