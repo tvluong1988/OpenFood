@@ -4,8 +4,8 @@ default_platform :ios
 
 platform :ios do
 before_all do
-#ensure_git_status_clean
-#cocoapods
+ensure_git_status_clean
+cocoapods
 end
 
 desc "Run tests"
