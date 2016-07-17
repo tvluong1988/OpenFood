@@ -39,6 +39,7 @@
 		8BDEAD371D2294CA00672830 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEAD361D2294CA00672830 /* .travis.yml */; };
 		8BE72A441D24BD4D0058619A /* script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8BE72A431D24BD4D0058619A /* script.sh */; };
 		8BE72A471D24BD730058619A /* after_success_script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8BE72A461D24BD730058619A /* after_success_script.sh */; };
+		8BF307411D330D2C004B710E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8BF307401D330D2C004B710E /* LICENSE */; };
 		8BF89CA01C45F46E00359C41 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C881C45F46E00359C41 /* Appfile */; };
 		8BF89CA11C45F46E00359C41 /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C891C45F46E00359C41 /* Deliverfile */; };
 		8BF89CA21C45F46E00359C41 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89C8A1C45F46E00359C41 /* Fastfile */; };
@@ -143,6 +144,7 @@
 		8BDEAD361D2294CA00672830 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		8BE72A431D24BD4D0058619A /* script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = script.sh; path = travis/script.sh; sourceTree = "<group>"; };
 		8BE72A461D24BD730058619A /* after_success_script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = after_success_script.sh; path = travis/after_success_script.sh; sourceTree = "<group>"; };
+		8BF307401D330D2C004B710E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8BF89C881C45F46E00359C41 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		8BF89C891C45F46E00359C41 /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
 		8BF89C8A1C45F46E00359C41 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
+				8BF307401D330D2C004B710E /* LICENSE */,
 				8BE72A451D24BD550058619A /* travis */,
 				8BDEAD361D2294CA00672830 /* .travis.yml */,
 				8B346D6F1C581F5C00DD65C5 /* Demo.gif */,
@@ -649,6 +652,7 @@
 				8BF89CA51C45F46E00359C41 /* keywords.txt in Resources */,
 				8BF89CB31C45F46E00359C41 /* Snapfile in Resources */,
 				8B3FF4561D320B3500843E20 /* iosDeveloper.p12.enc in Resources */,
+				8BF307411D330D2C004B710E /* LICENSE in Resources */,
 				8B33339E1C28C02100831806 /* Main.storyboard in Resources */,
 				8BF89CB11C45F46E00359C41 /* report.xml in Resources */,
 				8BF89CAD1C45F46E00359C41 /* primary_second_sub_category.txt in Resources */,

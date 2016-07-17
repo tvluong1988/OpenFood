@@ -4,8 +4,7 @@ default_platform :ios
 
 platform :ios do
 before_all do
-#ensure_git_status_clean
-#cocoapods
+cocoapods
 end
 
 desc "Run tests"
@@ -29,10 +28,63 @@ output_directory: "xcov_output"
 )
 end
 
+desc "Run Build"
+lane :build do
+create_keychain(
+name: ENV["KEYCHAIN_NAME"],
+default_keychain: true,
+unlock: true,
+timeout: 3600,
+lock_when_sleeps: true,
+password: SecureRandom.base64
+)
+
+#Import distribution certificate
+import_certificate(
+certificate_path: "fastlane/cert/iosDeveloper.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: ENV["KEYCHAIN_NAME"]
+)
+
+import_certificate(
+certificate_path: "fastlane/cert/iosDistribution.p12",
+certificate_password: ENV["KEY_PASSWORD"],
+keychain_name: ENV["KEYCHAIN_NAME"]
+)
+
+#Fetch provisioning profile
+sigh(
+adhoc: false,
+username: ENV["ITUNES_CONNECT_USER"],
+cert_id: ENV["TEAM_ID"]
+)
+
+#increment_build_number
+set_info_plist_value(
+path: './OpenFood/Info.plist',
+key: 'CFBundleVersion',
+value: "#{number_of_commits}"
+)
+
+
+#build
+gym(
+scheme: "OpenFood",
+configuration: "App Store",
+sdk: "iphoneos9.3",
+clean: true,
+include_bitcode: false,
+include_symbols: true,
+use_legacy_build_api: true,
+export_method: "app-store"
+)
+
+delete_keychain(name: ENV["KEYCHAIN_NAME"])
+
+end
 
 desc "Submit a new beta build to App Store"
 lane :beta do
-
 
 create_keychain(
 name: ENV["KEYCHAIN_NAME"],
@@ -60,7 +112,7 @@ keychain_name: ENV["KEYCHAIN_NAME"]
 sigh(
 adhoc: false,
 username: ENV["ITUNES_CONNECT_USER"],
-cert_id: "38CJ7RTF4Q"
+cert_id: ENV["TEAM_ID"]
 )
 
 #increment_build_number
@@ -96,10 +148,6 @@ delete_keychain(name: ENV["KEYCHAIN_NAME"])
 
 end
 
-lane :screenshot do
-snapshot
-frameit
-end
 
 end
 
