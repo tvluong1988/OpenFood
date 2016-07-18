@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057E2E3520162EA2B7EA77A0 /* Pods_OpenFoodSnapshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5930747E129454262DB258 /* Pods_OpenFoodSnapshot.framework */; };
 		11D0B47A5AB2B386DA71B606 /* Pods_OpenFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */; };
+		393EFFC6B4C047FF2F721653 /* Pods_OpenFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6908F22725E2D822C7FADF0D /* Pods_OpenFoodTests.framework */; };
 		8B115D2A1C2DAFEC0079589F /* RecallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B115D291C2DAFEC0079589F /* RecallManager.swift */; };
 		8B3333991C28C02100831806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333981C28C02100831806 /* AppDelegate.swift */; };
 		8B33339B1C28C02100831806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33339A1C28C02100831806 /* ViewController.swift */; };
@@ -78,6 +80,7 @@
 		8BF89CE91C46068200359C41 /* Verdana Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */; };
 		8BF89CEA1C46068200359C41 /* Verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDC1C46068200359C41 /* Verdana.ttf */; };
 		8BF89CEB1C46068200359C41 /* Framefile.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF89CDD1C46068200359C41 /* Framefile.json */; };
+		F787F742AD24360520924449 /* Pods_OpenFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AF82B434CCC09FBDDF7A03 /* Pods_OpenFoodUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +108,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153CA30DD578F5FCDFD6FDB8 /* Pods-OpenFoodSnapshot.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodSnapshot.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.app store.xcconfig"; sourceTree = "<group>"; };
 		2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.debug.xcconfig"; sourceTree = "<group>"; };
+		41AF82B434CCC09FBDDF7A03 /* Pods_OpenFoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		6908F22725E2D822C7FADF0D /* Pods_OpenFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B7553777F9919CE249796D /* Pods-OpenFoodUITests.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodUITests.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		7BA41625E5454692A6C24C2E /* Pods-OpenFoodTests.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodTests.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		8B115D291C2DAFEC0079589F /* RecallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecallManager.swift; sourceTree = "<group>"; };
 		8B3333951C28C02100831806 /* OpenFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3333981C28C02100831806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,8 +193,15 @@
 		8BF89CDB1C46068200359C41 /* Verdana Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Italic.ttf"; sourceTree = "<group>"; };
 		8BF89CDC1C46068200359C41 /* Verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Verdana.ttf; sourceTree = "<group>"; };
 		8BF89CDD1C46068200359C41 /* Framefile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Framefile.json; sourceTree = "<group>"; };
+		9A2735B08927D8723315B15F /* Pods-OpenFoodUITests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodUITests.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.app store.xcconfig"; sourceTree = "<group>"; };
 		A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B110C5D7D34434891ECA881F /* Pods-OpenFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6B4B236C450C69513A0F3F5 /* Pods-OpenFoodSnapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodSnapshot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5930747E129454262DB258 /* Pods_OpenFoodSnapshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodSnapshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E0FE172AEBB5C2ACF2D02C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodSnapshot.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		D9503C3090990EC74C770678 /* Pods-OpenFoodTests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodTests.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.app store.xcconfig"; sourceTree = "<group>"; };
 		F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFood.app store.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood.app store.xcconfig"; sourceTree = "<group>"; };
+		FAAF1919AC0114A740B6E4FB /* Pods-OpenFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393EFFC6B4C047FF2F721653 /* Pods_OpenFoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F787F742AD24360520924449 /* Pods_OpenFoodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057E2E3520162EA2B7EA77A0 /* Pods_OpenFoodSnapshot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +250,9 @@
 				8BD915CB1C3443D800973B8E /* StoreKit.framework */,
 				8B9E8E571C2A3CBD00C6527E /* MapKit.framework */,
 				A3FC7425BC255EB1561B20D4 /* Pods_OpenFood.framework */,
+				BF5930747E129454262DB258 /* Pods_OpenFoodSnapshot.framework */,
+				6908F22725E2D822C7FADF0D /* Pods_OpenFoodTests.framework */,
+				41AF82B434CCC09FBDDF7A03 /* Pods_OpenFoodUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -485,6 +506,15 @@
 				2D923A1A5D518B86ACE8DF97 /* Pods-OpenFood.debug.xcconfig */,
 				F91213AA5F4CB8E6DFEB7814 /* Pods-OpenFood.app store.xcconfig */,
 				66326CEE37ECB3BA468E42BE /* Pods-OpenFood.ad hoc.xcconfig */,
+				B6B4B236C450C69513A0F3F5 /* Pods-OpenFoodSnapshot.debug.xcconfig */,
+				153CA30DD578F5FCDFD6FDB8 /* Pods-OpenFoodSnapshot.app store.xcconfig */,
+				D5E0FE172AEBB5C2ACF2D02C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */,
+				FAAF1919AC0114A740B6E4FB /* Pods-OpenFoodTests.debug.xcconfig */,
+				D9503C3090990EC74C770678 /* Pods-OpenFoodTests.app store.xcconfig */,
+				7BA41625E5454692A6C24C2E /* Pods-OpenFoodTests.ad hoc.xcconfig */,
+				B110C5D7D34434891ECA881F /* Pods-OpenFoodUITests.debug.xcconfig */,
+				9A2735B08927D8723315B15F /* Pods-OpenFoodUITests.app store.xcconfig */,
+				75B7553777F9919CE249796D /* Pods-OpenFoodUITests.ad hoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -516,9 +546,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3333C01C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodTests" */;
 			buildPhases = (
+				5A4BFA665B1EB76F3B9C6368 /* [CP] Check Pods Manifest.lock */,
 				8B3333A51C28C02100831806 /* Sources */,
 				8B3333A61C28C02100831806 /* Frameworks */,
 				8B3333A71C28C02100831806 /* Resources */,
+				526A72265E370BCD30BAF919 /* [CP] Embed Pods Frameworks */,
+				9CE5E15A652009D434E7FF00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -534,9 +567,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3333C31C28C02100831806 /* Build configuration list for PBXNativeTarget "OpenFoodUITests" */;
 			buildPhases = (
+				48757329E1B56BF66C0BAC69 /* [CP] Check Pods Manifest.lock */,
 				8B3333B01C28C02100831806 /* Sources */,
 				8B3333B11C28C02100831806 /* Frameworks */,
 				8B3333B21C28C02100831806 /* Resources */,
+				14AF80CD21A1D03BDCFF80D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -552,9 +587,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF89CC31C45FC2200359C41 /* Build configuration list for PBXNativeTarget "OpenFoodSnapshot" */;
 			buildPhases = (
+				B0D5F23EBD77F5EFC8A2531E /* [CP] Check Pods Manifest.lock */,
 				8BF89CB81C45FC2200359C41 /* Sources */,
 				8BF89CB91C45FC2200359C41 /* Frameworks */,
 				8BF89CBA1C45FC2200359C41 /* Resources */,
+				3991FF431735807A5565AE4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -701,6 +738,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14AF80CD21A1D03BDCFF80D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		20FD9471A0AAA5F2883A5B7C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -716,6 +768,66 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3991FF431735807A5565AE4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48757329E1B56BF66C0BAC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		526A72265E370BCD30BAF919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4BFA665B1EB76F3B9C6368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		837C41AD6E396E6B61002026 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -729,6 +841,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFood/Pods-OpenFood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE5E15A652009D434E7FF00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D5F23EBD77F5EFC8A2531E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B8A895089F977660DDE11D00 /* [CP] Check Pods Manifest.lock */ = {
@@ -960,6 +1102,7 @@
 		};
 		8B3333C11C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAF1919AC0114A740B6E4FB /* Pods-OpenFoodTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = OpenFoodTests/Info.plist;
@@ -972,6 +1115,7 @@
 		};
 		8B3333C21C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9503C3090990EC74C770678 /* Pods-OpenFoodTests.app store.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = OpenFoodTests/Info.plist;
@@ -984,6 +1128,7 @@
 		};
 		8B3333C41C28C02100831806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B110C5D7D34434891ECA881F /* Pods-OpenFoodUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -996,6 +1141,7 @@
 		};
 		8B3333C51C28C02100831806 /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2735B08927D8723315B15F /* Pods-OpenFoodUITests.app store.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1064,6 +1210,7 @@
 		};
 		8B3D2BC11D276A6E00A48A48 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA41625E5454692A6C24C2E /* Pods-OpenFoodTests.ad hoc.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = OpenFoodTests/Info.plist;
@@ -1076,6 +1223,7 @@
 		};
 		8B3D2BC21D276A6E00A48A48 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B7553777F9919CE249796D /* Pods-OpenFoodUITests.ad hoc.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1088,6 +1236,7 @@
 		};
 		8B3D2BC31D276A6E00A48A48 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E0FE172AEBB5C2ACF2D02C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1100,6 +1249,7 @@
 		};
 		8BF89CC41C45FC2200359C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B4B236C450C69513A0F3F5 /* Pods-OpenFoodSnapshot.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1112,6 +1262,7 @@
 		};
 		8BF89CC51C45FC2200359C41 /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153CA30DD578F5FCDFD6FDB8 /* Pods-OpenFoodSnapshot.app store.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = OpenFoodSnapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

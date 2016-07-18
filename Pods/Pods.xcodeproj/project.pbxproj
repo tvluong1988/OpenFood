@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		049C5CEF2ACEFC70F2398A6E62464B3F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31928EAC6ABCC9398C55589D2F8264 /* Timeline.swift */; };
 		0B550B627077CF2C76BAFD0940DE1954 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8496FBFDB6DEF150A3421E31E4EBD /* UILabel+Chameleon.m */; };
+		0C4617A236A7436581B99427A88E5BCD /* Pods-OpenFoodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E106D635023F3AC666599BC2383098 /* Pods-OpenFoodTests-dummy.m */; };
 		13FBD58D8BC38C6DE1E97FD49BF9E7D8 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59AE36BE985C3E8CF012E800416689 /* ChameleonShorthand.swift */; };
 		14E9EF322C8EAB4DBF6F2DA271660154 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 466753BE414D46907DFE2822AB1A7E88 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1615AC56AB84A5D28261A44E4629ED3D /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 56594058786A7DC6FD03C86179399042 /* UIScrollView+EmptyDataSet.m */; };
 		16C13EA819937450B0D7812523E91036 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193B9B2F83AF0188C4D1D8F26E4CF42 /* SwiftyJSON.swift */; };
 		18456D9CBB4D90526A337A812D7E9836 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = B32958D0F3172AD8F119D2C0D5E35AEE /* UIImage+ChameleonPrivate.m */; };
+		2069952E79D550E6DC1FB797A5090F46 /* Pods-OpenFoodSnapshot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9136456E909F05F9A1803127E9B5A00 /* Pods-OpenFoodSnapshot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23833B6F85CE1FD3473261EA81449D67 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4FCD471C2B7A9FDC82187F1242130 /* Validation.swift */; };
 		281D2CF4047AC43D649CFF546DC18616 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033728978C05E1686FE672635B208AEA /* UIColor+ChameleonPrivate.m */; };
 		2839F94A2789A70BCEBBBC485B36B1B7 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AE379DE73F7DB0BCD7BFABA0D5734C /* ChameleonFramework-dummy.m */; };
@@ -32,15 +34,18 @@
 		5C8E43A94E06795B8A386CD09534C858 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2C5F50997A784B0A9386A2DEE8AED /* Stream.swift */; };
 		65E002400C35638B3B011E1607159A55 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFD8834F38E69AC9AED7C423E9ACB5C /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69054CA632252272400776E34DD2125B /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4112784D423BF2158DF6EE4E2052BB0C /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BC75B7DD1B01A03FD3E0BDC24D985E1 /* Pods-OpenFoodUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E20ACA596D143EAEDBA5D9CC749197 /* Pods-OpenFoodUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B5465F1191AB790D57F804A4D0AA14 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 154D06D5B02C7696A97B3AEDADB32109 /* UIButton+Chameleon.m */; };
 		7666941DE1807EB7E10F85393431466A /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578E36F3F51562E10FAF9DFD80401CE /* SwiftyJSON-dummy.m */; };
 		79889404CF169D28430E519C46A65FFE /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DB1047B1776F94618533341953D8B6 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8143C264AFB96C7A24A692E79B3293F6 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 584D8A76132B8FCCCC0176D004F916EE /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87763A8F7442C31DEF495492E1E083EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3212D7BC0710FE50E49B5AD2D9C0D0F /* CoreGraphics.framework */; };
 		8787A792EA1FF4CDD6A8471C4A765DA9 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = DE814B90EAC5EB8728908A4AB285FA2C /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		928F505C6815D3EE8F9DAFDABF34D07F /* Pods-OpenFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7BAE40B2CCF7711FDF4AB2A01A759 /* Pods-OpenFood-dummy.m */; };
+		928F505C6815D3EE8F9DAFDABF34D07F /* Pods-OpenFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B2F7F8988226442013DBEC225B0F3 /* Pods-OpenFood-dummy.m */; };
+		92EB98E6619D6D9F4BD97667035DB41B /* Pods-OpenFoodSnapshot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F160AB6B3EB82B1493CC7DEADA25B288 /* Pods-OpenFoodSnapshot-dummy.m */; };
 		932986DB179D826974456241A6AF01A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D31AF728F56D0CAFFECA7DF51E2E0E6 /* Foundation.framework */; };
-		9999C237AA45353813F8427C47607DB8 /* Pods-OpenFood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 989ED5D5D6652232ECD7B7D40B8F715C /* Pods-OpenFood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9356DDF3CFFD58D206599D863033377A /* Pods-OpenFoodUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B7264A0070101F2A2330CD50FB130 /* Pods-OpenFoodUITests-dummy.m */; };
+		9999C237AA45353813F8427C47607DB8 /* Pods-OpenFood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB470F224ECA174D5DC1C1C1CB29A1E5 /* Pods-OpenFood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A9AC09505270CD1B467A29510101938 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E25C15F0F124643743E1E6F63E997C /* ServerTrustPolicy.swift */; };
 		9C3D0F534E1E3C425AEE9C3E570E6AFF /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F99CD431A2C531D578BC707B634AC67 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CAC18C37D2BD26C0888D2E7C73B3D74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BFCC5FCF20BECEF409508768C21E64 /* UIKit.framework */; };
@@ -51,14 +56,18 @@
 		A0BFC6AF04BC14E0DECFEE7ECB9090D4 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = B86E87E317A8A51CB52441E768495492 /* Chameleon_.m */; };
 		A1E701BC83415B58E79F94A49C95563C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BFCC5FCF20BECEF409508768C21E64 /* UIKit.framework */; };
 		A395A18B23E71386C2327768C1AF12A4 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7111D3FD91B6250FC56120BE631C3EA2 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4E0D1A6B29C3E36BFFCEA07FC1DBD4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D31AF728F56D0CAFFECA7DF51E2E0E6 /* Foundation.framework */; };
 		A7564CEFA978561CD6644BBA62F78865 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4DE11975A61AECA94134C7BD6FC241 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A82330C666699CCBF61CE554EC538D5F /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05D299C58ECFD288D8103CCE6985F4 /* Download.swift */; };
 		AAF2F9F7DD620C5F869DE551F9A5BEBA /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC0E6A066C5BC710FDD6191CA317C /* MultipartFormData.swift */; };
+		ADBF92476D3687A12F5F0C4C5B127EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D31AF728F56D0CAFFECA7DF51E2E0E6 /* Foundation.framework */; };
+		B27FA6D3EE34DF5828613409963B030D /* Pods-OpenFoodTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C91E4F4AEDD261324430B78537D933B8 /* Pods-OpenFoodTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9EE2E1EE66D64A8885CFEA4B085A8A5 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A80618F8EDEB52E6B06C97B6B391B3 /* Manager.swift */; };
 		BDD7E98BF02530402079A22B257722C0 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C41BD15900C79D016B3641F4FC891B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF17B0EBCAE6CE65459899F94B4F2853 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CB5960CFA5AE1B0441F945030F444D /* UINavigationController+Chameleon.m */; };
 		C29CC7CFCC4C61316D0B95828C2D7F24 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 335D2DC5036BC04B83A1C82A12432E72 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33257A941AFD6AED32E2EF0F5EF015A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090018653634BB07D2302E1C2D6C8A98 /* Error.swift */; };
+		C5D10979FB0865B99ECE49D5742D5B2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D31AF728F56D0CAFFECA7DF51E2E0E6 /* Foundation.framework */; };
 		C5F7A7CB5A4BDD96BF6A5F24D2AB0B76 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A2CC7D74560FED6ACF54F11D64D191 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D19A5CEEF02D525456DF0A471B980BC6 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = C40B5EBE2ED5EE4CED69593C40B03765 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB259D31703730403E44C58D7CC034A8 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CCF636ABEF52B1824428DFCDA17E86 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,100 +117,139 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01801AE6A00FCD959C97A94F8A67C90F /* Pods_OpenFoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0193B9B2F83AF0188C4D1D8F26E4CF42 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		02A2CC7D74560FED6ACF54F11D64D191 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
 		033728978C05E1686FE672635B208AEA /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		0398C74BD6B7C6D9789DE56989CAA5D4 /* Pods-OpenFoodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenFoodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		04DB1047B1776F94618533341953D8B6 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
 		06E2C5F50997A784B0A9386A2DEE8AED /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		06E41C1860535F11648733F365651305 /* Pods-OpenFoodUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenFoodUITests.modulemap"; sourceTree = "<group>"; };
 		090018653634BB07D2302E1C2D6C8A98 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		0BC7A64D62B1499FB681C807C5DECFA0 /* Pods-OpenFood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenFood-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BD07CE5C8710E159F5D69614CB70CB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E28E1D8E11EF6C06AD59A97A8077B32 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		0F58FF170E51E38052E546FF93B1ED5A /* Pods-OpenFoodSnapshot-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenFoodSnapshot-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0F99CD431A2C531D578BC707B634AC67 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		1208FCBFA4053D2A69E521491EF69B06 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		136BADD7F93461C816A02D745853F6C8 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		1383FFC266B56774B2A92130C22957FA /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		14E106D635023F3AC666599BC2383098 /* Pods-OpenFoodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenFoodTests-dummy.m"; sourceTree = "<group>"; };
 		154D06D5B02C7696A97B3AEDADB32109 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
 		1675C4415AA388E4D7CB0B7617918094 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		19AF8BBA969375E7DC545BE8DCA9696A /* Pods-OpenFood.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.ad hoc.xcconfig"; sourceTree = "<group>"; };
-		1AC7BAE40B2CCF7711FDF4AB2A01A759 /* Pods-OpenFood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenFood-dummy.m"; sourceTree = "<group>"; };
+		16C3D271ADEF23D6BE2BDB181B11FEF4 /* Pods-OpenFoodSnapshot-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodSnapshot-resources.sh"; sourceTree = "<group>"; };
+		1840380B58BBD4FE2330825669E69D62 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0ADCA77F652C781D1E745DE1B325B /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
 		23A80618F8EDEB52E6B06C97B6B391B3 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
 		272E365053A714D38C092C5CDA3B6FD6 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		29A94722D9C91C19361E2672E3A579C3 /* Pods-OpenFood-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFood-resources.sh"; sourceTree = "<group>"; };
 		2A9FFF6B33BFD81E794D5874F753450C /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		2AEA93660844EB7EE055C3DF19C578E4 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D57A272D9493FEF7443D7ABB8A03E42 /* Pods-OpenFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EC4FCD471C2B7A9FDC82187F1242130 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		32BFCC5FCF20BECEF409508768C21E64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		335D2DC5036BC04B83A1C82A12432E72 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		36A91AC4E94BD6C19D813F632F28C251 /* Pods-OpenFood.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.app store.xcconfig"; sourceTree = "<group>"; };
-		38D9E79847B31A60ED5932AB3983425E /* Pods-OpenFood.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenFood.modulemap"; sourceTree = "<group>"; };
+		35B23E5D7BE77B75EEC6A67FEACD99DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3907CF01550CAEDA8EA643F5B0E92CC6 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
 		3A61B449C4E2A5EA871E0D8DB5E843C0 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		3ACD9070273D67B9995FDDFA3E2E10A4 /* Pods-OpenFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.release.xcconfig"; sourceTree = "<group>"; };
+		3AD982177777701DE289957C0B4036AE /* Pods-OpenFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.debug.xcconfig"; sourceTree = "<group>"; };
 		3AF8496FBFDB6DEF150A3421E31E4EBD /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		3B2CA35090B59BE9950E733C2DBD4D97 /* Pods_OpenFoodSnapshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodSnapshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C31928EAC6ABCC9398C55589D2F8264 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		3C726E264F87DCE920498C523C31A10F /* Pods-OpenFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.release.xcconfig"; sourceTree = "<group>"; };
 		40B262FE81D43EFC4401B426FCF2DC59 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		4112784D423BF2158DF6EE4E2052BB0C /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
 		4275D023FA22588B092FF7729803CFAF /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		434851F8F80EB266F3A7669DDF52A877 /* Pods-OpenFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.debug.xcconfig"; sourceTree = "<group>"; };
 		466753BE414D46907DFE2822AB1A7E88 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		47E25C15F0F124643743E1E6F63E997C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		4A9A866D2CA062ABFC18B7E77768237F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		4D770CA66E7D49ABC8D99575CA63B9AE /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E05D299C58ECFD288D8103CCE6985F4 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
 		51BB3165D926F5995250DD7304DC7CCA /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		5578E36F3F51562E10FAF9DFD80401CE /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		56594058786A7DC6FD03C86179399042 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		584D8A76132B8FCCCC0176D004F916EE /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		59E20ACA596D143EAEDBA5D9CC749197 /* Pods-OpenFoodUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenFoodUITests-umbrella.h"; sourceTree = "<group>"; };
+		5B5B2F7F8988226442013DBEC225B0F3 /* Pods-OpenFood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenFood-dummy.m"; sourceTree = "<group>"; };
+		5C9570B7008FC1A90B2F022434941DB2 /* Pods-OpenFoodTests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodTests.app store.xcconfig"; sourceTree = "<group>"; };
+		5FB6F98494C6B47E19DB219114FE7ABF /* Pods-OpenFoodSnapshot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenFoodSnapshot.modulemap"; sourceTree = "<group>"; };
+		60215229ADC981D114B97486C7B456C3 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6409AA02E66D21E6AA3F55CC6AD01A59 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		64A7C238EC7827DC5C795AF1A6357932 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
-		665875891362B608BCD6E562453235CC /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AE379DE73F7DB0BCD7BFABA0D5734C /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		6A390E76B037001BEB57E1A29366CAE9 /* Pods-OpenFood.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.app store.xcconfig"; sourceTree = "<group>"; };
 		6A59AE36BE985C3E8CF012E800416689 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
-		6C3422A1ABA6EB25ECD186B8DABB3BC6 /* Pods-OpenFood-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFood-resources.sh"; sourceTree = "<group>"; };
+		6C236ACD2F0005F7DB870211E50E0C3D /* Pods-OpenFoodSnapshot-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenFoodSnapshot-acknowledgements.plist"; sourceTree = "<group>"; };
+		6CDE5323187E563692353B11E8DEBC69 /* Pods-OpenFoodUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodUITests-frameworks.sh"; sourceTree = "<group>"; };
 		70CB5960CFA5AE1B0441F945030F444D /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
 		7111D3FD91B6250FC56120BE631C3EA2 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		72C7A2784E86E493E9EF8F77BC8632E4 /* Pods-OpenFood.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFood.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		76E6BBAB2A53E6F76055D4884C613C74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7734F4135C0B2D9F77D244C5FAC85C2F /* Pods-OpenFoodSnapshot-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodSnapshot-frameworks.sh"; sourceTree = "<group>"; };
+		789C8B7C7BF3697C66EC0436EF5C45A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79CCF636ABEF52B1824428DFCDA17E86 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
 		7B59C61941A2E782DA18C2EB45EDCFD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCFD89A74D12F81476086B4F84B8C75 /* Pods-OpenFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C21A4C1485506EA30B1CF58F4C8C7B9 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		7DA50B6417B7950771BD103C4B61A7D1 /* Pods-OpenFoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F991EE625B7C87281006976C8570D12 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		801FBA96F8855F6B341C8D42FC81CAB1 /* Pods-OpenFoodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenFoodTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8528129D62383E026E2D87E07D68864E /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		880FDAF9BF2D0FB24BC8908F697A4512 /* Pods-OpenFoodTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodTests-frameworks.sh"; sourceTree = "<group>"; };
+		8AC01D42CBFD7D609A4234269AA657A1 /* Pods_OpenFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D31AF728F56D0CAFFECA7DF51E2E0E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D5A4B06BBBFDA056DA350558A3F087E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D63933D4414AE26A14421FF933A15CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95EF61E7B4A8ACB4ED0A24DC57CC69C6 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
 		96D911D4AE495A5E2A60211C8092E2A7 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		989ED5D5D6652232ECD7B7D40B8F715C /* Pods-OpenFood-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenFood-umbrella.h"; sourceTree = "<group>"; };
+		A53F3D6A2FADA287AE147114349CEAF4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A660BDCF5F2220C2F313BD71DE351D49 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		A69C8C5CBE00AE0BEA78A45879B4AD99 /* Pods-OpenFoodSnapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodSnapshot.release.xcconfig"; sourceTree = "<group>"; };
 		A7C41BD15900C79D016B3641F4FC891B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		A9F1A3EEF66912734261646514C13E68 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		AA40AD8EAC12C27E85334E387D768A3F /* Pods-OpenFoodUITests.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodUITests.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		ABB8C14BB5E0533473AAE8B51BCBB9C4 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		B06C842BFD86A0358446A3217C432177 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		B1B82A2B213BD076E4487FDF3342CC30 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		B32958D0F3172AD8F119D2C0D5E35AEE /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		B86E87E317A8A51CB52441E768495492 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		B9136456E909F05F9A1803127E9B5A00 /* Pods-OpenFoodSnapshot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenFoodSnapshot-umbrella.h"; sourceTree = "<group>"; };
+		BA7E24EFFF72F09032C3255409D03FE5 /* Pods_OpenFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA977F5944393D30B9581A59DEC9DE8C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		BB470F224ECA174D5DC1C1C1CB29A1E5 /* Pods-OpenFood-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenFood-umbrella.h"; sourceTree = "<group>"; };
 		BB4DE11975A61AECA94134C7BD6FC241 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		BD831967841B666821BC6C9DCCAACDDF /* Pods-OpenFoodSnapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodSnapshot.debug.xcconfig"; sourceTree = "<group>"; };
 		C40B5EBE2ED5EE4CED69593C40B03765 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		C4AD31CD39AB45A7210C89A84EDC7B91 /* Pods-OpenFoodUITests.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodUITests.app store.xcconfig"; sourceTree = "<group>"; };
+		C7333CA63FEFB2B677D842D1013158A0 /* Pods-OpenFoodTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenFoodTests.modulemap"; sourceTree = "<group>"; };
 		C913D940046D2E90E3673316A64D4464 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C96796389C0D15F5A93480CBF8663205 /* Pods_OpenFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91E4F4AEDD261324430B78537D933B8 /* Pods-OpenFoodTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenFoodTests-umbrella.h"; sourceTree = "<group>"; };
 		CA923D707DC8DCF84ABA382AD39F03C1 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		CAA250D6AAA3D67B08752113FC8DF203 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CB5C057674E19D7A4EAD3F7DB1D4181E /* Pods-OpenFood.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenFood.modulemap"; sourceTree = "<group>"; };
+		CC206A48A1E486975B903EDC901DC64C /* Pods-OpenFood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFood-frameworks.sh"; sourceTree = "<group>"; };
 		CE8A2B1F0DD5BCAA92DD6C0F7B763F40 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		D0D6512D4D3B428F6570293202E8C089 /* Pods-OpenFood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFood-frameworks.sh"; sourceTree = "<group>"; };
-		D397F8E2F69688C1C478A1D945271A8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1E6CDA772F5ED9414C0C5C444A2736 /* Pods-OpenFoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFCD9AE4C5D57EDF0D1A23575BB171D5 /* Pods-OpenFoodUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodUITests-resources.sh"; sourceTree = "<group>"; };
+		D55C532ED2BB78814A76EC4976A50BF8 /* Pods-OpenFoodTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenFoodTests-resources.sh"; sourceTree = "<group>"; };
+		D8EA1522D45549A4809D8FB6633A9E05 /* Pods-OpenFoodTests.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodTests.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		DBAA8B0B1564F58757AAE4AEBF78B984 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		DDC37BB6394343C5683E28D5876380BA /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 		DE814B90EAC5EB8728908A4AB285FA2C /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		E246B90F0CCDB572E10ACE88122F4293 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 		E3212D7BC0710FE50E49B5AD2D9C0D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E82B7264A0070101F2A2330CD50FB130 /* Pods-OpenFoodUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenFoodUITests-dummy.m"; sourceTree = "<group>"; };
 		E8392FD1D745843A5B1F0502BC753BF1 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
 		F0BB6B97CEE887E114D14298013B772E /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		F160AB6B3EB82B1493CC7DEADA25B288 /* Pods-OpenFoodSnapshot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenFoodSnapshot-dummy.m"; sourceTree = "<group>"; };
+		F1E28A451FC1354B26C1E5FAFE50D828 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2666BC508ECFF340C309975A7520DC6 /* Pods-OpenFoodSnapshot.app store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodSnapshot.app store.xcconfig"; sourceTree = "<group>"; };
 		F3650605153B6BB083C29CE58E1C1507 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		F48BD0C8DDE1C46A70B75A029468EC56 /* Pods-OpenFood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenFood-acknowledgements.plist"; sourceTree = "<group>"; };
+		F79CB5760035C328BAA2D00A552A8458 /* Pods-OpenFoodUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenFoodUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7E51A9D536420A523E39D9474D6423C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenFoodSnapshot.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		F89CC0E6A066C5BC710FDD6191CA317C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		F8A52ACE831AB5832DAF8F81C3B9D776 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5951CFAFE01450C80140F04CF382FE /* Pods-OpenFoodUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenFoodUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FAFD8834F38E69AC9AED7C423E9ACB5C /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		FBBAFE0773BC858D8962A358ADFF0EA2 /* Pods-OpenFood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenFood-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBECCD25D43E9C6D70D5D85AA05F1FE6 /* Pods-OpenFood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenFood-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +267,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E488A8B1BF0A9189336CE0EA91181CD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB89E21D0A758BFDC892517F54FA54D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBF92476D3687A12F5F0C4C5B127EB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A21C50B855BB1FCBCA6552DD48D6AA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D10979FB0865B99ECE49D5742D5B2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E624A6311277E42B2846250DA2BD4FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E0D1A6B29C3E36BFFCEA07FC1DBD4E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,14 +324,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0101BEE637A24AFACEAE2ABFB824542B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7C854D67480E8287D006413FC18C6C7 /* Pods-OpenFood */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		09CF1F7A4518DE4DAB22E065B3CAD2D3 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +365,37 @@
 				DADC41D615EDB2C413AF4BD04C2F4535 /* Support Files */,
 			);
 			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		38204B5CFB655FB05AB28293343A8BF1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D98C0D80782FB00BC155480889BACD /* Pods-OpenFood */,
+				68CBA0396602B0027E8B65BE9AC6AD18 /* Pods-OpenFoodSnapshot */,
+				3A2719D9C71D3CA91FDED731A73D245B /* Pods-OpenFoodTests */,
+				7F01BBF60E646F57BA239B0B6D938135 /* Pods-OpenFoodUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3A2719D9C71D3CA91FDED731A73D245B /* Pods-OpenFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E28A451FC1354B26C1E5FAFE50D828 /* Info.plist */,
+				C7333CA63FEFB2B677D842D1013158A0 /* Pods-OpenFoodTests.modulemap */,
+				0398C74BD6B7C6D9789DE56989CAA5D4 /* Pods-OpenFoodTests-acknowledgements.markdown */,
+				801FBA96F8855F6B341C8D42FC81CAB1 /* Pods-OpenFoodTests-acknowledgements.plist */,
+				14E106D635023F3AC666599BC2383098 /* Pods-OpenFoodTests-dummy.m */,
+				880FDAF9BF2D0FB24BC8908F697A4512 /* Pods-OpenFoodTests-frameworks.sh */,
+				D55C532ED2BB78814A76EC4976A50BF8 /* Pods-OpenFoodTests-resources.sh */,
+				C91E4F4AEDD261324430B78537D933B8 /* Pods-OpenFoodTests-umbrella.h */,
+				D8EA1522D45549A4809D8FB6633A9E05 /* Pods-OpenFoodTests.ad hoc.xcconfig */,
+				5C9570B7008FC1A90B2F022434941DB2 /* Pods-OpenFoodTests.app store.xcconfig */,
+				2D57A272D9493FEF7443D7ABB8A03E42 /* Pods-OpenFoodTests.debug.xcconfig */,
+				CF1E6CDA772F5ED9414C0C5C444A2736 /* Pods-OpenFoodTests.release.xcconfig */,
+			);
+			name = "Pods-OpenFoodTests";
+			path = "Target Support Files/Pods-OpenFoodTests";
 			sourceTree = "<group>";
 		};
 		45AC1CA838B80FF61E89840B3D816A49 /* Support Files */ = {
@@ -386,27 +481,75 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		68CBA0396602B0027E8B65BE9AC6AD18 /* Pods-OpenFoodSnapshot */ = {
+			isa = PBXGroup;
+			children = (
+				789C8B7C7BF3697C66EC0436EF5C45A3 /* Info.plist */,
+				5FB6F98494C6B47E19DB219114FE7ABF /* Pods-OpenFoodSnapshot.modulemap */,
+				0F58FF170E51E38052E546FF93B1ED5A /* Pods-OpenFoodSnapshot-acknowledgements.markdown */,
+				6C236ACD2F0005F7DB870211E50E0C3D /* Pods-OpenFoodSnapshot-acknowledgements.plist */,
+				F160AB6B3EB82B1493CC7DEADA25B288 /* Pods-OpenFoodSnapshot-dummy.m */,
+				7734F4135C0B2D9F77D244C5FAC85C2F /* Pods-OpenFoodSnapshot-frameworks.sh */,
+				16C3D271ADEF23D6BE2BDB181B11FEF4 /* Pods-OpenFoodSnapshot-resources.sh */,
+				B9136456E909F05F9A1803127E9B5A00 /* Pods-OpenFoodSnapshot-umbrella.h */,
+				F7E51A9D536420A523E39D9474D6423C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */,
+				F2666BC508ECFF340C309975A7520DC6 /* Pods-OpenFoodSnapshot.app store.xcconfig */,
+				BD831967841B666821BC6C9DCCAACDDF /* Pods-OpenFoodSnapshot.debug.xcconfig */,
+				A69C8C5CBE00AE0BEA78A45879B4AD99 /* Pods-OpenFoodSnapshot.release.xcconfig */,
+			);
+			name = "Pods-OpenFoodSnapshot";
+			path = "Target Support Files/Pods-OpenFoodSnapshot";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				67622D14441D60EC5DD2F53C5B4C7382 /* Pods */,
-				920FFEB91FCD374CE863E8332FD1F970 /* Products */,
-				0101BEE637A24AFACEAE2ABFB824542B /* Targets Support Files */,
+				BD0CF5B7313B522B5A2F810263B05208 /* Products */,
+				38204B5CFB655FB05AB28293343A8BF1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		920FFEB91FCD374CE863E8332FD1F970 /* Products */ = {
+		7F01BBF60E646F57BA239B0B6D938135 /* Pods-OpenFoodUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A4B06BBBFDA056DA350558A3F087E /* Alamofire.framework */,
-				4D770CA66E7D49ABC8D99575CA63B9AE /* ChameleonFramework.framework */,
-				665875891362B608BCD6E562453235CC /* DZNEmptyDataSet.framework */,
-				C96796389C0D15F5A93480CBF8663205 /* Pods_OpenFood.framework */,
-				F8A52ACE831AB5832DAF8F81C3B9D776 /* SwiftyJSON.framework */,
+				0BD07CE5C8710E159F5D69614CB70CB2 /* Info.plist */,
+				06E41C1860535F11648733F365651305 /* Pods-OpenFoodUITests.modulemap */,
+				FA5951CFAFE01450C80140F04CF382FE /* Pods-OpenFoodUITests-acknowledgements.markdown */,
+				F79CB5760035C328BAA2D00A552A8458 /* Pods-OpenFoodUITests-acknowledgements.plist */,
+				E82B7264A0070101F2A2330CD50FB130 /* Pods-OpenFoodUITests-dummy.m */,
+				6CDE5323187E563692353B11E8DEBC69 /* Pods-OpenFoodUITests-frameworks.sh */,
+				CFCD9AE4C5D57EDF0D1A23575BB171D5 /* Pods-OpenFoodUITests-resources.sh */,
+				59E20ACA596D143EAEDBA5D9CC749197 /* Pods-OpenFoodUITests-umbrella.h */,
+				AA40AD8EAC12C27E85334E387D768A3F /* Pods-OpenFoodUITests.ad hoc.xcconfig */,
+				C4AD31CD39AB45A7210C89A84EDC7B91 /* Pods-OpenFoodUITests.app store.xcconfig */,
+				7BCFD89A74D12F81476086B4F84B8C75 /* Pods-OpenFoodUITests.debug.xcconfig */,
+				7DA50B6417B7950771BD103C4B61A7D1 /* Pods-OpenFoodUITests.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-OpenFoodUITests";
+			path = "Target Support Files/Pods-OpenFoodUITests";
+			sourceTree = "<group>";
+		};
+		A4D98C0D80782FB00BC155480889BACD /* Pods-OpenFood */ = {
+			isa = PBXGroup;
+			children = (
+				35B23E5D7BE77B75EEC6A67FEACD99DA /* Info.plist */,
+				CB5C057674E19D7A4EAD3F7DB1D4181E /* Pods-OpenFood.modulemap */,
+				FBECCD25D43E9C6D70D5D85AA05F1FE6 /* Pods-OpenFood-acknowledgements.markdown */,
+				0BC7A64D62B1499FB681C807C5DECFA0 /* Pods-OpenFood-acknowledgements.plist */,
+				5B5B2F7F8988226442013DBEC225B0F3 /* Pods-OpenFood-dummy.m */,
+				CC206A48A1E486975B903EDC901DC64C /* Pods-OpenFood-frameworks.sh */,
+				29A94722D9C91C19361E2672E3A579C3 /* Pods-OpenFood-resources.sh */,
+				BB470F224ECA174D5DC1C1C1CB29A1E5 /* Pods-OpenFood-umbrella.h */,
+				72C7A2784E86E493E9EF8F77BC8632E4 /* Pods-OpenFood.ad hoc.xcconfig */,
+				6A390E76B037001BEB57E1A29366CAE9 /* Pods-OpenFood.app store.xcconfig */,
+				3AD982177777701DE289957C0B4036AE /* Pods-OpenFood.debug.xcconfig */,
+				3ACD9070273D67B9995FDDFA3E2E10A4 /* Pods-OpenFood.release.xcconfig */,
+			);
+			name = "Pods-OpenFood";
+			path = "Target Support Files/Pods-OpenFood";
 			sourceTree = "<group>";
 		};
 		B65EA20A005582EDADDF7DFE671EC2C6 /* Swift */ = {
@@ -415,6 +558,21 @@
 				6A59AE36BE985C3E8CF012E800416689 /* ChameleonShorthand.swift */,
 			);
 			name = Swift;
+			sourceTree = "<group>";
+		};
+		BD0CF5B7313B522B5A2F810263B05208 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1840380B58BBD4FE2330825669E69D62 /* Alamofire.framework */,
+				2AEA93660844EB7EE055C3DF19C578E4 /* ChameleonFramework.framework */,
+				60215229ADC981D114B97486C7B456C3 /* DZNEmptyDataSet.framework */,
+				BA7E24EFFF72F09032C3255409D03FE5 /* Pods_OpenFood.framework */,
+				3B2CA35090B59BE9950E733C2DBD4D97 /* Pods_OpenFoodSnapshot.framework */,
+				8AC01D42CBFD7D609A4234269AA657A1 /* Pods_OpenFoodTests.framework */,
+				01801AE6A00FCD959C97A94F8A67C90F /* Pods_OpenFoodUITests.framework */,
+				A53F3D6A2FADA287AE147114349CEAF4 /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BE9CAD94F3ADC0A91CD07526E38EDDFA /* iOS */ = {
@@ -463,26 +621,6 @@
 				45AC1CA838B80FF61E89840B3D816A49 /* Support Files */,
 			);
 			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		E7C854D67480E8287D006413FC18C6C7 /* Pods-OpenFood */ = {
-			isa = PBXGroup;
-			children = (
-				D397F8E2F69688C1C478A1D945271A8A /* Info.plist */,
-				38D9E79847B31A60ED5932AB3983425E /* Pods-OpenFood.modulemap */,
-				FBBAFE0773BC858D8962A358ADFF0EA2 /* Pods-OpenFood-acknowledgements.markdown */,
-				F48BD0C8DDE1C46A70B75A029468EC56 /* Pods-OpenFood-acknowledgements.plist */,
-				1AC7BAE40B2CCF7711FDF4AB2A01A759 /* Pods-OpenFood-dummy.m */,
-				D0D6512D4D3B428F6570293202E8C089 /* Pods-OpenFood-frameworks.sh */,
-				6C3422A1ABA6EB25ECD186B8DABB3BC6 /* Pods-OpenFood-resources.sh */,
-				989ED5D5D6652232ECD7B7D40B8F715C /* Pods-OpenFood-umbrella.h */,
-				19AF8BBA969375E7DC545BE8DCA9696A /* Pods-OpenFood.ad hoc.xcconfig */,
-				36A91AC4E94BD6C19D813F632F28C251 /* Pods-OpenFood.app store.xcconfig */,
-				434851F8F80EB266F3A7669DDF52A877 /* Pods-OpenFood.debug.xcconfig */,
-				3C726E264F87DCE920498C523C31A10F /* Pods-OpenFood.release.xcconfig */,
-			);
-			name = "Pods-OpenFood";
-			path = "Target Support Files/Pods-OpenFood";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +674,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90E1E403E1878B15F345006AB663B7CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27FA6D3EE34DF5828613409963B030D /* Pods-OpenFoodTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA545CED9B173A4F3A1E86FA124C4170 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC75B7DD1B01A03FD3E0BDC24D985E1 /* Pods-OpenFoodUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD776DF2098335E9DDED0AD46642B4FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2069952E79D550E6DC1FB797A5090F46 /* Pods-OpenFoodSnapshot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8EBBF4D7CCF00C1874E604AFD4C7EFB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +709,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		27E04C6F60490D7E387C4224F17C4BBF /* Pods-OpenFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0851C02C1CD6FA786FBB1827AC1BA5E /* Build configuration list for PBXNativeTarget "Pods-OpenFoodTests" */;
+			buildPhases = (
+				00DEF9A09E37C593774BC1B425B2EB2F /* Sources */,
+				6E624A6311277E42B2846250DA2BD4FD /* Frameworks */,
+				90E1E403E1878B15F345006AB663B7CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OpenFoodTests";
+			productName = "Pods-OpenFoodTests";
+			productReference = 8AC01D42CBFD7D609A4234269AA657A1 /* Pods_OpenFoodTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4E4C310CDFCD7218D99A9E66D4AFD4D1 /* Pods-OpenFood */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87DA026C4BE8A408A562AEE016DEB189 /* Build configuration list for PBXNativeTarget "Pods-OpenFood" */;
@@ -565,7 +744,7 @@
 			);
 			name = "Pods-OpenFood";
 			productName = "Pods-OpenFood";
-			productReference = C96796389C0D15F5A93480CBF8663205 /* Pods_OpenFood.framework */;
+			productReference = BA7E24EFFF72F09032C3255409D03FE5 /* Pods_OpenFood.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		50380D93B96679DFB1AD2089EB6E4E53 /* Alamofire */ = {
@@ -582,7 +761,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 8D5A4B06BBBFDA056DA350558A3F087E /* Alamofire.framework */;
+			productReference = 1840380B58BBD4FE2330825669E69D62 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		91BFA567EDC47709FE90FA3C43E47CDF /* DZNEmptyDataSet */ = {
@@ -599,7 +778,7 @@
 			);
 			name = DZNEmptyDataSet;
 			productName = DZNEmptyDataSet;
-			productReference = 665875891362B608BCD6E562453235CC /* DZNEmptyDataSet.framework */;
+			productReference = 60215229ADC981D114B97486C7B456C3 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		931EFDC73A61F9F135852D0331664945 /* ChameleonFramework */ = {
@@ -616,7 +795,41 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = 4D770CA66E7D49ABC8D99575CA63B9AE /* ChameleonFramework.framework */;
+			productReference = 2AEA93660844EB7EE055C3DF19C578E4 /* ChameleonFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EEFA1E41EB61E200F62BBDD69531565 /* Pods-OpenFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390D4FB9CDCFC3D362F5774B3AF95BB1 /* Build configuration list for PBXNativeTarget "Pods-OpenFoodUITests" */;
+			buildPhases = (
+				E1F6BB25C5D2A6C8C30D023D1C40273D /* Sources */,
+				2CB89E21D0A758BFDC892517F54FA54D /* Frameworks */,
+				AA545CED9B173A4F3A1E86FA124C4170 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OpenFoodUITests";
+			productName = "Pods-OpenFoodUITests";
+			productReference = 01801AE6A00FCD959C97A94F8A67C90F /* Pods_OpenFoodUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA26580C43C08DA01E170B60C5B93BFB /* Pods-OpenFoodSnapshot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C0687DC8C70C200F15F964805C8E2F /* Build configuration list for PBXNativeTarget "Pods-OpenFoodSnapshot" */;
+			buildPhases = (
+				02972595BA0A55F1DF34727681300F99 /* Sources */,
+				4A21C50B855BB1FCBCA6552DD48D6AA0 /* Frameworks */,
+				DD776DF2098335E9DDED0AD46642B4FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OpenFoodSnapshot";
+			productName = "Pods-OpenFoodSnapshot";
+			productReference = 3B2CA35090B59BE9950E733C2DBD4D97 /* Pods_OpenFoodSnapshot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BF597F600B0B042CBAE69C26867BE3CB /* SwiftyJSON */ = {
@@ -633,7 +846,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = F8A52ACE831AB5832DAF8F81C3B9D776 /* SwiftyJSON.framework */;
+			productReference = A53F3D6A2FADA287AE147114349CEAF4 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -653,7 +866,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 920FFEB91FCD374CE863E8332FD1F970 /* Products */;
+			productRefGroup = BD0CF5B7313B522B5A2F810263B05208 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -661,12 +874,31 @@
 				931EFDC73A61F9F135852D0331664945 /* ChameleonFramework */,
 				91BFA567EDC47709FE90FA3C43E47CDF /* DZNEmptyDataSet */,
 				4E4C310CDFCD7218D99A9E66D4AFD4D1 /* Pods-OpenFood */,
+				AA26580C43C08DA01E170B60C5B93BFB /* Pods-OpenFoodSnapshot */,
+				27E04C6F60490D7E387C4224F17C4BBF /* Pods-OpenFoodTests */,
+				9EEFA1E41EB61E200F62BBDD69531565 /* Pods-OpenFoodUITests */,
 				BF597F600B0B042CBAE69C26867BE3CB /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00DEF9A09E37C593774BC1B425B2EB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4617A236A7436581B99427A88E5BCD /* Pods-OpenFoodTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02972595BA0A55F1DF34727681300F99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EB98E6619D6D9F4BD97667035DB41B /* Pods-OpenFoodSnapshot-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EEC5B4ED763A2B4E657122C39BDF133 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -711,6 +943,14 @@
 			files = (
 				E0B95A71CC97F2290025869988213A31 /* DZNEmptyDataSet-dummy.m in Sources */,
 				1615AC56AB84A5D28261A44E4629ED3D /* UIScrollView+EmptyDataSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F6BB25C5D2A6C8C30D023D1C40273D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9356DDF3CFFD58D206599D863033377A /* Pods-OpenFoodUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +1009,39 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0189BC33EE4A1720999C79630490A081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69C8C5CBE00AE0BEA78A45879B4AD99 /* Pods-OpenFoodSnapshot.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodSnapshot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0915119E28AE66A5060E0F406726A9CB /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -808,7 +1081,7 @@
 		};
 		0EEBDF7EE7AFF3B8F189207A350629B7 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AF8BBA969375E7DC545BE8DCA9696A /* Pods-OpenFood.ad hoc.xcconfig */;
+			baseConfigurationReference = 72C7A2784E86E493E9EF8F77BC8632E4 /* Pods-OpenFood.ad hoc.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -839,9 +1112,75 @@
 			};
 			name = "Ad Hoc";
 		};
+		1002A6DCA2DF371108E4D3D04051B154 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2666BC508ECFF340C309975A7520DC6 /* Pods-OpenFoodSnapshot.app store.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodSnapshot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
+		1E38070C00BC6D4B942DB83990444429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D57A272D9493FEF7443D7ABB8A03E42 /* Pods-OpenFoodTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		24708B069C38109AE52764F479FBEF66 /* App Store */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36A91AC4E94BD6C19D813F632F28C251 /* Pods-OpenFood.app store.xcconfig */;
+			baseConfigurationReference = 6A390E76B037001BEB57E1A29366CAE9 /* Pods-OpenFood.app store.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -874,7 +1213,7 @@
 		};
 		24A55FEB8053713EECFDF0420331853D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 434851F8F80EB266F3A7669DDF52A877 /* Pods-OpenFood.debug.xcconfig */;
+			baseConfigurationReference = 3AD982177777701DE289957C0B4036AE /* Pods-OpenFood.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -934,6 +1273,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		2E15227E3BEB1B46CA22C0D9AE9FCE9F /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E51A9D536420A523E39D9474D6423C /* Pods-OpenFoodSnapshot.ad hoc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodSnapshot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Ad Hoc";
 		};
 		31ED60D1CD3F6C0C5113DBCEBE8D1128 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1030,6 +1402,39 @@
 			};
 			name = "App Store";
 		};
+		4A22F644E3F9D9ACEDA4BD4EA1551457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA50B6417B7950771BD103C4B61A7D1 /* Pods-OpenFoodUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		58EAD8046D603FFD555D7FEE005CD08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA923D707DC8DCF84ABA382AD39F03C1 /* ChameleonFramework.xcconfig */;
@@ -1058,6 +1463,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		6966711F40B3A817F9F5C57C7210FE01 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4AD31CD39AB45A7210C89A84EDC7B91 /* Pods-OpenFoodUITests.app store.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
 		};
 		72720D83F09513B4F47E7732248298BE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1214,6 +1652,39 @@
 			};
 			name = "Ad Hoc";
 		};
+		943392D6A8DF7F7956138F9E707465BB /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9570B7008FC1A90B2F022434941DB2 /* Pods-OpenFoodTests.app store.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "App Store";
+		};
 		9BE069A0FABF0C2F681A7DF308A47BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA923D707DC8DCF84ABA382AD39F03C1 /* ChameleonFramework.xcconfig */;
@@ -1246,7 +1717,7 @@
 		};
 		9BFCE24D240AFD5DB5FE703C3E6707F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C726E264F87DCE920498C523C31A10F /* Pods-OpenFood.release.xcconfig */;
+			baseConfigurationReference = 3ACD9070273D67B9995FDDFA3E2E10A4 /* Pods-OpenFood.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1378,6 +1849,39 @@
 			};
 			name = Debug;
 		};
+		B0528A1540C80135A63729E6174292D7 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EA1522D45549A4809D8FB6633A9E05 /* Pods-OpenFoodTests.ad hoc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Ad Hoc";
+		};
 		B12E01770BBF4875195481D916E8D3F1 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 136BADD7F93461C816A02D745853F6C8 /* Alamofire.xcconfig */;
@@ -1406,6 +1910,105 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = "App Store";
+		};
+		B14AAF7E7B6DB4ED2F222C7F95ADBD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCFD89A74D12F81476086B4F84B8C75 /* Pods-OpenFoodUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA19B5B68A010D2126BE0708D2322D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1E6CDA772F5ED9414C0C5C444A2736 /* Pods-OpenFoodTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodTests/Pods-OpenFoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D378C0A15FDD423E3B6DD60CC1234BA1 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA40AD8EAC12C27E85334E387D768A3F /* Pods-OpenFoodUITests.ad hoc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodUITests/Pods-OpenFoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Ad Hoc";
 		};
 		E162219F6FB49EC4483CD7919A6C7EE9 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
@@ -1464,6 +2067,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = "App Store";
+		};
+		F1055C4D8B82943BABB28B6D75375C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD831967841B666821BC6C9DCCAACDDF /* Pods-OpenFoodSnapshot.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenFoodSnapshot/Pods-OpenFoodSnapshot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenFoodSnapshot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		F133BDEDFD739365482460F5236352FF /* App Store */ = {
 			isa = XCBuildConfiguration;
@@ -1548,6 +2184,17 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		390D4FB9CDCFC3D362F5774B3AF95BB1 /* Build configuration list for PBXNativeTarget "Pods-OpenFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D378C0A15FDD423E3B6DD60CC1234BA1 /* Ad Hoc */,
+				6966711F40B3A817F9F5C57C7210FE01 /* App Store */,
+				B14AAF7E7B6DB4ED2F222C7F95ADBD19 /* Debug */,
+				4A22F644E3F9D9ACEDA4BD4EA1551457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B852F28F0036FA954423A7474147B00 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1555,6 +2202,17 @@
 				B12E01770BBF4875195481D916E8D3F1 /* App Store */,
 				72720D83F09513B4F47E7732248298BE /* Debug */,
 				7E5CBEBC44C45F08E83711879CFF22D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C0687DC8C70C200F15F964805C8E2F /* Build configuration list for PBXNativeTarget "Pods-OpenFoodSnapshot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E15227E3BEB1B46CA22C0D9AE9FCE9F /* Ad Hoc */,
+				1002A6DCA2DF371108E4D3D04051B154 /* App Store */,
+				F1055C4D8B82943BABB28B6D75375C54 /* Debug */,
+				0189BC33EE4A1720999C79630490A081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1577,6 +2235,17 @@
 				24708B069C38109AE52764F479FBEF66 /* App Store */,
 				24A55FEB8053713EECFDF0420331853D /* Debug */,
 				9BFCE24D240AFD5DB5FE703C3E6707F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0851C02C1CD6FA786FBB1827AC1BA5E /* Build configuration list for PBXNativeTarget "Pods-OpenFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0528A1540C80135A63729E6174292D7 /* Ad Hoc */,
+				943392D6A8DF7F7956138F9E707465BB /* App Store */,
+				1E38070C00BC6D4B942DB83990444429 /* Debug */,
+				CA19B5B68A010D2126BE0708D2322D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
