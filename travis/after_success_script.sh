@@ -1,4 +1,4 @@
 #!/bin/bash
-if [ "{$TRAVIS_BRANCH}" = "master" ]; then
-fastlane ios report_test_coverage
+if [ $TRAVIS_BRANCH = "master" ]; then
+echo "I am on master branch!"
 fi

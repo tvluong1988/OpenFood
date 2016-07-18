@@ -24,6 +24,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-OpenFoodSnapshot.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OpenFoodTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OpenFoodUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>27E04C6F60490D7E387C4224F17C4BBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4E4C310CDFCD7218D99A9E66D4AFD4D1</key>
 		<dict>
 			<key>primary</key>
@@ -48,6 +68,16 @@
 			<true/>
 		</dict>
 		<key>931EFDC73A61F9F135852D0331664945</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EEFA1E41EB61E200F62BBDD69531565</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA26580C43C08DA01E170B60C5B93BFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
