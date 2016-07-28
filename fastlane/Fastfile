@@ -41,13 +41,13 @@ password: SecureRandom.base64
 
 #Import distribution certificate
 import_certificate(
-certificate_path: "fastlane/cert/iosDeveloper.p12",
+certificate_path: "iosDeveloper.p12",
 certificate_password: ENV["KEY_PASSWORD"],
 keychain_name: ENV["KEYCHAIN_NAME"]
 )
 
 import_certificate(
-certificate_path: "fastlane/cert/iosDistribution.p12",
+certificate_path: "iosDistribution.p12",
 certificate_password: ENV["KEY_PASSWORD"],
 keychain_name: ENV["KEYCHAIN_NAME"]
 )
