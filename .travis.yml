@@ -8,14 +8,17 @@ on_success: never
 on_failure: never
 
 
-before_script:
-- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/cert/iosDistribution.p12.enc -d -a -out fastlane/cert/iosDistribution.p12
-- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/cert/iosDeveloper.p12.enc -d -a -out fastlane/cert/iosDeveloper.p12
-
-
 before_install:
 - gem install xcov --no-ri --no-rdoc --no-document
 - gem update fastlane --no-ri --no-rdoc --no-document
+- gem install aws-sdk --no-ri --no-rdoc --no-document
+
+
+before_script:
+- ruby travis/get_certs_from_s3.rb
+- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in iosDeveloper.p12.enc -d -a -out iosDeveloper.p12
+- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in iosDistribution.p12.enc -d -a -out iosDistribution.p12
+
 
 script: travis/script.sh
 after_success: travis/after_success_script.sh
