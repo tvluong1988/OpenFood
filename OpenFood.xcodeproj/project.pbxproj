@@ -25,6 +25,7 @@
 		8B346D6E1C581F2900DD65C5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B346D6D1C581F2900DD65C5 /* README.md */; };
 		8B346D701C581F5C00DD65C5 /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B346D6F1C581F5C00DD65C5 /* Demo.gif */; };
 		8B72884A1C3239F60019297E /* MetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7288491C3239F60019297E /* MetaInfo.swift */; };
+		8B882ED81D49B05200AB1A0A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8B882ED71D49B05200AB1A0A /* .gitignore */; };
 		8B97C8BE1C28E95F00A977C8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */; };
 		8B9E8E541C2A2AD900C6527E /* USStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E531C2A2AD900C6527E /* USStates.swift */; };
 		8B9E8E561C2A36C200C6527E /* USStatePolygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */; };
@@ -135,6 +136,7 @@
 		8B346D6D1C581F2900DD65C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B346D6F1C581F5C00DD65C5 /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
 		8B7288491C3239F60019297E /* MetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInfo.swift; sourceTree = "<group>"; };
+		8B882ED71D49B05200AB1A0A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8B97C8BD1C28E95F00A977C8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8B9E8E531C2A2AD900C6527E /* USStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStates.swift; sourceTree = "<group>"; };
 		8B9E8E551C2A36C200C6527E /* USStatePolygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USStatePolygons.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		8B33338C1C28C02100831806 = {
 			isa = PBXGroup;
 			children = (
+				8B882ED71D49B05200AB1A0A /* .gitignore */,
 				8BF307401D330D2C004B710E /* LICENSE */,
 				8BE72A451D24BD550058619A /* travis */,
 				8BDEAD361D2294CA00672830 /* .travis.yml */,
@@ -664,6 +667,7 @@
 				8BDEAD371D2294CA00672830 /* .travis.yml in Resources */,
 				8BF89CA61C45F46E00359C41 /* marketing_url.txt in Resources */,
 				8BF89CA31C45F46E00359C41 /* copyright.txt in Resources */,
+				8B882ED81D49B05200AB1A0A /* .gitignore in Resources */,
 				8BF89CA81C45F46E00359C41 /* privacy_url.txt in Resources */,
 				8BF89CA01C45F46E00359C41 /* Appfile in Resources */,
 				8BF89CB01C45F46E00359C41 /* secondary_second_sub_category.txt in Resources */,
